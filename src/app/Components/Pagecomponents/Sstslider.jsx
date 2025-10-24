@@ -24,6 +24,8 @@ const Sstslider = ({ sliderdata }) => {
   }, []);
   return (
     <div className="max-w-[1490px] m-auto">
+
+      
       <Swiper
         loop
         // autoplay={{ delay: 2000 }}
