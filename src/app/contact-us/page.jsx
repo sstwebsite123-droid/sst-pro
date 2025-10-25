@@ -18,7 +18,7 @@ const faqData = [
   {
     question: "Do you have a physical office or address?",
     answer:
-      "Yes — Our office is located at 131 Finsbury Pavement, London EC2A 1NT, UK. You can also see the location on the map below."
+      "Yes — Our office is located at 131 Finsbury Pavement, London EC2A 1NT, UK. You can also see the location on the map above."
   },
   {
     question: "Can I submit a request outside working hours?",
