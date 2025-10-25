@@ -25,7 +25,7 @@ const Faqs = ({faqData}) => {
           <div   >
             <Description
               description={
-                "Get quick answers to the most common <br /> questions about SST."
+                "Get quick answers to the most common <br /> questions about SST Pro."
               }
               color={"text-white"}
               align={"lg:text-end"}

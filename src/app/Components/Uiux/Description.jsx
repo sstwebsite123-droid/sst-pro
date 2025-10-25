@@ -20,7 +20,7 @@ const Description = ({
     <div
       className={`flex flex-col ${justify_start == true ? 'items-center md:items-start' : 'items-center'}  justify-center ${items_start ? " " : "lg:items-end"} `}
      
-      data-aos={animation === false ? '' : 'fade-up'}
+      // data-aos={animation === false ? '' : 'fade-up'}
     >
       <p
         className={` ${color} text-center ${align} main_description pb-4 font_light`}

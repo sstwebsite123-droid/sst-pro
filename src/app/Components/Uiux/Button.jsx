@@ -13,6 +13,8 @@ const Button = ({
   border_bottom
 }) => {
   const [liquidcClass, setLiquidClass] = useState(false);
+  console.log(liquidcClass);
+
   return (
     <div
       className="relative overflow-hidden rounded-[50px] cus_btn transition-all duration-500 z-[3]"

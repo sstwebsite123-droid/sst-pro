@@ -4,9 +4,7 @@ import Title from "../Uiux/Title";
 import Link from "next/link";
 import { MessageSquare, Bell, MapPin, Phone } from "lucide-react";
 
-
-
-const contacts=[
+const contacts = [
   {
     icon: <MessageSquare className="w-5 h-5 text-white" />,
     heading: "Chat to sales",
@@ -21,20 +19,20 @@ const contacts=[
     actionText: "info@sst.pro",
     href: "mailto:info@sst.pro",
   },
-  
+
   {
     icon: <MapPin className="w-5 h-5 text-white" />,
     heading: "Visit us",
     subtext: "Visit our office HQ.",
     actionText: "View on Google Maps",
-    // href: "https://maps.google.com",
+    href: "https://maps.app.goo.gl/z98jJHwaspvNq6Lv5",
   },
   {
     icon: <Phone className="w-5 h-5 text-white" />,
     heading: "Call us",
     subtext: "Mon–Fri from 8am to 5pm.",
-    actionText: "+1 (555) 000-0000",
-    href: "tel:+15550000000",
+    actionText: "+4 (144) 707-8383",
+    href: "tel:+41447078383",
   },
 ];
 
@@ -45,9 +43,7 @@ const Contactusdata = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
             <Title
-              title={
-                'Get in <span class="gradient_text"> Touch </span>'
-              }
+              title={'Get in <span class="gradient_text"> Touch </span>'}
               color={"text-white"}
             />
           </div>
@@ -62,8 +58,6 @@ const Contactusdata = () => {
           </div>
         </div>
 
-
-
         <div className="pt-18">
           {/* keep same grid + card classes as your Trackgroth component */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 2xl:gap-12">
@@ -72,6 +66,7 @@ const Contactusdata = () => {
                 key={idx}
                 className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700"
               >
+                <Link href={item.href}>
                 <div className="max-w-[510px] m-auto pt-8 pb-6">
                   {/* small icon box like the screenshot */}
                   <div className="w-10 h-10 rounded-2xl border border-white/20 bg-white/5 flex items-center justify-center">
@@ -86,14 +81,14 @@ const Contactusdata = () => {
                     {item.subtext}
                   </p>
 
-                 <a
-  href={item.href}
-  className="inline-block mt-2 underline text-white"
->
-  {item.actionText}
-</a>
-
+                  <span
+                    // href={item.href}
+                    className="inline-block mt-2 underline text-white"
+                  >
+                    {item.actionText}
+                  </span>
                 </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -104,4 +99,3 @@ const Contactusdata = () => {
 };
 
 export default Contactusdata;
-

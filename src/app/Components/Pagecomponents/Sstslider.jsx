@@ -9,8 +9,6 @@ import Image from "next/image";
 import btnarrow from "../../../../public/icons/btnarrow.svg";
 import Arrowbtn from "../Uiux/Arrowbtn";
 
-
-
 const Sstslider = ({ sliderdata }) => {
   const [slideitem, setSlideItem] = useState(2);
   useEffect(() => {
@@ -24,8 +22,6 @@ const Sstslider = ({ sliderdata }) => {
   }, []);
   return (
     <div className="max-w-[1490px] m-auto">
-
-      
       <Swiper
         loop
         // autoplay={{ delay: 2000 }}

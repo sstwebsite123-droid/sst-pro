@@ -70,7 +70,8 @@ const Header = () => {
                 alt="Logo"
                 width={1000}
                 height={500}
-                className="max-w-[62px] md:max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px]"
+                className="max-w-[62px] md:max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px] animate-spin"
+                style={{animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out'}}
               />
             </Link>
           </div>
@@ -119,7 +120,7 @@ const Header = () => {
             </div>
           </div>
           <div className="block md:hidden">
-            <Link href="tel:5551234567">
+            <Link href="tel:+41447078383">
               <Image
                 src={callicon}
                 alt="callicon"
