@@ -1,13 +1,14 @@
 import React from 'react'
 import Contactusbanner from '../Components/Pagecomponents/Contactusbanner'
 import Contactusdata from '../Components/Pagecomponents/Contactusdata'
+import MapSection from '../Components/Pagecomponents/MapSection'
 import ConatctusForm from '../Components/Pagecomponents/ConatctusForm'
 import Faqs from '../Components/Pagecomponents/Faqs'
 const faqData = [
   {
     question: "How can I reach your support team?",
     answer:
-      "You can contact us via email at support@example.com or call us at +91‑XXXXXXXXXX between 9:00 AM and 6:00 PM (Mon–Fri)."
+      "You can contact us via email at info@sst.pro or call us at +44 (144) 707-8383 between 09:00–18:00 GMT (Mon–Fri)"
   },
   {
     question: "What is your response time?",
@@ -17,7 +18,7 @@ const faqData = [
   {
     question: "Do you have a physical office or address?",
     answer:
-      "Yes — Our office is located at 123, Main Street, Chandigarh, India. You can also see the location on the map below."
+      "Yes — Our office is located at 131 Finsbury Pavement, London EC2A 1NT, UK. You can also see the location on the map below."
   },
   {
     question: "Can I submit a request outside working hours?",
@@ -36,6 +37,7 @@ const page = () => {
     <div>
       {/* <Contactusbanner/> */}
       <Contactusdata/>
+      <MapSection/>
       <ConatctusForm/>
       <Faqs faqData={faqData} />
     </div>

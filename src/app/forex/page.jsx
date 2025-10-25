@@ -124,10 +124,10 @@ const page = () => {
           'Our <span class="gradient_text">Risk Management <br/> Philosophy</span>'
         }
         description={
-          "Effective risk management is essential to minimize losses early, protect investments, and ensure consistent, sustainable trading growth."
+          "Investing in real estate can be highly rewarding, but it requires careful planning, expert guidance, and strategic decision-making to achieve consistent, secure, and profitable growth."
         }
-        card1description={'While Forex markets offer significant potential, they also carry risk. That’s why at SST Pro, we employ advanced risk control systems, trade caps, and capital protection strategies.'}
-        card2description={'While Forex markets offer significant potential, they also carry risk. That’s why at SST Pro, we employ advanced risk control systems, trade caps, and capital protection strategies.'}
+        card1description={'While real estate offers strong growth potential, market fluctuations and property risks exist. SST Pro employs rigorous property evaluation, diversified portfolios, and capital protection strategies to ensure investment security. '}
+        card2description={'Every decision is made with data, expertise, and discipline, leveraging deep market research, emerging trends, and long-term value strategies to maximize returns while safeguarding client investments in every property transaction.'}
       />
       <Faqs faqData={faqData} />
     </div>
