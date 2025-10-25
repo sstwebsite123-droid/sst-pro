@@ -8,7 +8,7 @@ import Dynamicbanner from "../Components/Pagecomponents/Dynamicbanner";
 import Vision from "../Components/Pagecomponents/Vision";
 const faqData = [
   {
-    question: "What is SST?",
+    question: "What is SST Pro?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   },
@@ -28,7 +28,7 @@ const faqData = [
       "Register online, verify your details, and start trading in minutes."
   },
   {
-    question: "Is SST beginner-friendly?",
+    question: "Is SST Pro beginner-friendly?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   }

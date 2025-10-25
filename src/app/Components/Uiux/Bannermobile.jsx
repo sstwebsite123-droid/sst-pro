@@ -6,6 +6,8 @@ import Button from "./Button";
 import bannerdollar from "../../../../public/images/bannerdollar.webp";
 import bannerpersentgrafh from "../../../../public/images/bannerpersentgrafh.webp";
 import phonebannergraph from "../../../../public/images/phonebannergraph.webp";
+import InteractiveGraph from "../Pagecomponents/InteractiveGraph";
+import AnimatedSpeedMeter from "../Pagecomponents/AnimatedSpeedMeter";
 const Bannermobile = () => {
   return (
     <div className="banner_container">
@@ -63,40 +65,29 @@ const Bannermobile = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 pt-8">
-            <div className="">
+            <div className="animate-spin" style={{animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out'}}>
               <Image
                 src={bannerdollar}
                 alt="$"
                 width={2000}
                 height={500}
-                className="max-w-[130px]  flip_loop m-auto"
+                className="max-w-[130px] m-auto"
               />
             </div>
             <div className="">
               <div className="relative">
-                <Image
-                  src={bannerpersentgrafh}
-                  alt="$"
-                  width={5000}
-                  height={500}
-                  className="max-w-[140px] m-auto"
-                />
-                <p className="absolute w-full text-center bottom-[-10px] text-[14px] lg:text-xl xl:text-[24px] 2xl:text-[28px] text-white">
-                  Secure ROI
-                </p>
+              <AnimatedSpeedMeter />
               </div>
             </div>
           </div>
         </div>
-        <div className="pt-6 absolute bottom-0">
-          <Image
-            src={phonebannergraph}
-            alt="banner"
-            width={1000}
-            height={500}
-            className="w-full"
-          />
-        </div>
+       <div
+            className="absolute bottom-0 ps-6 w-full"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+          >
+            <InteractiveGraph />
+          </div>
       </div>
     </div>
   );

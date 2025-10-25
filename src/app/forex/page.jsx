@@ -14,7 +14,7 @@ import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
 const faqData = [
   {
-    question: "What is SST?",
+    question: "What is SST Pro?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   },
@@ -34,7 +34,7 @@ const faqData = [
       "Register online, verify your details, and start trading in minutes."
   },
   {
-    question: "Is SST beginner-friendly?",
+    question: "Is SST Pro beginner-friendly?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   }
@@ -85,7 +85,7 @@ const page = () => {
           'Your Gateway to <br/><span class="gradient_text">Global Forex Growth</span>'
         }
         description={
-          "Check out our achievements to trust our expertise proven performance, reliable <br/> growth, transparent management."
+          "With over 1,500+ active investors and a proven 98% client satisfaction rate, SST Pro has successfully managed millions in assets."
         }
         videoSrc='/video/graphvideo.mp4'
         right_description={
@@ -97,7 +97,7 @@ const page = () => {
           '<span class="gradient_text">SST Pro Forex </span><br/> Investment Highlights'
         }
         description={
-          "Check out our achievements to trust our expertise: proven performance, reliable growth, transparent management."
+          "Check out our achievements to trust our expertise proven performance, reliable growth, transparent management."
         }
         cardtitle1="10%-12%"
         carddes1={"Average Monthly Return"}
@@ -115,7 +115,7 @@ const page = () => {
           'How Forex Investment <br/>Works with <span class="gradient_text">SST Pro?</span>'
         }
         description={
-          "Check how your trading works — from account setup to managed strategies; we handle everything to ensure consistent, secure Forex growth."
+          "Check how your trading with us works — from account setup to managed strategies, we handle everything to ensure consistent, secure Forex growth."
         }
         cardata={cards}
       />
@@ -124,7 +124,7 @@ const page = () => {
           'Our <span class="gradient_text">Risk Management <br/> Philosophy</span>'
         }
         description={
-          "Check how your trading with us works — from account setup to managed strategies, we handle everything to ensure consistent, secure <br/> Forex growth."
+          "Effective risk management is essential to minimize losses early, protect investments, and ensure consistent, sustainable trading growth."
         }
         card1description={'While Forex markets offer significant potential, they also carry risk. That’s why at SST Pro, we employ advanced risk control systems, trade caps, and capital protection strategies.'}
         card2description={'While Forex markets offer significant potential, they also carry risk. That’s why at SST Pro, we employ advanced risk control systems, trade caps, and capital protection strategies.'}

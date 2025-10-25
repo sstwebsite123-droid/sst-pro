@@ -11,7 +11,7 @@ const Currentproject = () => {
           <div>
             <Title
               title={
-                'Current <span class="gradient_text"> Working  <br/> Projects </span> '
+                'Core <span class="gradient_text"> Investment <br/> Markets </span> '
               }
               color={"text-white"}
             />
@@ -19,7 +19,7 @@ const Currentproject = () => {
           <div>
             <Description
               description={
-                "Manage your current projects seamlessly, track updates, <br/> and optimize workflows for better productivity."
+                "SST Pro specializes in Forex and Real Estate trading, offering investors <br/> lucrative opportunities through diversified and strategic investment portfolios."
               }
               color={"text-white"}
               align={"lg:text-end"}

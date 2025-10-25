@@ -14,7 +14,7 @@ import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
 const faqData = [
   {
-    question: "What is SST?",
+    question: "What is SST Pro?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   },
@@ -34,7 +34,7 @@ const faqData = [
       "Register online, verify your details, and start trading in minutes."
   },
   {
-    question: "Is SST beginner-friendly?",
+    question: "Is SST Pro beginner-friendly?",
     answer:
       "Register online, verify your details, and start trading in minutes."
   }
