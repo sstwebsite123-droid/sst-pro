@@ -34,7 +34,7 @@ const footerdata = {
       title: "Contact",
       pagelinks: [
         { pagelink: "mailto:info@sst.pro", pagename: "info@sst.pro" },
-        { pagelink: "tel:+41447078383", pagename: "+4 (144) 707-8383" },
+        { pagelink: "tel:+41447078383", pagename: "+41 (447) 07-8383" },
       ],
     },
   ],

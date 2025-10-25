@@ -31,7 +31,7 @@ const contacts = [
     icon: <Phone className="w-5 h-5 text-white" />,
     heading: "Call us",
     subtext: "Mon–Fri from 8am to 5pm.",
-    actionText: "+4 (144) 707-8383",
+    actionText: "+41 (447) 07-8383",
     href: "tel:+41447078383",
   },
 ];
@@ -66,7 +66,7 @@ const Contactusdata = () => {
                 key={idx}
                 className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700"
               >
-                <Link href={item.href}>
+                <Link href={item.href} target="_blank">
                 <div className="max-w-[510px] m-auto pt-8 pb-6">
                   {/* small icon box like the screenshot */}
                   <div className="w-10 h-10 rounded-2xl border border-white/20 bg-white/5 flex items-center justify-center">
