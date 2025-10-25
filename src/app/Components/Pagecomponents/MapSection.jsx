@@ -48,7 +48,7 @@ const MapSection = () => {
       const marker = new window.google.maps.Marker({
         position: OFFICE_COORDS,
         map: mapInstance,
-        title: "SST Office - 131 Finsbury Pavement",
+        title: "SST Pro Office - 131 Finsbury Pavement",
         icon: {
           url:
             "data:image/svg+xml;charset=UTF-8," +
@@ -56,7 +56,7 @@ const MapSection = () => {
               <svg width="40" height="55" viewBox="0 0 40 55" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 0C8 0 0 8 0 20c0 15 20 35 20 35s20-20 20-35C40 8 32 0 20 0z" fill="#FF0000" stroke="#FFFFFF" stroke-width="2"/>
                 <circle cx="20" cy="20" r="6" fill="#FFFFFF"/>
-                <text x="20" y="23" text-anchor="middle" fill="#FF0000" font-size="8" font-weight="bold">SST</text>
+                <text x="20" y="23" text-anchor="middle" fill="#FF0000" font-size="8" font-weight="bold">SST Pro</text>
               </svg>
             `),
           scaledSize: new window.google.maps.Size(40, 55),
@@ -69,7 +69,7 @@ const MapSection = () => {
       const infoWindow = new window.google.maps.InfoWindow({
         content: `
           <div style="color:#000;padding:6px;">
-            <h3 style="margin:0 0 3px 0;color:#3B82F6;">SST Office</h3>
+            <h3 style="margin:0 0 3px 0;color:#3B82F6;">SST Pro Office</h3>
             <p style="margin:0;font-size:12px;">131 Finsbury Pavement, London EC2A 1NT, UK</p>
             <a href="https://maps.app.goo.gl/UAKiY6MTEzaZLU8R6" target="_blank" style="color:#3B82F6;text-decoration:none;font-size:11px;">Open in Google Maps</a>
           </div>
@@ -100,7 +100,7 @@ const MapSection = () => {
             encodeURIComponent(`
               <svg width="130" height="35" viewBox="0 0 130 35" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0" y="0" width="130" height="35" fill="rgba(0,0,0,0.7)" stroke="#FF0000" stroke-width="1.5" rx="5"/>
-                <text x="65" y="15" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">SST OFFICE</text>
+                <text x="65" y="15" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">SST Pro OFFICE</text>
                 <text x="65" y="28" text-anchor="middle" fill="#FF5555" font-size="9">131 Finsbury Pavement</text>
               </svg>
             `),
