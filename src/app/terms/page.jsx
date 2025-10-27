@@ -57,7 +57,7 @@ const TermsAndConditions = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
+      <div className="z-10 min-h-screen flex items-start justify-center p-4 pt-30">
         <div className={`max-w-4xl w-full transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
@@ -77,7 +77,7 @@ const TermsAndConditions = () => {
           </div>
 
           {/* Terms Content */}
-          <div className={`bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 transition-all duration-1000 delay-400 ${
+          <div className={`bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 transition-all duration-1000 delay-400 max-h-[70vh] overflow-y-auto ${
             showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <div className="prose prose-lg max-w-none">
@@ -305,38 +305,10 @@ const TermsAndConditions = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className={`flex flex-col sm:flex-row gap-4 justify-center mt-8 transition-all duration-1000 delay-600 ${
-            showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
-            <button
-              onClick={handleAccept}
-              className={`cursor-pointer px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${
-                isAccepted ? 'animate-pulse' : ''
-              }`}
-            >
-              <div className="flex items-center justify-center space-x-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-                <span>I Accept Terms & Conditions</span>
-              </div>
-            </button>
-
-            <button
-              onClick={handleReject}
-              className="cursor-pointer px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <div className="flex items-center justify-center space-x-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-                <span>I Do Not Accept</span>
-              </div>
-            </button>
-          </div>
+       
 
           {/* Footer */}
-          <div className={`text-center mt-8 transition-all duration-1000 delay-800 ${
+          <div className={`text-center mt-6 transition-all duration-1000 delay-800 ${
             showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <p className="text-white/80 text-sm">
