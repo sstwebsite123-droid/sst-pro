@@ -34,10 +34,11 @@ export const metadata = {
     description: 'SST Pro offers professional investment solutions in Forex trading and Real Estate. Get 10-12% monthly returns with expert market analysis and risk management.',
     images: [
       {
-        url: '/images/og-image.webp',
+        url: 'https://www.sst.pro/images/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'SST Pro - Professional Investment Solutions',
+        type: 'image/webp',
       },
     ],
   },
@@ -45,11 +46,21 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'SST Pro - Professional Investment Solutions',
     description: 'Professional investment solutions in Forex trading and Real Estate with expert market analysis and risk management.',
-    images: ['/images/og-image.webp'],
+    images: ['https://www.sst.pro/images/og-image.webp'],
     creator: '@sstpro',
+    site: '@sstpro',
   },
   alternates: {
     canonical: 'https://www.sst.pro',
+  },
+  other: {
+    'og:image:secure_url': 'https://www.sst.pro/images/og-image.webp',
+    'og:image:type': 'image/webp',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'twitter:image:alt': 'SST Pro - Professional Investment Solutions',
+    'twitter:domain': 'www.sst.pro',
+    'twitter:url': 'https://www.sst.pro',
   },
 };
 const monaSansnormal = localFont({
