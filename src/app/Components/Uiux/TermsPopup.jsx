@@ -77,13 +77,222 @@ const TermsPopup = () => {
 
           {/* Content */}
           <div className="px-4 pb-4">
-            <div className="bg-gray-800/50 rounded-xl p-3 mb-4">
+            <div className="bg-gray-800/50 rounded-xl p-3 mb-4 max-h-70 overflow-y-auto">
               <p className="text-gray-300 text-xs leading-relaxed mb-3">
                 Welcome to SST Pro. These Terms of Service ("Terms") govern your access to and use of our website www.sst.pro (the "Website") and any related services, platforms, or content (collectively referred to as the "Services").
               </p>
-              <p className="text-gray-300 text-xs leading-relaxed">
+              <p className="text-gray-300 text-xs leading-relaxed mb-4">
                 By using our Website or Services, you agree to comply with and be bound by these Terms, along with our Privacy Policy, Cookie Policy, and KYC Policy. If you do not agree to these Terms, please do not use our Website or Services.
               </p>
+
+              {/* Complete Terms Content */}
+              <div className="space-y-4">
+                {/* Section 1 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">1</span>
+                    Acceptance of Terms
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    By accessing or using SST Pro's Website or Services, you confirm that you:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1 ml-4">
+                    <li>Are at least 18 years old or the legal age in your jurisdiction;</li>
+                    <li>Have the authority to enter into a binding agreement;</li>
+                    <li>Are using the Services for lawful purposes only.</li>
+                  </ul>
+                  <p className="text-gray-300 text-xs mt-2 leading-relaxed">
+                    If you do not meet these requirements, you must not access or use SST Pro.
+                  </p>
+                </div>
+
+                {/* Section 2 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">2</span>
+                    Changes to Terms, Plans, and Returns
+                  </h4>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1">
+                    <li>SST Pro reserves the right to revise, modify, or update these Terms, our pricing plans, and any aspect of our Services at any time without prior notice.</li>
+                    <li>We also reserve the right to change returns, refunds, or profit distributions for any reason.</li>
+                    <li>Continued use of our Website or Services after any changes means you accept and agree to those updates.</li>
+                  </ul>
+                </div>
+
+                {/* Section 3 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">3</span>
+                    Use of Website and Services
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    You may use the SST Pro Website and Services solely for lawful and legitimate purposes. You agree not to:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1">
+                    <li>Use the Website for any unlawful, abusive, or fraudulent activity.</li>
+                    <li>Distribute spam, malicious software, or harmful content.</li>
+                    <li>Post or share offensive, defamatory, or misleading materials.</li>
+                    <li>Copy, modify, or reproduce any part of our Website or content without written consent.</li>
+                    <li>Interfere with the proper functioning of the Website or attempt unauthorized access to any part of our system.</li>
+                  </ul>
+                </div>
+
+                {/* Section 4 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">4</span>
+                    Intellectual Property Rights
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    All content, designs, text, graphics, software, databases, trademarks, and materials available on the SST Pro Website are owned by or licensed to SST Pro Ltd, registered in Colorado, United States of America, and the United Kingdom under the Companies Act 2006.
+                  </p>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    You may not reproduce, distribute, or create derivative works from any part of the Website without prior written permission.
+                  </p>
+                </div>
+
+                {/* Section 5 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">5</span>
+                    Account Registration and Security
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    To access certain features or Services, you may be required to register an account. You agree to:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1 mb-2">
+                    <li>Provide accurate and current information;</li>
+                    <li>Maintain the confidentiality of your login credentials; and</li>
+                    <li>Accept full responsibility for all activities that occur under your account.</li>
+                  </ul>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    SST Pro reserves the right to suspend or terminate any account found in violation of these Terms.
+                  </p>
+                </div>
+
+                {/* Section 6 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">6</span>
+                    Content and Liability Disclaimer
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    The information provided on SST Pro's Website and Services is for general informational purposes only. While we strive for accuracy, we do not guarantee that any content is complete, reliable, or up to date.
+                  </p>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    We do not provide financial, investment, or legal advice. Any reliance on our content is strictly at your own risk. SST Pro shall not be liable for any loss or damage arising from your use of or reliance on our Services.
+                  </p>
+                </div>
+
+                {/* Section 7 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">7</span>
+                    Returns, Refunds, and Plan Modifications
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    SST Pro offers flexible investment and service plans. However:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1">
+                    <li>All plans, returns, and offers are subject to change without notice.</li>
+                    <li>Returns or profits are not guaranteed and depend on market conditions and service performance.</li>
+                    <li>Refunds or cancellations may be considered only under valid conditions and after review by our team.</li>
+                    <li>SST Pro reserves the right to reject refund requests if they conflict with our policies or legal obligations.</li>
+                  </ul>
+                </div>
+
+                {/* Section 8 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">8</span>
+                    Privacy and Data Use
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    By using our Services, you agree that SST Pro may collect, use, and process your personal data in accordance with our Privacy Policy.
+                  </p>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    Your information may be used for identity verification (KYC), service optimization, and communication purposes. We take your privacy seriously and maintain reasonable measures to protect your data.
+                  </p>
+                </div>
+
+                {/* Section 9 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">9</span>
+                    Prohibited Content
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    You agree not to post, upload, or distribute content that:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1 mb-2">
+                    <li>Contains hate speech, violence, or discrimination;</li>
+                    <li>Infringes on copyrights or trademarks;</li>
+                    <li>Contains unlawful or pornographic material;</li>
+                    <li>Violates another person's privacy or confidentiality.</li>
+                  </ul>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    Any violation may result in immediate account suspension or legal action.
+                  </p>
+                </div>
+
+                {/* Section 11 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">11</span>
+                    Disclaimer of Warranties
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    SST Pro services are provided on an "as-is" and "as-available" basis. We do not guarantee uninterrupted service, error-free functionality, or that our Website will be free from viruses or harmful code.
+                  </p>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    You are responsible for implementing appropriate security measures to protect your devices and data.
+                  </p>
+                </div>
+
+                {/* Section 12 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">12</span>
+                    Limitation of Liability
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    To the fullest extent permitted by law, SST Pro, its directors, employees, and affiliates shall not be held liable for any:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-300 text-xs space-y-1 mb-2">
+                    <li>Indirect, incidental, or consequential damages;</li>
+                    <li>Loss of data, revenue, or profits; or</li>
+                    <li>Service interruptions or technical errors.</li>
+                  </ul>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    Your sole remedy for dissatisfaction with the Website or Services is to discontinue use.
+                  </p>
+                </div>
+
+                {/* Section 13 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">13</span>
+                    Termination
+                  </h4>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    SST Pro may suspend or terminate your access to the Website or Services at any time, without prior notice, if we believe you have violated these Terms or engaged in any activity that may harm our operations or reputation.
+                  </p>
+                </div>
+
+                {/* Section 14 */}
+                <div className="bg-gray-700/50 rounded-lg p-3">
+                  <h4 className="text-sm font-bold text-white mb-2 flex items-center">
+                    <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white font-bold text-xs">14</span>
+                    Governing Law
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2 leading-relaxed">
+                    These Terms are governed by and construed in accordance with the laws of the State of Colorado, United States of America, and applicable regulations of the United Kingdom.
+                  </p>
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    Any dispute arising under these Terms shall be subject to the exclusive jurisdiction of the courts in Colorado or London, as applicable.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Action Buttons */}

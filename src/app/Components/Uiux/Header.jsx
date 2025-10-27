@@ -54,7 +54,7 @@ const Header = () => {
           className="max-w-[1600px]   cus_header w-[88%] m-auto flex justify-between items-center bg-cover px-[20px] py-1 md:px-[35px] md:py-[13px] rounded-[60px] bg-no-repeat"
           style={{ backgroundImage: `url(${Headerbg.src})` }}
         >
-          <div className="block md:hidden" onClick={() => setMenu(!Menu)}>
+          <div className="block md:hidden  min-w-[62px]" onClick={() => setMenu(!Menu)}>
             <Image
               src={Menu ? cross : menu}
               alt="menu icon"
@@ -119,14 +119,14 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="block md:hidden">
+          <div className="block md:hidden min-w-[62px]">
             <Link href="tel:+41447078383">
               <Image
                 src={callicon}
                 alt="callicon"
                 width={1000}
                 height={500}
-                className="max-w-[48px]"
+                className="max-w-[48px] ml-auto"
               />
             </Link>
           </div>
