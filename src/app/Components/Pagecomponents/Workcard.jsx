@@ -3,7 +3,7 @@ import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Image from "next/image";
 import gradientbgcard from "../../../../public/images/gradientbgcard.webp";
-import bluewaterbanner from "../../../../public/images/bluewaterbanner.webp";
+import GalaxyAnimation from "./GalaxyAnimation";
 
 const Workcard = ({ title, description, cardata }) => {
   return (
@@ -69,22 +69,7 @@ const Workcard = ({ title, description, cardata }) => {
         </div>
       </div>
       <div className="px-[3%]">
-        <Image
-          src={bluewaterbanner}
-          alt="bluewaterbanner"
-          width={1000}
-          height={500}
-          className="w-full"
-        />
-         {/* <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-half "
-            >
-              <source src="/video/wavesvideo.mp4" type="video/mp4" />
-            </video> */}
+     <GalaxyAnimation />
       </div>
     </div>
   );

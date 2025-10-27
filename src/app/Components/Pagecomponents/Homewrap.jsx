@@ -15,27 +15,27 @@ const faqData = [
   {
     question: "What is SST Pro?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
   },
   {
     question: "Are my funds safe?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
   },
   {
     question: "What services do you offer?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
   },
   {
     question: "How do I open an account?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
   },
   {
     question: "Is SST Pro beginner-friendly?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
   }
 ];
 

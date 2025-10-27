@@ -32,7 +32,7 @@ const Globlegroth = ({title,description,right_description,videoSrc}) => {
               loop
               muted
               playsInline
-              className="  w-full h-full object-cover -z-5 brightness-[0.7] rounded-4xl border border-b-blue-500   "
+              className="  w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   "
             >
               <source src={videoSrc} type="video/mp4" />
             </video>

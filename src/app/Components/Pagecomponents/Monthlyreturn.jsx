@@ -5,16 +5,21 @@ import outerbanner from "../../../../public/images/Monthlyreturn.webp";
 import Image from "next/image";
 import bluearrowicon from "../../../../public/icons/bluearrowicon.svg";
 import Arrowbtn from "../Uiux/Arrowbtn";
-const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase,card_description,title,description}) => {
+const Monthlyreturn = ({
+  left_banner,
+  right_banner,
+  monthly_revenu,
+  monthly_increase,
+  card_description,
+  title,
+  description,
+}) => {
   return (
     <div className="pt-12 md:pt-18 lg:pt-24 2xl:pt-32">
       <div className="inn_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
-            <Title
-              title={title}
-              color={"text-white"}
-            />
+            <Title title={title} color={"text-white"} />
           </div>
           <div>
             <Description
@@ -37,13 +42,9 @@ const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase
             <div className="absolute h-full w-full hidden lg:flex items-center px-10 top-0 lg:top-6 xl:top-0">
               <div className="hidden lg:grid grid-cols-[2fr_5fr] gap-8">
                 <div>
-                  <Image
-                    src={left_banner}
-                    alt="Forexbitcoin"
-                    width={1000}
-                    height={500}
-                    className=""
-                  />
+                  <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
+                    <source src="/video/stcokprofit.mp4" type="video/mp4" />
+                  </video>
                 </div>
                 <div className="flex flex-col justify-center">
                   <div className="border-2 border-white rounded-[40px] relative">
@@ -60,7 +61,7 @@ const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase
                           Your Profit
                         </p>
                         <h4 className="text-[28px] lg:text-[32px] xl:text-[42px] 2xl:text-[50px] font-bold text-white">
-                         {monthly_revenu}
+                          {monthly_revenu}
                         </h4>
                       </div>
 
@@ -90,15 +91,11 @@ const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase
                 </div>
               </div>
             </div>
-            <div className="grid lg:hidden grid-cols-1 gap-8">
+            <div className="grid lg:hidden grid-cols-1 gap-4">
               <div>
-                <Image
-                  src={left_banner}
-                  alt="Forexbitcoin"
-                  width={1000}
-                  height={500}
-                  className="md:max-w-[60%] m-auto"
-                />
+              <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
+                    <source src="/video/stcokprofit.mp4" type="video/mp4" />
+                  </video>
               </div>
               <div className="flex flex-col justify-center">
                 <div className="border-2 border-white rounded-[40px] relative">
@@ -127,7 +124,9 @@ const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase
                         height={500}
                         className="max-w-[40px]"
                       />
-                      <span className="text-2xl text-secondary">{monthly_increase}</span>
+                      <span className="text-2xl text-secondary">
+                        {monthly_increase}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -145,7 +144,11 @@ const Monthlyreturn = ({left_banner,right_banner,monthly_revenu,monthly_increase
               </div>
             </div>
             <div className="absolute right-0 bottom-0">
-              <Arrowbtn width_height={"w-[40px] md:w-[60px] 2xl:w-[80px] w-[40px] md:w-[60px] 2xl:h-[80px]"} />
+              <Arrowbtn
+                width_height={
+                  "w-[40px] md:w-[60px] 2xl:w-[80px] w-[40px] md:w-[60px] 2xl:h-[80px]"
+                }
+              />
             </div>
           </div>
         </div>
