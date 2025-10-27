@@ -7,7 +7,7 @@ import "./Animations.css"
 import localFont from "next/font/local";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://sstpro.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sst.pro'),
   title: "SST Pro - Professional Investment Solutions | Forex & Real Estate Trading",
   description: "SST Pro offers professional investment solutions in Forex trading and Real Estate. Get 10-12% monthly returns with expert market analysis and risk management. Start your investment journey today.",
   keywords: "investment, forex trading, real estate investment, SST Pro, professional trading, monthly returns, risk management",
@@ -28,7 +28,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sstpro.com',
+    url: 'https://www.sst.pro',
     siteName: 'SST Pro',
     title: 'SST Pro - Professional Investment Solutions | Forex & Real Estate Trading',
     description: 'SST Pro offers professional investment solutions in Forex trading and Real Estate. Get 10-12% monthly returns with expert market analysis and risk management.',
@@ -49,7 +49,7 @@ export const metadata = {
     creator: '@sstpro',
   },
   alternates: {
-    canonical: 'https://sstpro.com',
+    canonical: 'https://www.sst.pro',
   },
 };
 const monaSansnormal = localFont({
