@@ -16,27 +16,27 @@ const faqData = [
   {
     question: "What is SST Pro?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
   },
   {
     question: "Are my funds safe?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
   },
   {
     question: "What services do you offer?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
   },
   {
     question: "How do I open an account?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
   },
   {
     question: "Is SST Pro beginner-friendly?",
     answer:
-      "Register online, verify your details, and start trading in minutes."
+      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
   }
 ];
 const cards = [
@@ -124,10 +124,10 @@ const page = () => {
           'Our <span class="gradient_text">Risk Management <br/> Philosophy</span>'
         }
         description={
-          "Investing in real estate can be highly rewarding, but it requires careful planning, expert guidance, and strategic decision-making to achieve consistent, secure, and profitable growth."
+          "Effective risk management is essential to minimize losses early, protect investments, and ensure consistent, sustainable trading growth."
         }
-        card1description={'While real estate offers strong growth potential, market fluctuations and property risks exist. SST Pro employs rigorous property evaluation, diversified portfolios, and capital protection strategies to ensure investment security. '}
-        card2description={'Every decision is made with data, expertise, and discipline, leveraging deep market research, emerging trends, and long-term value strategies to maximize returns while safeguarding client investments in every property transaction.'}
+        card1description={'While Forex markets offer significant potential, they also carry risk. That’s why at SST Pro, we employ advanced risk control systems, trade caps, and capital protection strategies.'}
+        card2description={'Every decision is guided by data, experience, and discipline ensuring your investment remains secure even in volatile conditions.'}
       />
       <Faqs faqData={faqData} />
     </div>
