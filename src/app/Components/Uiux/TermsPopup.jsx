@@ -7,7 +7,7 @@ const TermsPopup = () => {
 
   useEffect(() => {
     // Check if terms are already accepted
-    const termsAccepted = localStorage.getItem('termsAccepted');
+    const termsAccepted = localStorage.getItem('termsAccepteds');
     
     if (termsAccepted !== 'true') {
       // Show popup after a short delay
@@ -19,7 +19,7 @@ const TermsPopup = () => {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('termsAccepted', 'true');
+    localStorage.setItem('termsAccepteds', 'true');
     setIsAnimating(false);
     setTimeout(() => {
       setIsVisible(false);

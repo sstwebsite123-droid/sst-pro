@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
 
   useEffect(() => {
     // Check if terms are already accepted
-    const accepted = localStorage.getItem('termsAccepted');
+    const accepted = localStorage.getItem('termsAccepteds');
     if (accepted === 'true') {
       router.push('/');
       return;
@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
   }, [router]);
 
   const handleAccept = () => {
-    localStorage.setItem('termsAccepted', 'true');
+    localStorage.setItem('termsAccepteds', 'true');
     setIsAccepted(true);
     
     // Animate out then redirect
