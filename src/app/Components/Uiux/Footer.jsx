@@ -28,6 +28,7 @@ const footerdata = {
       pagelinks: [
         { pagelink: "/", pagename: "Training Modules" },
         { pagelink: "/", pagename: "Market Insights" },
+        { pagelink: "/terms", pagename: "Terms & Conditions" },
       ],
     },
     {
@@ -146,7 +147,7 @@ const Footer = () => {
               </div>
               <CopyRight />
               <div className="pt-6 lg:pt-6">
-                <div className="border-t-[1px] py-6 border-solid border-[#ffffff57] font_secondary flex flex-col-reverse gap-5 lg:gap-0 lg:flex-row items-center lg:justify-between">
+                <div className="border-t py-6 border-solid border-[#ffffff57] font_secondary flex flex-col-reverse gap-5 lg:gap-0 lg:flex-row items-center lg:justify-between">
                   <div className="flex flex-col lg:flex-row items-center gap-1.5 lg:gap-5">
                     <p className="text-[14px] 2xl:text-base font-light text-[#AAAAAA] font_light">
                       © 2025 SST Pro. All rights reserved.{" "}
