@@ -29,7 +29,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to:  process.env.EMAIL_USER,
+      to: [process.env.EMAIL_USER, "help@sst.pro"],
       subject: `New Inquiry from SST Pro Group`,
       text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
       html: `
