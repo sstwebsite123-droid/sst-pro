@@ -10,13 +10,6 @@ const TermsAndConditions = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if terms are already accepted
-    const accepted = localStorage.getItem('termsAccepteds');
-    if (accepted === 'true') {
-      router.push('/');
-      return;
-    }
-
     // Show animations
     setTimeout(() => setIsVisible(true), 100);
     setTimeout(() => setShowContent(true), 500);
