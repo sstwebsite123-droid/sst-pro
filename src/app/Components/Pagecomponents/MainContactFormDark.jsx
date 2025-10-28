@@ -6,12 +6,15 @@ import Button from "../Uiux/Button";
 export default function MainContactFormDark({
   fields = [],
   submitUrl = "/api/send-email",
-  thankYouRoute = "/",
+  // thankYouRoute = "/",
 }) {
   const initial = fields.reduce((acc, f) => ({ ...acc, [f.name]: "" }), {});
   const [form, setForm] = useState(initial);
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalType, setModalType] = useState("success"); // 'success' | 'error'
+  const [modalMessage, setModalMessage] = useState("");
   const router = useRouter();
 
   const onChange = (e) => {
@@ -47,13 +50,24 @@ export default function MainContactFormDark({
       const data = await res.json();
       if (data?.ok) {
         console.log(data,"data")
-        router.push(thankYouRoute);
+        // router.push(thankYouRoute);
         setForm(initial);
+        setErrors((s) => ({ ...s, _server: "" }));
+        setModalType("success");
+        setModalMessage("Thank you! Your message has been submitted successfully.");
+        setShowModal(true);
       } else {
-        setErrors((s) => ({ ...s, _server: data?.error || "Something went wrong" }));
+        const msg = data?.error || "Something went wrong";
+        setErrors((s) => ({ ...s, _server: msg }));
+        setModalType("error");
+        setModalMessage("Submission failed. Please try again later.");
+        setShowModal(true);
       }
     } catch (err) {
       setErrors((s) => ({ ...s, _server: "Network error. Try again." }));
+      setModalType("error");
+      setModalMessage("Network error. Please check your connection and try again.");
+      setShowModal(true);
     } finally {
       setSubmitting(false);
     }
@@ -94,6 +108,25 @@ export default function MainContactFormDark({
           </div>
         )})}
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow-xl">
+            <div className={modalType === "success" ? "text-green-600" : "text-red-600"}>
+              <h3 className="text-xl font-semibold">
+                {modalType === "success" ? "Success" : "Failed"}
+              </h3>
+            </div>
+            <p className="mt-2 text-gray-700">{modalMessage}</p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="mt-5 inline-flex items-center justify-center rounded-xl bg-black px-4 py-2 text-white hover:bg-black/90"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {errors._server && (
         <p className="text-red-400 text-sm mt-3">{errors._server}</p>

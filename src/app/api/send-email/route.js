@@ -15,15 +15,16 @@ export async function POST(req) {
     const fullName = `${firstName} ${lastName}`;
 
     const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: Number(process.env.EMAIL_PORT),
-      secure: true,
+      host: process.env.EMAIL_HOST, // smtp.gmail.com
+      port: 465,
+      secure: true, // true for port 465 (SSL)
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD,
       },
-      tls: { rejectUnauthorized: false },
     });
+    
+    
 
 
     await transporter.sendMail({
