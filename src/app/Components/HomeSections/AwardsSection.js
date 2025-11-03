@@ -50,7 +50,7 @@ const AwardsSection = () => {
       {/* Title */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold mb-3">
-          Awards & <span className="text-blue-400">Recognition</span>
+          Awards & <span className="gradient_text">Recognition</span>
         </h2>
         <p className="text-gray-300 max-w-xl mx-auto">
           Recognized globally for excellence in financial services and innovation
@@ -83,7 +83,7 @@ const AwardsSection = () => {
               </div>
               <h3 className="font-semibold text-lg">{award.title}</h3>
               <p className="text-gray-400 text-sm">{award.subtitle}</p>
-              <p className="text-blue-400 font-medium">{award.year}</p>
+              <p className="gradient_text font-medium">{award.year}</p>
             </div>
 
             {/* Smooth Rounded Glow Effect */}

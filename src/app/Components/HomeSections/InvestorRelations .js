@@ -19,7 +19,7 @@ const InvestorRelations = () => {
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold">
             <span className="text-gray-300">Investor</span>{" "}
-            <span className="text-sky-400">Relations</span>
+            <span className="gradient_text">Relations</span>
           </h1>
           <p className="text-gray-400 mt-3 max-w-md">
             Transparent communication and comprehensive resources for our
@@ -35,22 +35,22 @@ const InvestorRelations = () => {
               {
                 title: "Annual Reports",
                 desc: "Comprehensive financial statements and performance analysis",
-                icon: <FiFileText className="text-sky-400 text-2xl" />,
+                icon: <FiFileText className="gradient_text text-2xl" />,
               },
               {
                 title: "Quarterly Updates",
                 desc: "Regular insights into our growth and strategic direction",
-                icon: <FiTrendingUp className="text-sky-400 text-2xl" />,
+                icon: <FiTrendingUp className="gradient_text text-2xl" />,
               },
               {
                 title: "Compliance Documents",
                 desc: "Full regulatory disclosures and audit reports",
-                icon: <FiShield className="text-sky-400 text-2xl" />,
+                icon: <FiShield className="gradient_text text-2xl" />,
               },
               {
                 title: "Investment Overview",
                 desc: "Detailed breakdown of our investment strategies",
-                icon: <FiPieChart className="text-sky-400 text-2xl" />,
+                icon: <FiPieChart className="gradient_text text-2xl" />,
               },
             ].map((item, idx) => (
               <div
@@ -72,7 +72,7 @@ const InvestorRelations = () => {
       <div className="flex-1 mt-16 lg:mt-0 lg:ml-20 space-y-10">
         {/* Assets Box */}
         <div className="self-start bg-gray-900 border border-sky-500 px-6 py-3 rounded-xl inline-block text-center">
-          <h3 className="text-2xl font-semibold text-sky-400">$2.5B</h3>
+          <h3 className="text-2xl font-semibold gradient_text">$2.5B</h3>
           <p className="text-xs text-gray-400">Assets Under Management</p>
         </div>
 
@@ -104,18 +104,18 @@ const InvestorRelations = () => {
           <h3 className="font-semibold text-lg">Investor Relations Contact</h3>
           <div className="text-gray-400 text-sm space-y-2">
             <p className="flex items-center gap-2">
-              <FiMail className="text-sky-400" /> investors@sst.pro
+              <FiMail className="gradient_text" /> investors@sst.pro
             </p>
             <p className="flex items-center gap-2">
-              <FiPhone className="text-sky-400" /> +1 (555) 123-4567
+              <FiPhone className="gradient_text" /> +1 (555) 123-4567
             </p>
             <p className="flex items-center gap-2">
-              <FiMapPin className="text-sky-400" /> 123 Financial District, NY
+              <FiMapPin className="gradient_text" /> 123 Financial District, NY
               10004
             </p>
           </div>
 
-          <button className="mt-4 w-full bg-gradient-to-r from-sky-400 to-blue-600 text-black font-semibold py-2 rounded-full hover:opacity-90 transition">
+          <button className="mt-4 w-full gradient_bg text-black font-semibold py-2 rounded-full hover:opacity-90 transition">
             Schedule a Call
           </button>
         </div>

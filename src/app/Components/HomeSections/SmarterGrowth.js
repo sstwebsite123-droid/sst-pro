@@ -9,7 +9,7 @@ const SmarterGrowth = () => {
         {/* Left Section */}
         <div className="md:w-1/3">
           <h2 className="text-xl font-semibold">
-            <span className="text-blue-400">Smarter Growth.</span> Financial Freedom.
+            <span className="gradient_text">Smarter Growth.</span> Financial Freedom.
           </h2>
         </div>
 
@@ -17,10 +17,10 @@ const SmarterGrowth = () => {
         <div className="flex flex-col sm:flex-row md:w-2/3 justify-between space-y-8 sm:space-y-0 sm:space-x-10">
           {/* Column 1 */}
           <div className="space-y-3">
-            <p className="hover:text-blue-400 cursor-pointer">Strategy Workshops</p>
-            <p className="hover:text-blue-400 cursor-pointer">AI Analysis Tools Us</p>
-            <p className="hover:text-blue-400 cursor-pointer">Personal Mentorship</p>
-            <p className="hover:text-blue-400 cursor-pointer">Portfolio Review</p>
+            <p className="hover:gradient_text cursor-pointer">Strategy Workshops</p>
+            <p className="hover:gradient_text cursor-pointer">AI Analysis Tools Us</p>
+            <p className="hover:gradient_text cursor-pointer">Personal Mentorship</p>
+            <p className="hover:gradient_text cursor-pointer">Portfolio Review</p>
           </div>
 
           {/* Divider */}
@@ -28,8 +28,8 @@ const SmarterGrowth = () => {
 
           {/* Column 2 */}
           <div className="space-y-3">
-            <p className="hover:text-blue-400 cursor-pointer">Training Modules</p>
-            <p className="hover:text-blue-400 cursor-pointer">Market Insights</p>
+            <p className="hover:gradient_text cursor-pointer">Training Modules</p>
+            <p className="hover:gradient_text cursor-pointer">Market Insights</p>
           </div>
 
           {/* Divider */}

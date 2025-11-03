@@ -20,7 +20,7 @@ const statsData = [
     value: "$2.5B",
     label: "Assets Under Management",
     subtext: "+42% growth",
-    icon: <FaChartLine className="text-3xl text-blue-400" />,
+    icon: <FaChartLine className="text-3xl gradient_text" />,
     bg: management,
     hoverColor: "from-blue-500/30 to-transparent",
   },
@@ -48,8 +48,8 @@ export default function StatsSection() {
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-semibold mb-4">
-          <span className="text-blue-400">Real</span> Insights,{" "}
-          <span className="text-blue-200">Real</span> Results
+          <span className="gradient_text">Real Insights </span>,{" "}
+          <span className="">Real</span> Results
         </h2>
         <div className="w-24 h-[2px] bg-gray-700 mx-auto mb-4"></div>
         <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
