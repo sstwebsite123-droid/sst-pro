@@ -9,6 +9,7 @@ import {
   FiMapPin,
 } from "react-icons/fi";
 
+
 const InvestorRelations = () => {
   return (
     <div className="inn_container min-h-screen bg-black text-white px-6 md:px-16 py-12 flex flex-col lg:flex-row justify-between">
