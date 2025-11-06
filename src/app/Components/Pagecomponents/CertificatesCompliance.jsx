@@ -9,7 +9,7 @@ const CertificatesCompliance = () => {
       id: 1,
       title: "US Regulatory Compliance",
       description: "Authorized operations in United States",
-      image: "/certificate/certificate1.JPG",
+      image: "/certificate/certificate1.png",
       alt: "US Compliance Certificate"
     },
     {

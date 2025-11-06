@@ -11,6 +11,10 @@ import Link from "next/link";
 import Fotterlinks from "../Pagecomponents/Footerlinks";
 import Investment from "../Pagecomponents/Investment";
 import CopyRight from "./CopyRight";
+import SmarterGrowth from "../HomeSections/SmarterGrowth";
+import AwardsSection from "../HomeSections/AwardsSection";
+import StatsSection from "../HomeSections/StatsSection";
+import InvestorRelations from "../HomeSections/InvestorRelations ";
 const footerdata = {
   linkingdata: [
     {
@@ -61,6 +65,10 @@ const Footer = () => {
   return (
     <div>
       <Investment />
+      <SmarterGrowth/>
+      <AwardsSection/>
+      <StatsSection/>
+      <InvestorRelations/>
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
