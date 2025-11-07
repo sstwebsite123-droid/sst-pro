@@ -65,10 +65,10 @@ const Footer = () => {
   return (
     <div>
       <Investment />
-      <SmarterGrowth/>
+      {/* <SmarterGrowth/>
       <AwardsSection/>
       <StatsSection/>
-      <InvestorRelations/>
+      <InvestorRelations/> */}
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
