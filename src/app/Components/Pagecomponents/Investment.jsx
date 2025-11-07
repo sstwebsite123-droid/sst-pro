@@ -28,7 +28,7 @@ const Investment = () => {
             className="max-w-[300px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[615px]"
           />
         </div>
-        <div className="absolute bottom-[-22%] left-[5%]">
+        {/* <div className="absolute bottom-[-22%] left-[5%]">
           <Image
             src={investlightanimation}
             alt=""
@@ -36,7 +36,7 @@ const Investment = () => {
             height={500}
             className="max-w-[330px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[660px]"
           />
-        </div>
+        </div> */}
         <div className="absolute bottom-0 h-full max-h-[483px] w-full grid grid-cols-2">
           <div />
           <div className="flex items-center relative left-[-20%] lg:left-[-5%] 2xl:left-0">
