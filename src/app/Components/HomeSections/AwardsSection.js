@@ -49,10 +49,10 @@ const AwardsSection = () => {
     <section className="inn_container relative bg-[#05080e] text-white py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
       {/* Title */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+        <h2 className="main_title font_light mb-4">
           Awards & <span className="gradient_text">Recognition</span>
         </h2>
-        <p className="text-gray-300 max-w-xl mx-auto">
+        <p className=" text-white text-center  main_description pb-4 font_light">
           Recognized globally for excellence in financial services and innovation
         </p>
         <div className="w-24 h-[2px] bg-blue-500 mx-auto mt-3"></div>
@@ -63,7 +63,7 @@ const AwardsSection = () => {
         {awards.map((award) => (
           <div
             key={award.id}
-            className="relative bg-gradient-to-b from-[#0f1318] to-[#0a0e12] rounded-[2rem] border border-gray-700 overflow-hidden group transition-all duration-500 hover:border-blue-400 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]"
+            className="relative bg-gradient-to-b from-[#0f1318] to-[#0a0e12] rounded-[2rem] border border-gray-700 overflow-hidden group transition-all duration-500 hover:border-blue-600 hover:shadow-[0_0_25px_rgba(59,130,246,0.9)]"
           >
             {/* Image */}
             <div className="h-48 overflow-hidden rounded-t-[2rem]">
@@ -81,7 +81,7 @@ const AwardsSection = () => {
               <div className="bg-gradient-to-b from-blue-500 to-blue-700 p-3 rounded-full text-white shadow-md group-hover:scale-110 transition-transform duration-300">
                 {award.icon}
               </div>
-              <h3 className="font-semibold text-lg">{award.title}</h3>
+              <h3 className="text-[18px] gradient_text pb-2 w-max m-auto">{award.title}</h3>
               <p className="text-gray-400 text-sm">{award.subtitle}</p>
               <p className="gradient_text font-medium">{award.year}</p>
             </div>

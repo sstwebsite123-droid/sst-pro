@@ -25,7 +25,7 @@ const Investment = () => {
             alt=""
             width={2000}
             height={500}
-            className="max-w-[300px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[660px]"
+            className="max-w-[300px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[615px]"
           />
         </div>
         <div className="absolute bottom-[-22%] left-[5%]">

@@ -11,6 +11,8 @@ import Aboutsst from "./Aboutsst";
 import Corevalue from "./Corevalue";
 import Faqs from "./Faqs";
 import Bannermobile from "../Uiux/Bannermobile";
+import StatsSection from "../HomeSections/StatsSection";
+import InvestorRelations from "../HomeSections/InvestorRelations ";
 const faqData = [
   {
     question: "What is SST Pro?",
@@ -158,6 +160,8 @@ function Homewrap() {
       </motion.div>
 
       {/* Corevalue Section */}
+      <StatsSection/>
+      <InvestorRelations/>
       <motion.div
         ref={corevalueRef}
         initial={{ opacity: 0, y: 200 }}

@@ -1,20 +1,13 @@
 import React from "react";
-// import fotterbackground from "../../../../public/banners/fotterbackground.webp";
-// import fottercardph from "../../../../public/images/fottercardph.webp";
 import logo from "../../../../public/images/Logo.webp";
 import Image from "next/image";
 import facebookicon from "../../../../public/icons/facebook.svg";
 import Instaicon from "../../../../public/icons/Insta.svg";
 import x from "../../../../public/icons/X.svg";
 import Link from "next/link";
-// import Worldbroker from "../Pagecomponents/Worldbroker";
 import Fotterlinks from "../Pagecomponents/Footerlinks";
 import Investment from "../Pagecomponents/Investment";
 import CopyRight from "./CopyRight";
-import SmarterGrowth from "../HomeSections/SmarterGrowth";
-import AwardsSection from "../HomeSections/AwardsSection";
-import StatsSection from "../HomeSections/StatsSection";
-import InvestorRelations from "../HomeSections/InvestorRelations ";
 const footerdata = {
   linkingdata: [
     {
@@ -65,10 +58,7 @@ const Footer = () => {
   return (
     <div>
       <Investment />
-      {/* <SmarterGrowth/>
-      <AwardsSection/>
-      <StatsSection/>
-      <InvestorRelations/> */}
+      {/* <AwardsSection/> */}
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
