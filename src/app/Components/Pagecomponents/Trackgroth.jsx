@@ -11,6 +11,17 @@ import cardbanner7 from "../../../../public/images/trackcard7.webp";
 import cardbanner8 from "../../../../public/images/trackcard8.webp";
 import cardbanner9 from "../../../../public/images/trackcard9.webp";
 import cardbanner10 from "../../../../public/images/trackcard10.webp";
+import ForexTrading from "../../../../public/images/ForexTrading.webp";
+import RealEstate from "../../../../public/images/RealEstate.webp";
+import Mining from "../../../../public/images/Mining.webp";
+import SugarPlant from "../../../../public/images/SugarPlant.webp";
+import HotelChains from "../../../../public/images/HotelChains.webp";
+import OilEnergy from "../../../../public/images/OilEnergy.webp";
+import Agriculture from "../../../../public/images/Agriculture.webp";
+import Transportation from "../../../../public/images/Transportation.webp";
+import Technologys from "../../../../public/images/Technologys.webp";
+
+
 import Image from "next/image";
 import Arrowbtn from "../Uiux/Arrowbtn";
 const industries = [
@@ -27,7 +38,43 @@ const industries = [
   //   cardvaluetype3: "Annual Growth"
   // },
   {
-    image: cardbanner4,
+    image: ForexTrading,
+    title: "Forex Trading",
+    description:
+      "Navigate global currencies with precision and smart strategies.",
+    cardvalue1: "$55B+",
+    cardvaluetype1: "Global Market",
+    cardvalue2: "4%",
+    cardvaluetype2: "Annual Growth",
+    cardvalue3: "180M",
+    cardvaluetype3: "Produced Yearly"
+  },
+  {
+    image: RealEstate,
+    title: "Real Estate",
+    description:
+      "Invest in properties that build long-term value and stability.",
+    cardvalue1: "$55B+",
+    cardvaluetype1: "Global Market",
+    cardvalue2: "4%",
+    cardvaluetype2: "Annual Growth",
+    cardvalue3: "180M",
+    cardvaluetype3: "Produced Yearly"
+  },
+  {
+    image: Mining,
+    title: "Mining",
+    description:
+      "Harness opportunities in natural resources and global demand.",
+    cardvalue1: "$55B+",
+    cardvaluetype1: "Global Market",
+    cardvalue2: "4%",
+    cardvaluetype2: "Annual Growth",
+    cardvalue3: "180M",
+    cardvaluetype3: "Produced Yearly"
+  },
+  {
+    image: SugarPlant,
     title: "Sugar Plant",
     description:
       "Fueling industries with quality and <br/> sustainable production.",
@@ -39,7 +86,7 @@ const industries = [
     cardvaluetype3: "Produced Yearly"
   },
   {
-    image: cardbanner5,
+    image: HotelChains,
     title: "Hotel Chains",
     description:
       "Expanding hospitality with innovation <br/> and global reach.",
@@ -63,7 +110,7 @@ const industries = [
   //   cardvaluetype3: "Eco-based Demand"
   // },
   {
-    image: cardbanner7,
+    image: OilEnergy,
     title: "Oil & Energy",
     description:
       "Powering economies through reliable <br/> energy investments.",
@@ -76,8 +123,8 @@ const industries = [
   },
 
 
-    {
-    image: cardbanner8,
+  {
+    image: Agriculture,
     title: "Agriculture",
     description:
       "Sustaining the world with smart and <br/> efficient farming.",
@@ -89,7 +136,7 @@ const industries = [
     cardvaluetype3: "Tech-Integrated Farms",
   },
   {
-    image: cardbanner9,
+    image: Transportation,
     title: "Transportation & Logistics",
     description:
       "Connecting global trade with <br/> efficiency and speed.",
@@ -101,7 +148,7 @@ const industries = [
     cardvaluetype3: "Digitalized Operations",
   },
   {
-    image: cardbanner10,
+    image: Technologys,
     title: "Technology & AI",
     description:
       "Driving innovation with data, <br/> automation, and intelligence.",
@@ -126,7 +173,7 @@ const Trackgroth = () => {
       transition={{ duration: 1 }}
     >
       <div className="inn_container pt-12 md:pt-18 lg:pt-24  2xl:pt-32">
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 items-center"
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -139,7 +186,7 @@ const Trackgroth = () => {
           >
             <Title
               title={
-                'Upcoming <span class="gradient_text"> Markets for <br/> Investment </span> '
+                'Future Projects <br /> Pipeline '
               }
               color={"text-white"}
             />
@@ -158,8 +205,8 @@ const Trackgroth = () => {
             />
           </motion.div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="pt-18"
           initial={{ opacity: 0, y: 100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
@@ -167,13 +214,13 @@ const Trackgroth = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-12">
             {industries.map((data, index) =>
-              <motion.div 
+              <motion.div
                 key={index}
                 className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic"
                 initial={{ opacity: 0, y: 100, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
                 transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
-                whileHover={{ 
+                whileHover={{
                   y: -10,
                   scale: 1.05,
                   transition: { duration: 0.3 }
@@ -183,22 +230,22 @@ const Trackgroth = () => {
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 />
-                
+
                 {/* Floating particles */}
                 <motion.div
                   className="absolute top-4 right-4 w-2 h-2 bg-primary/40 rounded-full"
-                  animate={{ 
+                  animate={{
                     y: [0, -15, 0],
                     opacity: [0.4, 1, 0.4]
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 3,
                     repeat: Infinity,
                     delay: index * 0.5
                   }}
                 />
-                
-                <motion.div 
+
+                <motion.div
                   className="relative max-w-[510px] m-auto cursor-ripple"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
@@ -216,7 +263,7 @@ const Trackgroth = () => {
                       className="rounded-lg"
                     />
                   </motion.div>
-                  
+
                   <motion.div
                     initial={{ opacity: 0, scale: 0 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
@@ -226,21 +273,21 @@ const Trackgroth = () => {
                     <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[80px] h-[50px] md:h-[65px] 2xl:h-[80px]"} />
                   </motion.div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="max-w-[510px] m-auto pt-8 relative z-10"
                   initial={{ opacity: 0, y: 30 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.8, delay: 1.6 + index * 0.1 }}
                 >
-                  <motion.h4 
+                  <motion.h4
                     className="text-2xl lg:text-[30px] gradient_text w-max"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
                   >
                     {data.title}
                   </motion.h4>
-                  
+
                   <motion.p
                     className="sub_description text-white pt-3 min-h-[66px]"
                     dangerouslySetInnerHTML={{ __html: data.description }}

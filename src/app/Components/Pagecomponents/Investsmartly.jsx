@@ -16,41 +16,44 @@ const Investsmartly = () => {
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="inn_container pt-12 md:pt-18 lg:pt-24  2xl:pt-32">
-        <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 items-center"
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
+      <div className=" pt-12 md:pt-18 lg:pt-24  2xl:pt-32 bg-[#0E1F30] rounded-[50px] mt-[86px]">
+        <div className="custom_container">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            className="grid grid-cols-1 lg:grid-cols-2 items-center px-10"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
-            <Title
-              title={
-                'Learn to <span class="gradient_text"> Invest <br /> Smartly</span> '
-              }
-              color={"text-white"}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
+              <Title
+                title={
+                  'Learn to <span class="gradient_text"> Invest <br /> Smartly</span> '
+                }
+                color={"text-white"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <Description
+                description={
+                  "We guide you through financial literacy, investing <br/> strategies, and market insights."
+                }
+                color={"text-white"}
+                align={"lg:text-end"}
+              />
+            </motion.div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            <Description
-              description={
-                "We guide you through financial literacy, investing <br/> strategies, and market insights."
-              }
-              color={"text-white"}
-              align={"lg:text-end"}
-            />
-          </motion.div>
-        </motion.div>
-        
-        <motion.div 
+        </div>
+
+
+        <motion.div
           className="pt-18 relative hidden lg:block"
           initial={{ opacity: 0, y: 100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
@@ -69,7 +72,7 @@ const Investsmartly = () => {
               className="max-w-[550px] 2xl:max-w-[675px] m-auto"
             />
           </motion.div>
-          
+
           <motion.div
             className="text-end absolute top-[5%] left-[20%] fade_up invest_card1"
             initial={{ opacity: 0, x: -100, y: -50 }}
@@ -77,13 +80,13 @@ const Investsmartly = () => {
             transition={{ duration: 1, delay: 1.2 }}
             whileHover={{ scale: 1.05, x: 10 }}
           >
-            <motion.p 
+            <motion.p
               className="text-[22px] xl:text-[25px] text-primary pb-3"
               whileHover={{ scale: 1.05 }}
             >
               Portfolio Building Tips
             </motion.p>
-            <motion.span 
+            <motion.span
               className="sub_description text-ternary"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -93,7 +96,7 @@ const Investsmartly = () => {
               long-term financial goals.
             </motion.span>
           </motion.div>
-          
+
           <motion.div
             className="text-end absolute bottom-[28%] left-[8%] invest_card2"
             initial={{ opacity: 0, x: -100, y: 50 }}
@@ -101,13 +104,13 @@ const Investsmartly = () => {
             transition={{ duration: 1, delay: 1.4 }}
             whileHover={{ scale: 1.05, x: 10 }}
           >
-            <motion.p 
+            <motion.p
               className="text-[22px] xl:text-[25px] text-primary pb-3"
               whileHover={{ scale: 1.05 }}
             >
               Step-by-Step Investment Tutorials
             </motion.p>
-            <motion.span 
+            <motion.span
               className="sub_description text-ternary"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -117,7 +120,7 @@ const Investsmartly = () => {
               easy-to-follow guides for beginners.
             </motion.span>
           </motion.div>
-          
+
           <motion.div
             className="text-start absolute bottom-[25%] right-[17%] invest_card3"
             initial={{ opacity: 0, x: 100, y: 50 }}
@@ -125,13 +128,13 @@ const Investsmartly = () => {
             transition={{ duration: 1, delay: 1.6 }}
             whileHover={{ scale: 1.05, x: -10 }}
           >
-            <motion.p 
+            <motion.p
               className="text-[22px] xl:text-[25px] text-primary pb-3"
               whileHover={{ scale: 1.05 }}
             >
               Risk Management Guidance
             </motion.p>
-            <motion.span 
+            <motion.span
               className="sub_description text-ternary"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -142,22 +145,22 @@ const Investsmartly = () => {
             </motion.span>
           </motion.div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="pt-12 block lg:hidden"
           initial={{ opacity: 0, y: 100 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
           transition={{ duration: 1.2, delay: 0.8 }}
         >
           <div className="flex flex-col gap-6">
-            <motion.div 
+            <motion.div
               className="text-center fade_up invest_card1"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: 1 }}
               whileHover={{ scale: 1.02 }}
             >
-              <motion.p 
+              <motion.p
                 className="text-xl md:text-[22px] xl:text-[25px] text-primary pb-3"
                 whileHover={{ scale: 1.05 }}
               >
@@ -168,15 +171,15 @@ const Investsmartly = () => {
                 long-term financial goals.
               </span>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="text-center invest_card2"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: 1.2 }}
               whileHover={{ scale: 1.02 }}
             >
-              <motion.p 
+              <motion.p
                 className="text-xl md:text-[22px] xl:text-[25px] text-primary pb-3"
                 whileHover={{ scale: 1.05 }}
               >
@@ -187,15 +190,15 @@ const Investsmartly = () => {
                 easy-to-follow guides for beginners.
               </span>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="text-center invest_card3"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: 1.4 }}
               whileHover={{ scale: 1.02 }}
             >
-              <motion.p 
+              <motion.p
                 className="text-xl md:text-[22px] xl:text-[25px] text-primary pb-3"
                 whileHover={{ scale: 1.05 }}
               >

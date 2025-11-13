@@ -13,6 +13,7 @@ import Faqs from "./Faqs";
 import Bannermobile from "../Uiux/Bannermobile";
 import StatsSection from "../HomeSections/StatsSection";
 import InvestorRelations from "../HomeSections/InvestorRelations ";
+import Awardndreco from "../Pagecomponents/Awardndreco";
 const faqData = [
   {
     question: "What is SST Pro?",
@@ -69,12 +70,12 @@ function Homewrap() {
   const faqsInView = useInView(faqsRef, { once: true, margin: "-50px" });
 
   return (
-    <motion.div 
+    <motion.div
       className="bg-black relative"
       style={{ opacity }}
     >
       {/* Animated background gradient */}
-      <motion.div 
+      <motion.div
         className="fixed inset-0 pointer-events-none"
         style={{ y }}
       >
@@ -91,12 +92,12 @@ function Homewrap() {
         animate={bannerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <div className="hidden md:block">
+        <div className=" md:block">
           <Banner />
         </div>
-        <div className="block md:hidden">
+        {/* <div className="block md:hidden">
           <Bannermobile />
-        </div>
+        </div> */}
       </motion.div>
 
       {/* Topstock Section */}
@@ -159,9 +160,18 @@ function Homewrap() {
         <Aboutsst />
       </motion.div>
 
+      {/* Award Section */}
+      <Awardndreco />
+
+
+
+      <StatsSection />
+
+
+      <InvestorRelations />
+
+
       {/* Corevalue Section */}
-      <StatsSection/>
-      <InvestorRelations/>
       <motion.div
         ref={corevalueRef}
         initial={{ opacity: 0, y: 200 }}
