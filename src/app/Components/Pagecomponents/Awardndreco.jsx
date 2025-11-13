@@ -2,7 +2,7 @@ import React from 'react'
 import Award1 from '../../../../public/images/Award1.webp'
 import Year24 from '../../../../public/images/Year24.webp'
 import Year23 from '../../../../public/images/Year23.webp'
-import Awardcardbg from '../../../../public/images/Awardcardbg.webp'
+import blurbg from '../../../../public/images/blurbg.webp'
 import Image from 'next/image'
 import Title from '../Uiux/Title'
 import Description from '../Uiux/Description'
@@ -14,7 +14,7 @@ const Award_card = [
         img: Award1,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
-        Awardbg: Awardcardbg,
+        Awardbg: blurbg,
         year: Year24
     },
     {
@@ -22,7 +22,7 @@ const Award_card = [
         img: Award1,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
-        Awardbg: Awardcardbg,
+        Awardbg: blurbg,
         year: Year24
     },
     {
@@ -30,7 +30,7 @@ const Award_card = [
         img: Award1,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
-        Awardbg: Awardcardbg,
+        Awardbg: blurbg,
         year: Year23
     },
     {
@@ -38,7 +38,7 @@ const Award_card = [
         img: Award1,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
-        Awardbg: Awardcardbg,
+        Awardbg: blurbg,
         year: Year23
     }
 ]
