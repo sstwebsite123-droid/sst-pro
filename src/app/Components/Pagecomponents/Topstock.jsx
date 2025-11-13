@@ -9,7 +9,7 @@ import loss from "../../../../public/icons/loss.svg";
 import Image from "next/image";
 import Button from "../Uiux/Button";
 import leftArrow from '../../../../public/images/leftArrow.webp'
-import Rightarrow from '../../../../public/Images/Rightarrow.webp'
+import Rightarrow from '../../../../public/images/Rightarrow.webp'
 const stockCards = [
   {
     cardsub_name: "EXXON MOBIL CORP.",

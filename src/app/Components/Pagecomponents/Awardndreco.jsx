@@ -1,11 +1,11 @@
 import React from 'react'
 import Award1 from '../../../../public/images/Award1.webp'
-import Year24 from '../../../../public/Images/Year24.webp'
-import Year23 from '../../../../public/Images/Year23.webp'
+import Year24 from '../../../../public/images/Year24.webp'
+import Year23 from '../../../../public/images/Year23.webp'
 import Awardcardbg from '../../../../public/Images/Awardcardbg.webp'
 import Image from 'next/image'
 import Title from '../Uiux/Title'
-import Description from '../UiUx/Description'
+import Description from '../Uiux/Description'
 
 
 const Award_card = [
