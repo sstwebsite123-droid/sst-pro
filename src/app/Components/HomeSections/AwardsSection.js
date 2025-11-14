@@ -8,6 +8,8 @@ import investment from "../../../../public/FooterImg/investment.webp";
 import Financial from "../../../../public/FooterImg/Financial.webp";
 import Trading from "../../../../public/FooterImg/Trading.webp";
 import Choice from "../../../../public/FooterImg/Choice.webp";
+import Title from "../Uiux/Title";
+import Description from "../Uiux/Description";
 
 const awards = [
   {
