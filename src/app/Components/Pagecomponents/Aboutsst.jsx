@@ -8,7 +8,7 @@ import Image from 'next/image'
 const AboutSst = () => {
   return (
     <div className='inn_container'>
-      <div className='grid grid-cols-2 title_grid py-12'>
+      <div className='grid grid-cols-1 title_grid py-12'>
         <div>
           <Title title={'About SST Pro'} color={'gradient_text'} />
         </div>

@@ -161,9 +161,9 @@ function Topstock() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1, delay: 1.2 }}
       >
-        <div className="arrow-btns flex justify-between gap-[30px] ">
+        <div className="arrow-btns flex justify-end gap-[30px] ">
 
-          <div className="stockbtns">
+          {/* <div className="stockbtns">
             <button className=''>
               <Image
                 src={leftArrow}
@@ -180,8 +180,8 @@ function Topstock() {
                 height={500}
                 className=' max-w-[51px] bg-[#D9D9D926] rounded-full' />
             </button>
-          </div>
-          <div className=" flex justify-center md:justify-end">
+          </div> */}
+          <div className=" flex justify-end md:justify-end">
             <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}

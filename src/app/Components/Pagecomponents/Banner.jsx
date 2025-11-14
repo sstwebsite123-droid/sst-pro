@@ -238,7 +238,7 @@ const Banner = () => {
             <p className=' bg-[linear-gradient(90deg,rgba(74,161,255,1)_0%,rgba(181,217,215,1)_35%,rgba(74,161,255,1)_100%)] bg-clip-text text-transparent'>Secure. Smart.</p>
             <p className='font-bold text-transparent stroke-text'>Transparent.</p>
           </div>
-          <div className="des max-w-[805px] m-auto text-[10px] md:text-[13px] 2xl:text-[25px] lg:text-[15px] text-[#D0D0D0]  leading-[20px]">
+          <div className="des max-w-[805px] m-auto text-[10px] md:text-[13px] 2xl:text-[25px] lg:text-[15px] text-[#D0D0D0]  2xl:leading-[35px]">
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
           <div className="banner-btn w-full">

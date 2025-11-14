@@ -3,6 +3,10 @@ import Award1 from '../../../../public/images/Award1.webp'
 import Year24 from '../../../../public/images/Year24.webp'
 import Year23 from '../../../../public/images/Year23.webp'
 import blurbg from '../../../../public/images/blurbg.webp'
+import Award2 from '../../../../public/images/Award2.webp'
+import Award3 from '../../../../public/images/Award3.webp'
+import Award4 from '../../../../public/images/Award4.webp'
+
 import Image from 'next/image'
 import Title from '../Uiux/Title'
 import Description from '../Uiux/Description'
@@ -19,7 +23,7 @@ const Award_card = [
     },
     {
         id: 2,
-        img: Award1,
+        img: Award2,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
         Awardbg: blurbg,
@@ -27,7 +31,7 @@ const Award_card = [
     },
     {
         id: 3,
-        img: Award1,
+        img: Award3,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
         Awardbg: blurbg,
@@ -35,7 +39,7 @@ const Award_card = [
     },
     {
         id: 4,
-        img: Award1,
+        img: Award4,
         Awardtitle: "Best Investment Platform",
         Awarddes: "Global Finance Awards",
         Awardbg: blurbg,
@@ -62,14 +66,18 @@ const Awardndreco = () => {
 
 
                             <div className="relative  text-center font-sans text-white">
-                                {/* Top (medal) */}
-                                <Image
-                                    src={data.img}
-                                    alt="Top Medal"
-                                    width={1000}
-                                    height={500}
-                                    className=" absolute bottom-[45%] 2xl:bottom-[40%] left-[0px] 2xl:left-[0%]     "
-                                />
+
+
+                                <div className={`top-medal absolute flex justify-center items-center bottom-[33%] `}>
+                                    <Image
+                                        src={data.img}
+                                        alt="Top Medal"
+                                        width={1000}
+                                        height={500}
+                                        className=""
+                                    />
+                                </div>
+
                                 {/* Background */}
                                 <Image
                                     src={data.Awardbg}
@@ -81,15 +89,17 @@ const Awardndreco = () => {
                                 />
 
 
+                                <div className="bootom-ribbon absolute flex justify-center items-center bottom-[-30px] w-full">
+                                    {/* Bottom (ribbon/date) */}
+                                    <Image
+                                        src={data.year}
+                                        alt="Bottom Ribbon"
+                                        width={1000}
+                                        height={500}
+                                        className="ribbon  max-w-[218px] m-auto flex justify-center items-center "
+                                    />
 
-                                {/* Bottom (ribbon/date) */}
-                                <Image
-                                    src={data.year}
-                                    alt="Bottom Ribbon"
-                                    width={1000}
-                                    height={500}
-                                    className=" relative  bottom-[27px] left-[18%] 2xl:left-[34%] max-w-[180px] md:max-w-[120px] 2xl:max-w-[160px] 2xl:bottom-[25px] "
-                                />
+                                </div>
 
                                 {/* Text Overlay */}
                                 <div className="absolute w-full  top-[50%]    ">
