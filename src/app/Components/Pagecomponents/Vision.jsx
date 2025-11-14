@@ -29,7 +29,7 @@ const Vision = () => {
       </div>
 
       <div className=" mt-14 md:mt-18">
-        <div className="mt-8 relative h-[320px] md:h-[380px] lg:h-[440px] overflow-hidden rounded-[26px] border border-white/12">
+        <div className="mt-8 relative h-[320px] md:h-[380px] lg:h-[440px] overflow-hidden ">
           <Image
             src={visionImg}
             alt="Vision"
@@ -46,7 +46,7 @@ const Vision = () => {
                 justify_start={true}
                 align={"text-center lg:text-start"}
                 color={"text-white"}
-                // items_start={true}
+              // items_start={true}
               />
             </div>
           </div>

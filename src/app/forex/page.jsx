@@ -6,12 +6,13 @@ import Globlegroth from "../Components/Pagecomponents/Globlegroth";
 import Investementhighlights from "../Components/Pagecomponents/Investementhighlights";
 import Workcard from "../Components/Pagecomponents/Workcard";
 import Riskmanagement from "../Components/Pagecomponents/Riskmanagement";
-import Forexbitcoin from "../../../public/images/forexbitcoin.webp";
+import Forexbitcoin from "../../../public/images/forexbitcoin.webp"
 import monthlygraph from "../../../public/images/monthlygraph.webp";
 import forexgloblegraph from "../../../public/images/forexgloblegraph.webp";
 import investworkimg1 from "../../../public/images/investworkimg1.webp";
 import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
+import forexbg from "../../../public/images/forexbg.webp";
 const faqData = [
   {
     question: "What is SST Pro?",
@@ -64,6 +65,7 @@ const page = () => {
     <div>
       <Dynamicbanner
         banner_title={"Forex Trading Investment <br/> with SST Pro"}
+        bannerimg={forexbg}
       />
       <Monthlyreturn
         title={

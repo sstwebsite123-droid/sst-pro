@@ -188,7 +188,7 @@ const Trackgroth = () => {
               title={
                 'Future Projects <br /> Pipeline '
               }
-              color={"text-white"}
+              color={"gradient_text"}
             />
           </motion.div>
           <motion.div
@@ -228,7 +228,7 @@ const Trackgroth = () => {
               >
                 {/* Animated background gradient */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#001D3C] group-hover:opacity-100 transition-opacity duration-500"
                 />
 
                 {/* Floating particles */}

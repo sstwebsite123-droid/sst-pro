@@ -235,10 +235,10 @@ const Banner = () => {
       <div className='bg-cover bg-center' style={{ backgroundImage: `url(${bluewavelight.src})` }}   >
         <div className="banner-tit-des-btn flex flex-col justify-center items-center text-center w-full px-4 md:pt-[12%] pt-[30%] gap-[10px] lg:gap-[5px] 2xl:gap-[20px]">
           <div className="title  flex text-[18px]  md:text-[45px]   2xl:text-[95px] lg:text-[45px] max-w-[1372px] font-medium m-auto ">
-            <p className=' bg-[linear-gradient(90deg,rgba(74,161,255,1)_0%,rgba(181,217,215,1)_35%,rgba(74,161,255,1)_100%)] bg-clip-text text-transparent'>Secure. Smart.</p>
-            <p className='font-bold text-transparent stroke-text'>Transparent.</p>
+            <p className=' bg-gradient-to-r from-[#4AA1FF] via-[#B5D9D7] to-[#4AA1FF] bg-clip-text text-transparent'>Secure. Smart.</p>
+            <p className=' stroke-text glow-text'>Transparent.</p>
           </div>
-          <div className="des max-w-[805px] m-auto text-[10px] md:text-[13px] 2xl:text-[25px] lg:text-[15px] text-[#D0D0D0]  2xl:leading-[35px]">
+          <div className="des max-w-[805px] m-auto text-[10px] md:text-[13px] 2xl:text-[24px] lg:text-[15px] text-[#D0D0D0]  2xl:leading-[35px]">
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
           <div className="banner-btn w-full">
@@ -250,14 +250,14 @@ const Banner = () => {
           </div>
 
         </div>
-        <div className="invest-tenpersent gap-[15%] mt-[10%] px-[3%] md:px-[6%] grid grid-cols-2 ">
-          <div className="relative w-max m-auto md:mt-[18%] h-max rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg">
-            <p className=" text-xs md:text-sm text-gray-300">Investment results</p>
+        <div className="invest-tenpersent px-2 gap-[15%]  grid grid-cols-1 md:grid-cols-2 mt-[36px] md:mt-0 ">
+          <div className=" w-[100px]  relative w-max m-auto md:mt-[18%] h-max rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg">
+            <p className=" text-[12px] md:text-sm text-gray-300">Investment results</p>
 
             <div className="flex items-center gap-2 mt-2">
-              <h2 className=" text-xs 2xl:text-3xl md:text-2xl font-semibold">$25,901</h2>
+              <h2 className=" text-[12px] 2xl:text-3xl md:text-2xl font-semibold">$25,901</h2>
 
-              <span className="flex items-center gap-1 text-green-400 bg-[#00000080] px-2 py-1 rounded-full text-xs">
+              <span className="flex items-center gap-1 text-green-400 bg-[#00000080] px-2 py-1 rounded-full text-[9px]">
                 ▲ 8.10%
               </span>
             </div>

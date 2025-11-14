@@ -39,7 +39,7 @@ const AboutSst = () => {
               <h1 className='vission-text gradient_text text-[22px] md:text-[32px] 2xl:text-[62px]'> Vision</h1>
             </div>
             <div className="vission-des text-white  ">
-              <p className='  text-strat md:text-end text-xs md:text-[10px] 2xl:md:text-[22px]'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
+              <p className='  text-strat md:text-end text-[10px] md:text-[10px] 2xl:md:text-[14px]'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const AboutSst = () => {
               </div>
             </div>
             <div className="mission-des text-white  ">
-              <p className='  text-xs  md:text-[10px] 2xl:md:text-[22px]'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
+              <p className='  text-[10px]  md:text-[10px] 2xl:md:text-[14px]'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
             </div>
           </div>
         </div>

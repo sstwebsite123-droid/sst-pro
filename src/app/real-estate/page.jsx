@@ -12,6 +12,7 @@ import realestateglobleposter from "../../../public/images/realestateglobleposte
 import investworkimg1 from "../../../public/images/investworkimg1.webp";
 import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
+import sleekglass from '../../../public/images/sleekglass.webp'
 const faqData = [
   {
     question: "What is SST Pro?",
@@ -64,6 +65,7 @@ const page = () => {
     <div>
       <Dynamicbanner
         banner_title={"Real Estate Trading <br/> Investment with SST Pro"}
+        bannerimg={sleekglass}
       />
       <Monthlyreturn
         title={
@@ -87,7 +89,7 @@ const page = () => {
         description={
           "Investing in real estate requires knowledge, strategy, and trusted guidance. SST Pro provides all three for confident, rewarding investments."
         }
-         videoSrc='/video/realstatevideo.mp4'
+        videoSrc='/video/realstatevideo.mp4'
         right_description={`The real estate market is one of the most stable and lucrative asset classes, offering opportunities across residential, commercial, and mixed-use properties. <br/>
         At SST Pro, we transform market insights into profitable ventures. Through expert analysis, strategic property selection, and professional fund management, we offer investors annual returns  delivered securely and transparently.
         `}

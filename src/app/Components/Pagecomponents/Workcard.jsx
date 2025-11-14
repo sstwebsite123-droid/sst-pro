@@ -52,13 +52,14 @@ const Workcard = ({ title, description, cardata }) => {
                     className=""
                   />
 
-                  <div className="absolute top-0 w-full h-full flex">
+                  <div className="absolute top-0 w-full h-full flex group w-fit overflow-hidden">
                     <Image
                       src={data.icon}
                       alt="investworkimg1"
                       width={5000}
                       height={500}
-                      className="max-w-[150px] xl:max-w-[180px] 2xl:max-w-[250px] m-auto max-h-[140px] xl:max-h-[170px] 2xl:max-h-[220px] object-contain"
+                      className="max-w-[150px] xl:max-w-[180px] 2xl:max-w-[250px] m-auto max-h-[140px] xl:max-h-[170px] 2xl:max-h-[220px] object-contain transition-all duration-500 ease-out 
+           group-hover:-translate-y-5"
                     />
                   </div>
                 </div>
@@ -69,7 +70,7 @@ const Workcard = ({ title, description, cardata }) => {
         </div>
       </div>
       <div className="px-[3%]">
-     <GalaxyAnimation />
+        <GalaxyAnimation />
       </div>
     </div>
   );

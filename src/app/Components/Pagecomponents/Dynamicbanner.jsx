@@ -4,24 +4,24 @@ import dynamicbannerph from "../../../../public/banners/dynamicbannerph.webp";
 import Button from "../Uiux/Button";
 import Image from "next/image";
 
-const Dynamicbanner = ({ banner_title }) => {
+const Dynamicbanner = ({ banner_title, bannerimg }) => {
   return (
     <div>
       <div className="banner_container">
         <div className="relative pt-3 md:pt-[30px] xl:pt-[26px] 2xl:pt-4">
           <Image
-            src={dynamicbanner}
+            src={bannerimg}
             alt=""
             width={10000}
             height={500}
             className="w-full h-full object-cover hidden md:block"
           />
           <Image
-            src={dynamicbannerph}
+            src={bannerimg}
             alt=""
             width={10000}
             height={500}
-            className="w-full h-full object-cover block md:hidden"
+            className="w-full h-full object-cover block md:hidden min-h-[356px]"
           />
           <div className="absolute top-[32%] left-0 w-full px-4 sm:px-6">
             <div className="relative">

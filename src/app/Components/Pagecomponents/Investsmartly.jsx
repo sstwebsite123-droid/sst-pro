@@ -16,7 +16,7 @@ const Investsmartly = () => {
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className=" pt-12 md:pt-18 lg:pt-24  2xl:pt-32 bg-[#0E1F30] rounded-[50px] mt-[86px]">
+      <div className=" py-20 md:pt-18 lg:pt-24  2xl:pt-32 bg-[#0E1F30] rounded-[50px] mt-[86px]">
         <div className="custom_container">
           <motion.div
             className="grid grid-cols-1 lg:grid-cols-2 items-center px-10"
