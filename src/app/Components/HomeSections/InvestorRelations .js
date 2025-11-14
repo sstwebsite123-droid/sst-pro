@@ -130,7 +130,8 @@ const InvestorRelations = () => {
                 ].map((card, idx) => (
                   <div
                     key={idx}
-                    className={`group relative overflow-hidden rounded-[28px] border ${card.border} bg-[radial-gradient(circle_at_top,rgba(15,76,129,0.35),rgba(5,14,30,0.88))] p-6 shadow-[0_18px_45px_rgba(6,12,25,0.55)] backdrop-blur`}
+                    className={`group relative overflow-hidden rounded-[28px] border ${card.border} bg-[radial-gradient(circle_at_top,rgba(15,76,129,0.35),rgba(5,14,30,0.88))] p-6 shadow-[0_18px_45px_rgba(6,12,25,0.55)] backdrop-blur hover:bg-gradient-to-r hover:from-blue-400 hover:to-black
+    transition-all duration-300 rounded-lg`}
                   >
                     <span
                       className={`absolute -right-6 -top-6 h-20 w-20 rounded-full ${card.iconTint}`}
@@ -142,9 +143,8 @@ const InvestorRelations = () => {
                       {card.title}
                     </p>
                     <p
-                      className={`relative mt-5 font-semibold ${card.accent} ${
-                        card.valueClass || "text-3xl"
-                      }`}
+                      className={`relative mt-5 font-semibold ${card.accent} ${card.valueClass || "text-3xl"
+                        }`}
                     >
                       {card.value}
                     </p>
