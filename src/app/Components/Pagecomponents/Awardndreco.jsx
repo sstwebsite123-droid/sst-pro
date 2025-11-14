@@ -6,7 +6,6 @@ import blurbg from '../../../../public/images/blurbg.webp'
 import Award2 from '../../../../public/images/Award2.webp'
 import Award3 from '../../../../public/images/Award3.webp'
 import Award4 from '../../../../public/images/Award4.webp'
-
 import Image from 'next/image'
 import Title from '../Uiux/Title'
 import Description from '../Uiux/Description'
