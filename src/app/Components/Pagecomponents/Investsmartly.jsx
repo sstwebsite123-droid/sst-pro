@@ -74,7 +74,7 @@ const Investsmartly = () => {
           </motion.div>
 
           <motion.div
-            className="text-end absolute top-[5%] left-[20%] fade_up invest_card1"
+            className="text-end absolute top-[5%] left-[13%] fade_up invest_card1"
             initial={{ opacity: 0, x: -100, y: -50 }}
             animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: -100, y: -50 }}
             transition={{ duration: 1, delay: 1.2 }}
@@ -122,7 +122,7 @@ const Investsmartly = () => {
           </motion.div>
 
           <motion.div
-            className="text-start absolute bottom-[25%] right-[17%] invest_card3"
+            className="text-start absolute bottom-[19%] right-[17%] invest_card3"
             initial={{ opacity: 0, x: 100, y: 50 }}
             animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x: 100, y: 50 }}
             transition={{ duration: 1, delay: 1.6 }}

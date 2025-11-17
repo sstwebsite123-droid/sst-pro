@@ -8,16 +8,24 @@ import Image from 'next/image'
 const AboutSst = () => {
   return (
     <div className='inn_container'>
-      <div className='grid grid-cols-1 title_grid py-12'>
-        <div>
-          <Title title={'About SST Pro'} color={'gradient_text'} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div   >
+          <Title
+            title={'<span class="gradient_text">About SST Pro</span> '}
+            color={"text-white"}
+          />
         </div>
-
-        <div className='flex justify-end items-center'>
-          <Description description={'Established 2 years ago, SST Pro has been dedicated to helping <br /> clients achieve smarter growth and financial freedom.'} color={'text-white'} textalign={'text-end'} />
+        <div   >
+          <Description
+            description={
+              "Established 2 years ago, SST Pro has been dedicated to helping <br/> clients achieve smarter growth and financial freedom."
+            }
+            color={"text-white"}
+            align={"lg:text-end"}
+          />
         </div>
       </div>
-      <div className="bg-cover bg-center py-[24%] px-0 " style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
+      <div className="bg-cover bg-center py-[16%] px-0 " style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
         <div className="mission-vission grid grid-cols-1 md:grid-cols-2 flex py-0 px-[10%] justify-between md:gap-[50%] ">
           <div className="vissoin mb-[21rem] md:m-0">
             <div className="icon-visson flex justify-start md:justify-end gap-[20px] items-center">
@@ -36,17 +44,17 @@ const AboutSst = () => {
                 </svg>
               </div>
 
-              <h1 className='vission-text gradient_text text-[22px] md:text-[32px] 2xl:text-[62px]'> Vision</h1>
+              <h1 className='vission-text gradient_text text-[22px] md:text-[48px] 2xl:text-[62px] pb-4'> Vision</h1>
             </div>
             <div className="vission-des text-white  ">
-              <p className='  text-strat md:text-end text-[10px] md:text-[10px] 2xl:md:text-[14px]'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
+              <p className='  text-strat md:text-end sub_description '>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
             </div>
           </div>
 
 
           <div className="missoin">
             <div className="icon-visson flex justify-start gap-[20px] items-center">
-              <h1 className='mission-text gradient_text text-[22px] md:text-[32px] 2xl:text-[62px]'> Mision</h1>
+              <h1 className='mission-text gradient_text text-[22px] md:text-[48px] 2xl:text-[62px] pb-4'> Mision</h1>
               <div className="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                   <g clipPath="url(#clip0_1407_1582)">
@@ -64,7 +72,7 @@ const AboutSst = () => {
               </div>
             </div>
             <div className="mission-des text-white  ">
-              <p className='  text-[10px]  md:text-[10px] 2xl:md:text-[14px]'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
+              <p className='  sub_description'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
             </div>
           </div>
         </div>

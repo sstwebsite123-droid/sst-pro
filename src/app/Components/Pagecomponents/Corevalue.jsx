@@ -50,7 +50,7 @@ const Card = ({ title, description, className }) => {
 
 const Corevalue = () => {
   return (
-    <div className="inn_container" style={{marginTop: "2rem"}}>
+    <div className="inn_container" style={{ marginTop: "2rem" }}>
       <div className="relative mx-auto flex flex-col gap-8 rounded-[32px] bg-[url('/images/corevalue.webp')] bg-cover bg-center px-6 py-12 md:px-16 md:py-20">
         {/* <div className="flex items-center justify-center">
             <div className="flex items-center gap-3 rounded-full border border-[#1f4073]/40 bg-[#0a1b33] px-8 py-3">

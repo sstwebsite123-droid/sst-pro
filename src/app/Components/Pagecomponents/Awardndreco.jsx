@@ -48,17 +48,22 @@ const Award_card = [
 
 const Awardndreco = () => {
     return (
-        <div className='custom_container bg-[#0E1F30] rounded-[50px] mt-[7%] ' >
-            <div className='grid grid-cols-1 md:grid-cols-1 title_grid p-[5%]'>
-                <div>
-                    <Title title={'Awards & Recognition'} color={'gradient_text'} />
+        <div className='inn_container bg-[#0E1F30] rounded-[50px] mt-[7%] pt-[40px] ' >
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+                <div   >
+                    <Title
+                        title={'<span class="gradient_text">Awards & Recognition</span> '}
+                        color={"text-white"}
+                    />
                 </div>
-
-                {/* <div className='flex justify-end text-end '>
-                    <Description description={'Recognized globally for excellence in financial <br /> services and innovation'} color={'text-white'} textalign={'text-end'} />
-                </div> */}
-                <div className='flex justify-end items-end'>
-                    <Description description={'Established 2 years ago, SST Pro has been dedicated to helping <br /> clients achieve smarter growth and financial freedom.'} color={'text-white'} textalign={'text-end'} />
+                <div   >
+                    <Description
+                        description={
+                            "Established 2 years ago, SST Pro has been dedicated to helping <br /> clients achieve smarter growth and financial freedom."
+                        }
+                        color={"text-white"}
+                        align={"lg:text-end"}
+                    />
                 </div>
             </div>
             <div className="awardcard  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-[8%] gap-[11rem] lg:gap-[10px] 2xl:gap-[10px]  mt-[17%] md:m-auto 2xl:mt-0 ">

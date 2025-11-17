@@ -15,7 +15,7 @@ const Aboutsstpro = () => {
           <div>
             <Title
               title={
-                'Trusted Growth for <span class="gradient_text"> <br /> Global Investors</span> '
+                'Trusted Growth for <span class="gradient_text"> <br /> Global Investors'
               }
               color={"text-white"}
             />
@@ -23,7 +23,7 @@ const Aboutsstpro = () => {
           <div>
             <Description
               description={
-                "Established 2 years ago, SST Pro has been dedicated to helping <br/> clients achieve smarter growth and financial freedom."
+                "Established 2 years ago, SST Pro has been dedicated to helping  <br/> clients achieve smarter growth and financial freedom."
               }
               color={"text-white"}
               align={"lg:text-end"}
@@ -50,7 +50,7 @@ const Aboutsstpro = () => {
                     
                   </p> */}
                   <span className="sub_description text-black">
-                   With operations in the USA and the United Kingdom, we help <br/> investors achieve consistent, secure, and sustainable financial <br/>growth through data-driven strategies.
+                    With operations in the USA and the United Kingdom, we help <br /> investors achieve consistent, secure, and sustainable financial <br />growth through data-driven strategies.
                   </span>
                 </div>
               </div>
@@ -69,7 +69,7 @@ const Aboutsstpro = () => {
                     Vision
                   </p> */}
                   <span className="sub_description text-black">
-                   SST Pro Ltd is officially registered under the laws of Colorado and <br/> certified by the Secretary of State of Colorado, maintaining full <br/>compliance and good standing.
+                    SST Pro Ltd is officially registered under the laws of Colorado and <br /> certified by the Secretary of State of Colorado, maintaining full <br />compliance and good standing.
                   </span>
                 </div>
               </div>

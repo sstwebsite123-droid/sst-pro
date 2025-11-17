@@ -220,16 +220,16 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  .invest_card1 {
+  /* .invest_card1 {
     left: 0%;
-  }
+  } */
 
   .invest_card2 {
     bottom: 14%;
   }
 
   .invest_card3 {
-    right: 0%;
+    right: 12%;
   }
 }
 
