@@ -187,9 +187,9 @@ function Topstock() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href={"/#"}>
+              {/* <Link href={"/#"}>
                 <Button btn_name=" View All Stocks" color="text-black" btn_background="bg-primary" />
-              </Link>
+              </Link> */}
             </motion.div>
           </div>
         </div>

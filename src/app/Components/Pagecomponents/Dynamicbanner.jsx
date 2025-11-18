@@ -48,7 +48,7 @@ const Dynamicbanner = ({ banner_title, bannerimg }) => {
                       </Link>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1600" className="cursor-pointer">
-                      <Link href={"/#"}
+                      <Link href={"/contact-us"}
                       >
                         <Button
                           btn_name={"Request Demo"}
