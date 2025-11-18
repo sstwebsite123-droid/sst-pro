@@ -1,5 +1,5 @@
 import React from 'react'
-import Bannerposter from ".././../../../public/banners/Banner.webp";
+import forexbg from ".././../../../public/images/forexbg.webp";
 import bannersignleft from "../../../../public/images/bannersignleft.webp";
 import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const Forexbanner = () => {
   return (
-  <div>
+    <div>
       <div className="banner_container">
         {/* Banner container with responsive height */}
         <div className="relative pt-[30px] xl:pt-[26px] 2xl:pt-4">
           <Image
-            src={Bannerposter}
+            src={forexbg}
             alt=""
             width={10000}
             height={500}

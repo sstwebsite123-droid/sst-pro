@@ -8,6 +8,7 @@ import Dynamicbanner from "../Components/Pagecomponents/Dynamicbanner";
 import Vision from "../Components/Pagecomponents/Vision";
 import CEOMessage from "../Components/Pagecomponents/CEOMessage";
 import CertificatesCompliance from "../Components/Pagecomponents/CertificatesCompliance";
+import Aboutbgbanner from '../../../public/images/Aboutbgbanner.webp'
 const faqData = [
   {
     question: "What is SST Pro?",
@@ -38,7 +39,7 @@ const faqData = [
 const page = () => {
   return (
     <div>
-      <Dynamicbanner banner_title={"About SST Pro"} />
+      <Dynamicbanner banner_title={"About SST Pro"} bannerimg={Aboutbgbanner} />
       <Aboutsstpro />
       <Aboutdata />
       <Vision />

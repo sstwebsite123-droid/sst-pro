@@ -23,7 +23,7 @@ const headerlinks = [
   {
     id: 3,
     pagename: "Services",
-    pagelink: "#"
+    pagelink: "/Services"
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ const Header = () => {
                 width={1000}
                 height={500}
                 className="max-w-[62px] md:max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px] animate-spin"
-                style={{animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out'}}
+                style={{ animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out' }}
               />
             </Link>
           </div>
@@ -84,7 +84,7 @@ const Header = () => {
                 <Link href={data.pagelink}>
                   <span
                     className={` text-base xl:text-xl 2xl:text-[22px] relative z-[2] font_light px-3 xl:px-5 ${currentpath ===
-                    data.pagelink
+                      data.pagelink
                       ? "text-secondary font-semibold"
                       : "text-white font-medium"}`}
                   >

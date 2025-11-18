@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import outerbanner from "../../../../public/images/Monthlyreturn.webp";
+import realestateleft from "../../../../public/images/realestateleft.webp";
 import Image from "next/image";
 import bluearrowicon from "../../../../public/icons/bluearrowicon.svg";
 import Arrowbtn from "../Uiux/Arrowbtn";
@@ -41,10 +42,16 @@ const Monthlyreturn = ({
             />
             <div className="absolute h-full w-full hidden lg:flex items-center px-10 top-0 lg:top-6 xl:top-0">
               <div className="hidden lg:grid grid-cols-[2fr_5fr] gap-8">
-                <div>
-                  <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
+                <div className="overflow-hidden  border-gray-300">
+                  <Image
+                    src={left_banner}
+                    width={1000}
+                    height={500}
+                    alt="realestateleft"
+                    className="object-cover transition-transform duration-100  hover:scale-105" />
+                  {/* <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
                     <source src="/video/stcokprofit.mp4" type="video/mp4" />
-                  </video>
+                  </video> */}
                 </div>
                 <div className="flex flex-col justify-center">
                   <div className="border-2 border-white rounded-[40px] relative">
@@ -93,9 +100,9 @@ const Monthlyreturn = ({
             </div>
             <div className="grid lg:hidden grid-cols-1 gap-4">
               <div>
-              <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
-                    <source src="/video/stcokprofit.mp4" type="video/mp4" />
-                  </video>
+                <video autoPlay loop muted playsInline className="w-full h-full object-cover -z-5  rounded-4xl border border-b-blue-500   ">
+                  <source src="/video/stcokprofit.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="flex flex-col justify-center">
                 <div className="border-2 border-white rounded-[40px] relative">

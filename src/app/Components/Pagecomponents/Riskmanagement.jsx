@@ -1,6 +1,8 @@
 import React from "react";
 import Riskmanagementbanner from "../../../../public/images/Riskmanagement.webp";
 import Riskmanagementbannerph from "../../../../public/images/Riskmanagementph.webp";
+import realestategraph from "../../../../public/images/realestategraph.webp";
+import Ropejump from "../../../../public/Gif/Ropejump.gif";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Image from "next/image";
@@ -52,19 +54,32 @@ const Riskmanagement = ({
       </div>
       <div className="relative lg:top-[-100px]">
         <Image
-          src={Riskmanagementbanner}
+          src={Ropejump}
           alt="Riskmanagementbanner"
           width={3000}
           height={500}
           className="w-full hidden lg:block"
         />
+
+
         <Image
-          src={Riskmanagementbannerph}
+          src={Ropejump}
           alt="Riskmanagementbanner"
           width={3000}
           height={500}
-          className="w-full block lg:hidden"
+          className="w-full block lg:hidden "
         />
+        <Image
+          src={realestategraph}
+          alt="Riskmanagementbanner"
+          width={3000}
+          height={500}
+          className="w-full block lg:hidden "
+        />
+
+
+
+
       </div>
     </div>
   );

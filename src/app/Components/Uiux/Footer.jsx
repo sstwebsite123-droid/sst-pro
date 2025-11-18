@@ -1,20 +1,13 @@
 import React from "react";
-// import fotterbackground from "../../../../public/banners/fotterbackground.webp";
-// import fottercardph from "../../../../public/images/fottercardph.webp";
 import logo from "../../../../public/images/Logo.webp";
 import Image from "next/image";
 import facebookicon from "../../../../public/icons/facebook.svg";
 import Instaicon from "../../../../public/icons/Insta.svg";
 import x from "../../../../public/icons/X.svg";
 import Link from "next/link";
-// import Worldbroker from "../Pagecomponents/Worldbroker";
 import Fotterlinks from "../Pagecomponents/Footerlinks";
 import Investment from "../Pagecomponents/Investment";
 import CopyRight from "./CopyRight";
-import SmarterGrowth from "../HomeSections/SmarterGrowth";
-import AwardsSection from "../HomeSections/AwardsSection";
-import StatsSection from "../HomeSections/StatsSection";
-import InvestorRelations from "../HomeSections/InvestorRelations ";
 const footerdata = {
   linkingdata: [
     {
@@ -46,29 +39,26 @@ const footerdata = {
   social_links: [
     {
       alt: "Facebook",
-      pagelink: "",
+      pagelink: " https://www.facebook.com/profile.php?id=61583148307385",
       icon: facebookicon,
     },
     {
       alt: "Instagram",
-      pagelink: "",
+      pagelink: "https://www.instagram.com/sst__pro/",
       icon: Instaicon,
     },
-    {
-      alt: "You Tube",
-      pagelink: "",
-      icon: x,
-    },
+    // {
+    //   alt: "You Tube",
+    //   pagelink: "",
+    //   icon: x,
+    // },
   ],
 };
 const Footer = () => {
   return (
     <div>
       <Investment />
-      {/* <SmarterGrowth/>
-      <AwardsSection/>
-      <StatsSection/>
-      <InvestorRelations/> */}
+      {/* <AwardsSection/> */}
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
@@ -84,7 +74,7 @@ const Footer = () => {
                       className=" max-w-[55px] lg:max-w-[74px] xl:max-w-[84px]"
                     />
                   </Link>
-                  <p className="lg:text-lg xl:text-xl text-white pt-4" style={{fontSize: '14px'}}>
+                  <p className="lg:text-lg xl:text-xl text-white pt-4" style={{ fontSize: '14px' }}>
                     SST Pro is a trusted investment platform specializing in
                     Forex and Real Estate trading, offering investors secure,
                     diversified, and profitable opportunities for sustainable
@@ -93,11 +83,10 @@ const Footer = () => {
                 </div>
                 {footerdata.linkingdata.map((data, index) => (
                   <div
-                    className={`${
-                      index === 2
-                        ? null
-                        : "border-r-[3px] border-dashed border-[#72727250]"
-                    }`}
+                    className={`${index === 2
+                      ? null
+                      : "border-r-[3px] border-dashed border-[#72727250]"
+                      }`}
                     key={index}
                   >
                     <Fotterlinks title={data.title} linklist={data.pagelinks} />
@@ -109,11 +98,10 @@ const Footer = () => {
                 <div className="grid grid-cols-2 gap-x-8 gap-y-6 py-6">
                   {footerdata.linkingdata.slice(0, 1).map((data, index) => (
                     <div
-                      className={`${
-                        index === 2
-                          ? null
-                          : "border-r-[3px] w-full border-dashed"
-                      }`}
+                      className={`${index === 2
+                        ? null
+                        : "border-r-[3px] w-full border-dashed"
+                        }`}
                       key={index}
                     >
                       <Fotterlinks
@@ -126,11 +114,10 @@ const Footer = () => {
                   <div className="flex items-start flex-col gap-4">
                     {footerdata.linkingdata.slice(1, 3).map((data, index) => (
                       <div
-                        className={`${
-                          index === 2
-                            ? null
-                            : "border-r-[3px] w-full border-dashed"
-                        }`}
+                        className={`${index === 2
+                          ? null
+                          : "border-r-[3px] w-full border-dashed"
+                          }`}
                         key={index}
                       >
                         <Fotterlinks

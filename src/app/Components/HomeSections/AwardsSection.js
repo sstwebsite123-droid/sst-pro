@@ -8,6 +8,8 @@ import investment from "../../../../public/FooterImg/investment.webp";
 import Financial from "../../../../public/FooterImg/Financial.webp";
 import Trading from "../../../../public/FooterImg/Trading.webp";
 import Choice from "../../../../public/FooterImg/Choice.webp";
+import Title from "../Uiux/Title";
+import Description from "../Uiux/Description";
 
 const awards = [
   {
@@ -48,14 +50,14 @@ const AwardsSection = () => {
   return (
     <section className="inn_container relative bg-[#05080e] text-white py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
       {/* Title */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
-          Awards & <span className="gradient_text">Recognition</span>
-        </h2>
-        <p className="text-gray-300 max-w-xl mx-auto">
-          Recognized globally for excellence in financial services and innovation
-        </p>
-        <div className="w-24 h-[2px] bg-blue-500 mx-auto mt-3"></div>
+      <div className='grid grid-cols-1 md:grid-cols-2 title_grid p-[5%]'>
+        <div>
+          <Title title={'Awards & Recognition sdfsdf'} color={'gradient_text'} />
+        </div>
+
+        <div className='flex justify-end text-end '>
+          <Description description={'Recognized globally for excellence in financial <br /> services and innovation'} color={'text-white'} textalign={'text-end'} />
+        </div>
       </div>
 
       {/* Awards Grid */}
@@ -63,7 +65,7 @@ const AwardsSection = () => {
         {awards.map((award) => (
           <div
             key={award.id}
-            className="relative bg-gradient-to-b from-[#0f1318] to-[#0a0e12] rounded-[2rem] border border-gray-700 overflow-hidden group transition-all duration-500 hover:border-blue-400 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]"
+            className="relative bg-gradient-to-b from-[#0f1318] to-[#0a0e12] rounded-[2rem] border border-gray-700 overflow-hidden group transition-all duration-500 hover:border-blue-600 hover:shadow-[0_0_25px_rgba(59,130,246,0.9)]"
           >
             {/* Image */}
             <div className="h-48 overflow-hidden rounded-t-[2rem]">
@@ -81,7 +83,7 @@ const AwardsSection = () => {
               <div className="bg-gradient-to-b from-blue-500 to-blue-700 p-3 rounded-full text-white shadow-md group-hover:scale-110 transition-transform duration-300">
                 {award.icon}
               </div>
-              <h3 className="font-semibold text-lg">{award.title}</h3>
+              <h3 className="text-[18px] gradient_text pb-2 w-max m-auto">{award.title}</h3>
               <p className="text-gray-400 text-sm">{award.subtitle}</p>
               <p className="gradient_text font-medium">{award.year}</p>
             </div>
