@@ -52,55 +52,68 @@ const PackageCard = ({ pkg }) => {
     return (
         <div>
 
-            <div className="relative max-w-sm w-full">
-
-                {/* Badge for second card */}
+            <div className="relative w-full">
                 {pkg.badge && (
-                    <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-[#C6E5E2] px-6 py-1 rounded-full font-semibold text-sm">
+                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#C6E5E2] px-3  md:px-4 py-3 rounded-full text-[12px] sm:text-[18px] md:text-[20px]">
                         {pkg.badge}
                     </div>
                 )}
-
-                {/* Card */}
                 <div
-                    className={`rounded-3xl p-4 bg-gradient-to-b ${pkg.bg} shadow-xl flex flex-col justify-center items-center text-start`}
+                    className={`w-full  max-w-[451px]  mx-auto rounded-3xl p-4 sm:p-6 md:p-8 
+    bg-gradient-to-b ${pkg.bg} shadow-xl flex flex-col justify-center items-center`}
                 >
-                    {/* Title */}
-                    <h2 className="text-2xl font-semibold text-black mb-2 w-full">
+
+
+                    <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-2 w-full">
                         {pkg.title}
                     </h2>
 
-                    {/* Description */}
-                    <p className="text-gray-700 mb-6">{pkg.description}</p>
 
-                    {/* Black Price Box */}
-                    <div className="bg-black text-white p-6 rounded-2xl mb-6">
+                    <p
+                        className={`mb-4 sm:mb-6 text-sm sm:text-base md:text-lg 
+      ${pkg.id === 2 ? 'text-white' : 'text-black'}`}
+                    >
+                        {pkg.description}
+                    </p>
+
+
+                    <div className="w-full bg-black text-white p-4 sm:p-6 rounded-2xl">
                         <div className="flex items-baseline space-x-2 mb-4">
-                            <span className="text-5xl font-bold text-[#7EC6FF]">
+                            <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#7EC6FF]">
                                 {pkg.price}
                             </span>
-                            <span className="text-md opacity-80">/ Investment</span>
+                            <span className="text-lg sm:text-xl md:text-2xl opacity-80">
+                                / Investment
+                            </span>
                         </div>
 
-                        {/* Features */}
+
                         <ul className="space-y-3">
                             {pkg.features.map((feature, index) => (
-                                <li key={index} className="flex items-center gap-2">
-                                    <span className="text-[#7EC6FF] text-lg font-bold">✓</span>
+                                <li key={index} className="flex items-center gap-2 text-sm sm:text-base md:text-lg">
+                                    <span className="text-[#7EC6FF] text-xl sm:text-2xl font-bold">✓</span>
                                     {feature}
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Button */}
+
                     <button
-                        className={` absolute w-[50%] -bottom-[19px]  py-3 rounded-full font-semibold text-black bg-[#C6E5E2] hover:bg-[#b2d4d1] transition`}
+                        className={`
+        absolute left-1/2 -translate-x-1/2 w-[70%] sm:w-[60%] md:w-[50%]
+        -bottom-[18px] sm:-bottom-[20px] md:-bottom-[22px]
+        py-2 sm:py-3 text-base sm:text-lg md:text-[22px] rounded-full transition
+        ${pkg.id === 2 ? 'bg-[#499EFB] text-white' : 'bg-[#C6E5E2] hover:bg-[#b2d4d1]'}
+      `}
                     >
                         {pkg.buttonText}
                     </button>
+
                 </div>
             </div>
+
+
 
         </div>
     );
@@ -109,7 +122,7 @@ const PackageCard = ({ pkg }) => {
 const InvestmentPackages = () => {
     return (
         <div
-            className=" max-h-screen bg-cover bg-center px-6 lg:px-16 py-20 mb-[10%]"
+            className="  bg-cover bg-center px-6 lg:px-16 py-20 mb-[10%]"
             style={{
                 backgroundImage: "url('/images/galaxeybg.webp')",
             }}
@@ -117,20 +130,20 @@ const InvestmentPackages = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div>
                     <Title
-                        title="What We Offer"
+                        title="Investment Packages"
                         color={" gradient_text"}
                     />
                 </div>
                 <div>
                     <Description
-                        description="Explore powerful tools, expert insights, and innovative features designed to elevate your trading experience with SST Pro."
+                        description="Pick the package that fits your goals and start growing your wealth with flexible, tailored options for every investor."
                         color="text-white"
                         align="lg:text-end"
                     />
                 </div>
             </div>
             {/* Cards */}
-            <div className="flex justify-center flex-wrap gap-10 mt-[4%]">
+            <div className="flex justify-center items-center  flex-wrap gap-12 md:gap-[4rem] mt-[4%]">
                 {packages.map((pkg) => (
                     <PackageCard key={pkg.id} pkg={pkg} />
                 ))}
