@@ -23,24 +23,24 @@ const Award_card = [
     {
         id: 2,
         img: Award2,
-        Awardtitle: "Best Investment Platform",
-        Awarddes: "Global Finance Awards",
+        Awardtitle: "Excellence in Financial Innovation",
+        Awarddes: "FinTech Excellence Awards",
         Awardbg: blurbg,
         year: Year24
     },
     {
         id: 3,
         img: Award3,
-        Awardtitle: "Best Investment Platform",
-        Awarddes: "Global Finance Awards",
+        Awardtitle: "Top Rated Trading Platform",
+        Awarddes: "Investment Weekly",
         Awardbg: blurbg,
         year: Year23
     },
     {
         id: 4,
         img: Award4,
-        Awardtitle: "Best Investment Platform",
-        Awarddes: "Global Finance Awards",
+        Awardtitle: "Customer Choice Award",
+        Awarddes: "Trading Community",
         Awardbg: blurbg,
         year: Year23
     }
@@ -109,7 +109,7 @@ const Awardndreco = () => {
                                 </div>
 
                                 {/* Text Overlay */}
-                                <div className="absolute w-full  top-[50%]    ">
+                                <div className="absolute w-full  top-[41%]    ">
                                     <h2 className="2xl:text-[30px] font-semibold">{data.Awardtitle}</h2>
                                     <p className="text-gray-300 w-max m-auto  bg-[#0000001C] text-sm mt-1">{data.Awarddes}</p>
 

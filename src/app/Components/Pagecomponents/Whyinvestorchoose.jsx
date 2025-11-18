@@ -90,18 +90,18 @@ const Whyinvestorchoose = () => {
                         {/* LEFT CARDS */}
                         <div className="flex flex-col sm:items-start gap-10">
 
-                            <div className="w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[547px] relative lg:right-[-10%] 2xl:right-[29%] xl:right-[-1%] lg:top-[-5%] xl:top-[-3%] 2xl:top-[-12%]
+                            <div className="w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[447px] relative lg:right-[-10%] 2xl:right-[13%] xl:right-[-1%] lg:top-[-5%] xl:top-[-3%] 2xl:top-[-12%]
                              bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px] 2xl:text-2xl font-semibold">Top-Level Security</h2>
                                 <p className="text-gray-300 mt-2">Your funds and data stay fully protected.</p>
                             </div>
 
-                            <div className="w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[547px] relative lg:right-[1%] 2xl:right-[41%] lg:top-[-11%] 2xl:top-[-15%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
+                            <div className="w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[447px] relative lg:right-[1%] 2xl:right-[24%] lg:top-[-11%] 2xl:top-[-15%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px]  2xl:text-2xl font-semibold">Scalable Growth</h2>
                                 <p className="text-gray-300 mt-2">Grow with daily profits and bonuses.</p>
                             </div>
 
-                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[547px] relative xl:right-[-1%] lg:right-[-11%] 2xl:right-[29%] lg:top-[-18%] 2xl:top-[-17%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
+                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px]  2xl:max-w-[447px] relative xl:right-[-1%] lg:right-[-11%] 2xl:right-[13%] lg:top-[-18%] 2xl:top-[-17%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px]  2xl:text-2xl font-semibold">Smart Technology</h2>
                                 <p className="text-gray-300 mt-2">Smart automation, real results.</p>
                             </div>
@@ -111,17 +111,17 @@ const Whyinvestorchoose = () => {
                         {/* RIGHT CARDS */}
                         <div className="flex flex-col gap-10  sm:items-end">
 
-                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[547px] relative lg:left-[-10%] 2xl:left-[29%] lg:top-[-6%] 2xl:top-[-12%]  xl:left-[-1%] xl:top-[-3%]bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
+                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[447px] relative lg:left-[-10%] 2xl:left-[13%] lg:top-[-6%] 2xl:top-[-12%]  xl:left-[-1%] xl:top-[-3%]bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px] 2xl:text-2xl font-semibold">Real Trades. Real Profits.</h2>
                                 <p className="text-gray-300 mt-2">Profits from genuine live market trades.</p>
                             </div>
 
-                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[547px] relative lg:left-[1%] 2xl:left-[40%] lg:top-[-12%] 2xl:top-[-15%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
+                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[447px] relative lg:left-[1%] 2xl:left-[21%] lg:top-[-12%] 2xl:top-[-15%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px] 2xl:text-2xl font-semibold">Expert Team</h2>
                                 <p className="text-gray-300 mt-2">Run by verified, experienced traders.</p>
                             </div>
 
-                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[547px] relative xl:left-[-1%] lg:left-[-10%] 2xl:left-[29%] lg:top-[-19%] 2xl:top-[-17%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
+                            <div className=" w-full lg:max-w-[230px] xl:max-w-[447px] 2xl:max-w-[447px] relative xl:left-[-1%] lg:left-[-10%] 2xl:left-[13%] lg:top-[-19%] 2xl:top-[-17%] bg-white/5 backdrop-blur-md rounded-2xl p-6 shadow-[inset_0_0_30px_rgba(0,120,255,0.2)]">
                                 <h2 className="text-[#94C8FF] lg:text-[14px] 2xl:text-2xl font-semibold">Transparency</h2>
                                 <p className="text-gray-300 mt-2">No hidden fees, just clear reports.</p>
                             </div>

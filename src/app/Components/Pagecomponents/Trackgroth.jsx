@@ -37,42 +37,46 @@ const industries = [
   //   cardvalue3: "6%",
   //   cardvaluetype3: "Annual Growth"
   // },
-  {
-    image: ForexTrading,
-    title: "Forex Trading",
-    description:
-      "Navigate global currencies with precision and smart strategies.",
-    cardvalue1: "$55B+",
-    cardvaluetype1: "Global Market",
-    cardvalue2: "4%",
-    cardvaluetype2: "Annual Growth",
-    cardvalue3: "180M",
-    cardvaluetype3: "Produced Yearly"
-  },
-  {
-    image: RealEstate,
-    title: "Real Estate",
-    description:
-      "Invest in properties that build long-term value and stability.",
-    cardvalue1: "$55B+",
-    cardvaluetype1: "Global Market",
-    cardvalue2: "4%",
-    cardvaluetype2: "Annual Growth",
-    cardvalue3: "180M",
-    cardvaluetype3: "Produced Yearly"
-  },
-  {
-    image: Mining,
-    title: "Mining",
-    description:
-      "Harness opportunities in natural resources and global demand.",
-    cardvalue1: "$55B+",
-    cardvaluetype1: "Global Market",
-    cardvalue2: "4%",
-    cardvaluetype2: "Annual Growth",
-    cardvalue3: "180M",
-    cardvaluetype3: "Produced Yearly"
-  },
+
+
+  // {
+  //   image: ForexTrading,
+  //   title: "Forex Trading",
+  //   description:
+  //     "Navigate global currencies with precision and smart strategies.",
+  //   cardvalue1: "$55B+",
+  //   cardvaluetype1: "Global Market",
+  //   cardvalue2: "4%",
+  //   cardvaluetype2: "Annual Growth",
+  //   cardvalue3: "180M",
+  //   cardvaluetype3: "Produced Yearly"
+  // },
+  // {
+  //   image: RealEstate,
+  //   title: "Real Estate",
+  //   description:
+  //     "Invest in properties that build long-term value and stability.",
+  //   cardvalue1: "$55B+",
+  //   cardvaluetype1: "Global Market",
+  //   cardvalue2: "4%",
+  //   cardvaluetype2: "Annual Growth",
+  //   cardvalue3: "180M",
+  //   cardvaluetype3: "Produced Yearly"
+  // },
+  // {
+  //   image: Mining,
+  //   title: "Mining",
+  //   description:
+  //     "Harness opportunities in natural resources and global demand.",
+  //   cardvalue1: "$55B+",
+  //   cardvaluetype1: "Global Market",
+  //   cardvalue2: "4%",
+  //   cardvaluetype2: "Annual Growth",
+  //   cardvalue3: "180M",
+  //   cardvaluetype3: "Produced Yearly"
+  // },
+
+
   {
     image: SugarPlant,
     title: "Sugar Plant",

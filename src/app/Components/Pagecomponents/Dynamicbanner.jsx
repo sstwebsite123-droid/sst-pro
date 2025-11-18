@@ -3,6 +3,7 @@ import dynamicbanner from "../../../../public/banners/dynamicbanner.webp";
 import dynamicbannerph from "../../../../public/banners/dynamicbannerph.webp";
 import Button from "../Uiux/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Dynamicbanner = ({ banner_title, bannerimg }) => {
   return (
@@ -36,22 +37,27 @@ const Dynamicbanner = ({ banner_title, bannerimg }) => {
                 <div className="flex items-center justify-center">
                   <div className="flex flex-wrap sm:flex-nowrap justify-center gap-4 sm:gap-6 pt-6">
                     <div data-aos="fade-up" data-aos-duration="1400">
-                      <Button
-                        btn_name={"Get Started"}
-                        btn_background={"bg-transparent"}
-                        shadow={true}
-                        color={"text-white"}
-                        border_bottom={"border-b-0"}
-                      />
+                      <Link href={"https://clients.sst.pro/register"}>
+                        <Button
+                          btn_name={"Get Started"}
+                          btn_background={"bg-transparent"}
+                          shadow={true}
+                          color={"text-white"}
+                          border_bottom={"border-b-0"}
+                        />
+                      </Link>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1600">
-                      <Button
-                        btn_name={"Request Demo"}
-                        btn_background={"gradient_bg"}
-                        btn_border={"border-secondary"}
-                        color={"text-black "}
-                        icon={true}
-                      />
+                    <div data-aos="fade-up" data-aos-duration="1600" className="cursor-pointer">
+                      <Link href={"/#"}
+                      >
+                        <Button
+                          btn_name={"Request Demo"}
+                          btn_background={"gradient_bg"}
+                          btn_border={"border-secondary"}
+                          color={"text-black "}
+                          icon={true}
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>

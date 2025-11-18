@@ -168,7 +168,16 @@ function Homewrap() {
       <StatsSection />
 
 
-      <InvestorRelations />
+      <motion.div
+        ref={corevalueRef}
+        initial={{ opacity: 0, y: 200 }}
+        animate={corevalueInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
+        transition={{ duration: 1.4, ease: "easeOut", delay: 0.8 }}
+      >
+        <InvestorRelations />
+      </motion.div>
+
+
 
 
       {/* Corevalue Section */}
@@ -176,12 +185,14 @@ function Homewrap() {
         ref={corevalueRef}
         initial={{ opacity: 0, y: 200 }}
         animate={corevalueInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
-        transition={{ duration: 1.4, ease: "easeOut", delay: 0.8 }}
+        transition={{ duration: 5, ease: "easeOut", delay: 0.8 }}
       >
         <Corevalue />
       </motion.div>
 
       {/* Faqs Section */}
+
+
       <motion.div
         ref={faqsRef}
         initial={{ opacity: 0, scale: 0.8 }}

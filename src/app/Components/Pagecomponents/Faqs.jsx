@@ -4,7 +4,7 @@ import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import plus from "../../../../public/icons/faqplus.svg"
 import Image from "next/image";
-const Faqs = ({faqData}) => {
+const Faqs = ({ faqData }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleAnswer = index => {
@@ -46,7 +46,7 @@ const Faqs = ({faqData}) => {
                   {index + 1}. {faq.question}
                   <span
                     className={`ml-2 transform   transition-all duration-500 ease-in-out ${activeIndex ===
-                    index
+                      index
                       ? "rotate-135"
                       : "rotate-0"}`}
                   >

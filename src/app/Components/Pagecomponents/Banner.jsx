@@ -19,7 +19,32 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Buttondev from "../Uiux/Buttondev";
+
+import { useState } from "react";
+
+
 const Banner = () => {
+  const [count, setCount] = useState(0);
+  const targetValue = 25901;   // your final number
+  const duration = 1000;       // 2 seconds
+
+  useEffect(() => {
+    let start = 0;
+    let end = targetValue;
+    let incrementTime = 10;
+    let step = (end / duration) * incrementTime;
+
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= end) {
+        start = end;
+        clearInterval(timer);
+      }
+      setCount(Math.floor(start));
+    }, incrementTime);
+
+    return () => clearInterval(timer);
+  }, []);
 
 
   return (
@@ -97,24 +122,24 @@ const Banner = () => {
     //                 {" "}Transparent
     //               </motion.span>
     //             </motion.h1>
-    //             <motion.div 
+    //             <motion.div
     //               className="main_banne_des"
     //               initial={{ opacity: 0, y: 30 }}
     //               animate={{ opacity: 1, y: 0 }}
     //               transition={{ duration: 1, delay: 1.1, ease: "easeOut" }}
     //             >
-    //                <Description
-    //               description={
-    //                 "Where Trust Meets Technology — Powering the Next Generation <br/> of Trading and Investment."
-    //               }
-    //               color={"text-[#D0D0D0]"}
-    //               align={"text-center px-40 lg:px-0"}
-    //               items_start={true}
-    //               border={false}
-    //             />
+    //               <Description
+    //                 description={
+    //                   "Where Trust Meets Technology — Powering the Next Generation <br/> of Trading and Investment."
+    //                 }
+    //                 color={"text-[#D0D0D0]"}
+    //                 align={"text-center px-40 lg:px-0"}
+    //                 items_start={true}
+    //                 border={false}
+    //               />
     //             </motion.div>
 
-    //             <motion.div 
+    //             <motion.div
     //               className="flex items-start justify-center"
     //               initial={{ opacity: 0, y: 50 }}
     //               animate={{ opacity: 1, y: 0 }}
@@ -127,14 +152,14 @@ const Banner = () => {
     //                   whileTap={{ scale: 0.95 }}
     //                   transition={{ duration: 0.2 }}
     //                 >
-    //                    <Link href={"https://clients.sst.pro/register"}>
-    //                   <Button
-    //                     btn_name={"Get Started"}
-    //                     btn_background={"bg-transparent"}
-    //                     shadow={true}
-    //                     color={"text-white"}
-    //                     border_bottom={"border-b-0"}
-    //                   />
+    //                   <Link href={"https://clients.sst.pro/register"}>
+    //                     <Button
+    //                       btn_name={"Get Started"}
+    //                       btn_background={"bg-transparent"}
+    //                       shadow={true}
+    //                       color={"text-white"}
+    //                       border_bottom={"border-b-0"}
+    //                     />
     //                   </Link>
     //                 </motion.div>
     //                 <motion.div
@@ -154,18 +179,18 @@ const Banner = () => {
     //               </div>
     //             </motion.div>
     //           </motion.div>
-    //           <motion.div 
+    //           <motion.div
     //             className="absolute top-[38%] lg:top-[55%] left-[7%] lg:left-[13%] cursor-magic"
     //             initial={{ opacity: 0, scale: 0.5, rotate: -180 }}
     //             animate={{ opacity: 1, scale: 1, rotate: 0 }}
     //             transition={{ duration: 2, delay: 1.5, ease: "easeOut" }}
     //             whileHover={{ scale: 1.1, rotate: 5 }}
     //           >
-    //             <motion.div 
-    //               className="animate-spin" 
-    //               style={{animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out'}}
+    //             <motion.div
+    //               className="animate-spin"
+    //               style={{ animationDuration: '2s', animationIterationCount: '1', animationTimingFunction: 'ease-in-out' }}
     //               animate={{ rotate: [0, 360] }}
-    //               // transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+    //             // transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
     //             >
     //               <Image
     //                 src={bannerdollar}
@@ -177,7 +202,7 @@ const Banner = () => {
     //             </motion.div>
     //           </motion.div>
 
-    //           <motion.div 
+    //           <motion.div
     //             className="absolute top-[35%] lg:top-[56%] right-[4%] lg:right-[7%] cursor-ice"
     //             initial={{ opacity: 0, scale: 0.8, x: 50 }}
     //             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -242,16 +267,20 @@ const Banner = () => {
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
           <div className="banner-btn w-full">
-            <Buttondev
-              text="Request Demo"
-              bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
-              textColor="text-black"
-              className='w-full max-w-[176px] 2xl:max-w-[476px] lg:max-w-[276px] md:max-w-[276px] m-auto' />
+            <Link href={"/#"}>
+              <Buttondev
+                text="Request Demo"
+                bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
+                textColor="text-black"
+                className='w-full max-w-[176px] 2xl:max-w-[476px] lg:max-w-[276px] md:max-w-[276px] m-auto' />
+            </Link>
           </div>
 
         </div>
         <div className="invest-tenpersent px-2 gap-[15%]  grid grid-cols-1 md:grid-cols-2 mt-[36px] md:mt-0 ">
-          <div className=" w-[100px]  relative w-max m-auto md:mt-[18%] h-max rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg">
+
+
+          {/* <div className=" w-[100px]  relative w-max m-auto md:mt-[18%] h-max rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg">
             <p className=" text-[12px] md:text-sm text-gray-300">Investment results</p>
 
             <div className="flex items-center gap-2 mt-2">
@@ -261,26 +290,47 @@ const Banner = () => {
                 ▲ 8.10%
               </span>
             </div>
+          </div> */}
+          <div
+            className="relative w-max m-auto md:mt-[18%] h-max rounded-2xl 
+                 bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 
+                 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg"
+          >
+            <p className="text-[12px] md:text-sm text-gray-300">Investment results</p>
+
+            <div className="flex items-center gap-2 mt-2">
+              <h2 className="text-[12px] 2xl:text-3xl md:text-2xl font-semibold flex items-center">
+                ${count.toLocaleString()}
+              </h2>
+
+              <span className="flex items-center gap-1 text-green-400 bg-[#00000080] px-2 py-1 rounded-full text-[9px]">
+                ▲ 8.10%
+              </span>
+            </div>
           </div>
-          <div className="Tenpersent">
+
+          {/* <div className="Tenpersent">
             <Image
               src={Tenpersent}
               alt='Tenpersent'
               width={1000}
               height={500}
               className=' max-w-[150px] 2xl:max-w-[348px]  md:max-w-[280px] m-auto ' />
-          </div>
+          </div> */}
+          <AnimatedSpeedMeter />
         </div>
 
         <div className="graphimg flex items-end w-full mt-[3%] ">
           <div className="img flex-1 relative">
-            <Image
+            {/* <Image
               src={wave}
               alt="wave chart"
               width={1000}
               height={500}
               className=" w-full h-auto"
-            />
+            /> */}
+
+            <InteractiveGraph />
           </div>
         </div>
       </div>

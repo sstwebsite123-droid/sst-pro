@@ -6,6 +6,7 @@ import Image from "next/image";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
+import Link from "next/link";
 const Investment = () => {
   return (
     <div className=" py-24 xl:py-32 overflow-hidden">
@@ -19,13 +20,13 @@ const Investment = () => {
             className="w-full h-[250px] lg:h-auto"
           />
         </div>
-        <div className="absolute bottom-0 left-[5%]">
+        <div className="absolute bottom-0 left-[8%]">
           <Image
             src={investperson}
             alt=""
-            width={2000}
+            width={1000}
             height={500}
-            className="max-w-[300px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[615px]"
+            className="max-w-[300px] lg:max-w-[420px] xl:max-w-[520px] 2xl:max-w-[520px]"
           />
         </div>
         {/* <div className="absolute bottom-[-22%] left-[5%]">
@@ -57,18 +58,23 @@ const Investment = () => {
                 border={false}
               />
               <div className="flex gap-5 justify-center lg:justify-start lg:pt-5 xl:pt-8">
-                <Button
-                  btn_name={"Create Account"}
-                  btn_background={"bg-[#63818D]"}
-                  color={"text-white"}
-                  shadow={true}
-                />
-                <Button
-                  btn_name={"Request Demo"}
-                  btn_background={"bg-secondary"}
-                  color={"text-black"}
-                  btn_border={"border-secondary"}
-                />
+                <Link href={"/#"}>
+                  <Button
+                    btn_name={"Create Account"}
+                    btn_background={"bg-[#63818D]"}
+                    color={"text-white"}
+                    shadow={true}
+                  />
+                </Link>
+                <Link href={"/#"}>
+                  <Button
+                    btn_name={"Request Demo"}
+                    btn_background={"bg-secondary"}
+                    color={"text-black"}
+                    btn_border={"border-secondary"}
+                  />
+                </Link>
+
               </div>
             </div>
           </div>

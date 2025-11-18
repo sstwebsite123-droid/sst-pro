@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import galaxeybg from '../../../../public/images/galaxeybg.webp'
-
+import Link from "next/link";
 const packages = [
     {
         id: 1,
@@ -98,18 +98,18 @@ const PackageCard = ({ pkg }) => {
                         </ul>
                     </div>
 
-
-                    <button
-                        className={`
+                    <Link href={"/#"}>
+                        <button
+                            className={`
         absolute left-1/2 -translate-x-1/2 w-[70%] sm:w-[60%] md:w-[50%]
         -bottom-[18px] sm:-bottom-[20px] md:-bottom-[22px]
         py-2 sm:py-3 text-base sm:text-lg md:text-[22px] rounded-full transition
         ${pkg.id === 2 ? 'bg-[#499EFB] text-white' : 'bg-[#C6E5E2] hover:bg-[#b2d4d1]'}
       `}
-                    >
-                        {pkg.buttonText}
-                    </button>
-
+                        >
+                            {pkg.buttonText}
+                        </button>
+                    </Link>
                 </div>
             </div>
 
@@ -143,7 +143,7 @@ const InvestmentPackages = () => {
                 </div>
             </div>
             {/* Cards */}
-            <div className="flex justify-center items-center  flex-wrap gap-12 md:gap-[4rem] mt-[4%]">
+            <div className="grid grid-cols-1 2xl:grid-cols-3 justify-center items-center    gap-12 md:gap-[4rem] mt-[4%]">
                 {packages.map((pkg) => (
                     <PackageCard key={pkg.id} pkg={pkg} />
                 ))}

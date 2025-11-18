@@ -25,10 +25,10 @@ const AboutSst = () => {
           />
         </div>
       </div>
-      <div className="bg-cover bg-center py-[16%] px-0 " style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
-        <div className="mission-vission grid grid-cols-1 md:grid-cols-2 flex py-0 px-[10%] justify-between md:gap-[50%] ">
+      {/* <div className="bg-cover bg-center px-[0%] lg:px-[16%] py-[16%] " style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
+        <div className="mission-vission grid grid-cols-1 md:grid-cols-2 flex py-0  justify-between md:gap-[18px] ">
           <div className="vissoin mb-[21rem] md:m-0">
-            <div className="icon-visson flex justify-start md:justify-end gap-[20px] items-center">
+            <div className="icon-visson flex justify-start gap-[20px] items-center w-full m-auto">
               <div className="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="68" height="73" viewBox="0 0 68 73" fill="none">
                   <path d="M34.0001 54.5415C24.3824 54.5415 15.7703 49.8695 10.2392 45.9503C4.27667 41.726 0.609183 37.553 0.455917 37.3777C0.24833 37.1399 0.132812 36.8262 0.132812 36.5002C0.132812 36.1743 0.24833 35.8606 0.455917 35.6228C0.609183 35.4475 4.27773 31.2745 10.2392 27.0502C15.7703 23.131 24.3824 18.459 34.0001 18.459C43.6179 18.459 52.2299 23.131 57.7611 27.0502C63.7225 31.2745 67.391 35.4472 67.544 35.6228C67.7516 35.8606 67.8671 36.1743 67.8671 36.5002C67.8671 36.8262 67.7516 37.1399 67.544 37.3777C67.391 37.5533 63.7225 41.726 57.7611 45.9503C52.2299 49.8695 43.6179 54.5415 34.0001 54.5415ZM3.02159 36.5002C6.30923 39.8965 19.0563 51.9751 34.0001 51.9751C48.9644 51.9751 61.6952 39.8982 64.9794 36.5008C61.6926 33.1069 48.945 21.0254 34.0001 21.0254C19.0552 21.0254 6.3095 33.1038 3.02159 36.5002Z" fill="#94C8FF" />
@@ -44,17 +44,17 @@ const AboutSst = () => {
                 </svg>
               </div>
 
-              <h1 className='vission-text gradient_text text-[22px] md:text-[48px] 2xl:text-[62px] pb-4'> Vision</h1>
+              <p className='vission-text gradient_text text-[44px] md:text-[34px] 2xl:text-[62px] pb-4'> Vision</p>
             </div>
             <div className="vission-des text-white  ">
-              <p className='  text-strat md:text-end sub_description '>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
+              <p className='  text-start  md:text-[12px] pr-[54px]  text-[16px] lg:text-[18px]  '>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
             </div>
           </div>
 
 
           <div className="missoin">
-            <div className="icon-visson flex justify-start gap-[20px] items-center">
-              <h1 className='mission-text gradient_text text-[22px] md:text-[48px] 2xl:text-[62px] pb-4'> Mision</h1>
+            <div className="icon-visson flex justify-end gap-[20px] items-center">
+              <p className='mission-text gradient_text text-[44px] md:text-[34px] 2xl:text-[62px] pb-4'> Mision</p>
               <div className="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                   <g clipPath="url(#clip0_1407_1582)">
@@ -72,73 +72,75 @@ const AboutSst = () => {
               </div>
             </div>
             <div className="mission-des text-white  ">
-              <p className='  sub_description'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
+              <p className=' text-end   md:text-[12px] pl-[50px]  text-[16px] lg:text-[18px] '>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
             </div>
           </div>
         </div>
+      </div> */}
 
+
+
+      <div className=" relative MV-bg bg-cover bg-center px-[0%] lg:px-[16%] py-[16%]" style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
+        <div className="md:relative absolute h-full w-full flex justify-center items-center top-0 left-0">
+
+
+          <div className="  MV-wrap grid grid-cols-1 md:grid-cols-2 gap-[20rem]">
+            <div className="vission-main">
+              <div className="icon-heading flex justify-end items-center gap-10 ">
+                <div className="icon ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="68" height="73" viewBox="0 0 68 73" fill="none">
+                    <path d="M34.0001 54.5415C24.3824 54.5415 15.7703 49.8695 10.2392 45.9503C4.27667 41.726 0.609183 37.553 0.455917 37.3777C0.24833 37.1399 0.132812 36.8262 0.132812 36.5002C0.132812 36.1743 0.24833 35.8606 0.455917 35.6228C0.609183 35.4475 4.27773 31.2745 10.2392 27.0502C15.7703 23.131 24.3824 18.459 34.0001 18.459C43.6179 18.459 52.2299 23.131 57.7611 27.0502C63.7225 31.2745 67.391 35.4472 67.544 35.6228C67.7516 35.8606 67.8671 36.1743 67.8671 36.5002C67.8671 36.8262 67.7516 37.1399 67.544 37.3777C67.391 37.5533 63.7225 41.726 57.7611 45.9503C52.2299 49.8695 43.6179 54.5415 34.0001 54.5415ZM3.02159 36.5002C6.30923 39.8965 19.0563 51.9751 34.0001 51.9751C48.9644 51.9751 61.6952 39.8982 64.9794 36.5008C61.6926 33.1069 48.945 21.0254 34.0001 21.0254C19.0552 21.0254 6.3095 33.1038 3.02159 36.5002Z" fill="#94C8FF" />
+                    <path d="M34.0006 54.5415C30.6768 54.5415 27.4276 53.4833 24.664 51.5009C21.9004 49.5184 19.7464 46.7008 18.4745 43.4042C17.2026 40.1075 16.8698 36.4801 17.5183 32.9804C18.1667 29.4808 19.7673 26.2661 22.1176 23.7431C24.468 21.22 27.4624 19.5017 30.7224 18.8056C33.9823 18.1095 37.3614 18.4668 40.4322 19.8323C43.503 21.1978 46.1276 23.5102 47.9742 26.4771C49.8208 29.444 50.8064 32.932 50.8064 36.5003C50.8014 41.2835 49.0291 45.8692 45.8785 49.2515C42.7279 52.6337 38.4562 54.5362 34.0006 54.5415ZM34.0006 21.0254C31.1496 21.0255 28.3627 21.9331 25.9922 23.6335C23.6217 25.334 21.7741 27.7508 20.6831 30.5785C19.5921 33.4061 19.3067 36.5176 19.863 39.5194C20.4192 42.5212 21.7921 45.2786 23.8081 47.4427C25.8241 49.6069 28.3925 51.0807 31.1888 51.6778C33.985 52.2749 36.8833 51.9684 39.5173 50.7971C42.1513 49.6259 44.4026 47.6424 45.9865 45.0976C47.5704 42.5528 48.4158 39.5609 48.4158 36.5003C48.4115 32.3975 46.8913 28.464 44.1889 25.5629C41.4864 22.6619 37.8224 21.03 34.0006 21.0254Z" fill="#94C8FF" />
+                    <path d="M34 16.0951C33.683 16.0951 33.379 15.9599 33.1548 15.7192C32.9306 15.4786 32.8047 15.1522 32.8047 14.8119V9.96191C32.8047 9.62159 32.9306 9.2952 33.1548 9.05455C33.379 8.81391 33.683 8.67871 34 8.67871C34.317 8.67871 34.621 8.81391 34.8452 9.05455C35.0694 9.2952 35.1953 9.62159 35.1953 9.96191V14.8119C35.1953 15.1522 35.0694 15.4786 34.8452 15.7192C34.621 15.9599 34.317 16.0951 34 16.0951Z" fill="#94C8FF" />
+                    <path d="M23.8992 18.9999C23.6892 19 23.4829 18.9408 23.301 18.8281C23.1192 18.7154 22.9682 18.5533 22.8632 18.358L20.6054 14.1577C20.4494 13.8631 20.4083 13.5142 20.491 13.1872C20.5737 12.8602 20.7735 12.5816 21.0469 12.4122C21.3202 12.2427 21.6449 12.1963 21.9501 12.2829C22.2552 12.3695 22.5161 12.5821 22.6757 12.8745L24.9335 17.0748C25.0385 17.2698 25.0937 17.491 25.0938 17.7162C25.0939 17.9414 25.0388 18.1626 24.934 18.3577C24.8292 18.5528 24.6784 18.7148 24.4968 18.8276C24.3152 18.9403 24.1089 18.9997 23.8992 18.9999Z" fill="#94C8FF" />
+                    <path d="M21.6397 60.7663C21.4299 60.7661 21.2239 60.7067 21.0423 60.594C20.8607 60.4813 20.7099 60.3192 20.6051 60.1241C20.5004 59.9291 20.4452 59.7078 20.4453 59.4826C20.4454 59.2574 20.5007 59.0362 20.6056 58.8412L22.8634 54.6412C22.9413 54.494 23.0456 54.3649 23.1702 54.2612C23.2948 54.1576 23.4372 54.0814 23.5893 54.037C23.7415 53.9927 23.9003 53.9811 24.0566 54.0029C24.2129 54.0247 24.3637 54.0795 24.5002 54.1641C24.6367 54.2487 24.7563 54.3615 24.852 54.4959C24.9478 54.6304 25.0178 54.7838 25.0581 54.9474C25.0984 55.111 25.1082 55.2816 25.0868 55.4492C25.0655 55.6169 25.0134 55.7784 24.9337 55.9244L22.6759 60.1244C22.5709 60.3197 22.4199 60.4819 22.238 60.5946C22.0561 60.7072 21.8497 60.7665 21.6397 60.7663Z" fill="#94C8FF" />
+                    <path d="M34 64.3213C33.683 64.3213 33.379 64.1861 33.1548 63.9455C32.9306 63.7048 32.8047 63.3785 32.8047 63.0381V58.1885C32.8047 57.8481 32.9306 57.5218 33.1548 57.2811C33.379 57.0405 33.683 56.9053 34 56.9053C34.317 56.9053 34.621 57.0405 34.8452 57.2811C35.0694 57.5218 35.1953 57.8481 35.1953 58.1885V63.0381C35.1953 63.3785 35.0694 63.7048 34.8452 63.9455C34.621 64.1861 34.317 64.3213 34 64.3213Z" fill="#94C8FF" />
+                    <path d="M46.3601 60.7669C46.1502 60.767 45.9439 60.7077 45.762 60.595C45.5801 60.4823 45.4291 60.3202 45.3242 60.125L43.0664 55.9249C42.9079 55.6301 42.8649 55.2799 42.947 54.9511C43.0291 54.6224 43.2294 54.3421 43.504 54.1719C43.7786 54.0017 44.1049 53.9556 44.4111 54.0437C44.7173 54.1318 44.9784 54.3469 45.1369 54.6417L47.3947 58.8418C47.4997 59.0368 47.555 59.258 47.555 59.4832C47.5551 59.7084 47.5 59.9297 47.3951 60.1248C47.2903 60.3199 47.1395 60.4819 46.9579 60.5946C46.7762 60.7073 46.5699 60.7667 46.3601 60.7669Z" fill="#94C8FF" />
+                    <path d="M44.1006 19.0012C43.8909 19.001 43.6848 18.9415 43.5032 18.8288C43.3216 18.7161 43.1709 18.5541 43.0661 18.359C42.9613 18.1639 42.9062 17.9426 42.9063 17.7175C42.9063 17.4923 42.9616 17.2711 43.0665 17.0761L45.3244 12.8757C45.4829 12.5808 45.744 12.3655 46.0504 12.2773C46.3567 12.189 46.6832 12.235 46.958 12.4052C47.2327 12.5754 47.4332 12.8557 47.5154 13.1846C47.5976 13.5135 47.5547 13.864 47.3962 14.1589L45.1384 18.3593C45.0333 18.5548 44.882 18.7171 44.6998 18.8298C44.5176 18.9425 44.3109 19.0016 44.1006 19.0012Z" fill="#94C8FF" />
+                    <path d="M43.0549 35.9759C42.7379 35.9759 42.4339 35.8407 42.2097 35.6C41.9855 35.3594 41.8596 35.033 41.8596 34.6927V31.7881H39.1523C38.8353 31.7881 38.5313 31.6529 38.3071 31.4122C38.083 31.1716 37.957 30.8452 37.957 30.5049C37.957 30.1646 38.083 29.8382 38.3071 29.5975C38.5313 29.3569 38.8353 29.2217 39.1523 29.2217H43.0538C43.3709 29.2217 43.6749 29.3569 43.8991 29.5975C44.1232 29.8382 44.2492 30.1646 44.2492 30.5049V34.6927C44.2492 35.0328 44.1234 35.359 43.8994 35.5996C43.6755 35.8403 43.3717 35.9756 43.0549 35.9759Z" fill="#94C8FF" />
+                    <path d="M24.9453 43.7784C24.7089 43.7784 24.4778 43.7031 24.2812 43.5621C24.0847 43.4211 23.9315 43.2207 23.841 42.9862C23.7505 42.7517 23.7268 42.4937 23.773 42.2448C23.8191 41.9959 23.9329 41.7673 24.1001 41.5878L31.2704 33.8903C31.3814 33.7711 31.5132 33.6766 31.6582 33.6121C31.8032 33.5476 31.9586 33.5144 32.1156 33.5145C32.2726 33.5144 32.428 33.5476 32.573 33.6121C32.7181 33.6766 32.8498 33.7711 32.9608 33.8903L35.586 36.7088L42.2112 29.5964C42.4354 29.3558 42.7395 29.2206 43.0565 29.2207C43.3735 29.2208 43.6775 29.356 43.9017 29.5967C44.1258 29.8374 44.2517 30.1638 44.2516 30.5041C44.2516 30.8444 44.1256 31.1708 43.9014 31.4114L36.4309 39.4309C36.2068 39.6715 35.9029 39.8066 35.586 39.8067C35.429 39.8067 35.2736 39.7735 35.1286 39.709C34.9835 39.6445 34.8518 39.55 34.7408 39.4309L32.1148 36.6132L25.7905 43.4025C25.6797 43.5219 25.5479 43.6165 25.4029 43.681C25.2578 43.7455 25.1023 43.7786 24.9453 43.7784Z" fill="#94C8FF" />
+                  </svg>
+                </div>
+                <div className="heading">
+                  <p className='text-white md:text-[34px] text-[54px] gradient_text'>Vision</p>
+                </div>
+              </div>
+              <div className="vission-des">
+                <p className='text-[12px] text-white text-end'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
+              </div>
+            </div>
+            <div className="vission-main">
+              <div className="icon-heading flex justify-start items-center gap-2 ">
+                <div className="heading">
+                  <p className='text-white  md:text-[34px] text-[54px] gradient_text'>Mision</p>
+                </div>
+                <div className="icon ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 55 55" fill="none">
+                    <g clipPath="url(#clip0_1407_1582)">
+                      <path d="M27.5928 19.1874C28.3498 19.1874 28.9628 18.5739 28.9628 17.8173C28.9628 17.0607 28.3498 16.4473 27.5928 16.4473C21.5398 16.4473 16.6328 21.3543 16.6328 27.4076C16.6328 33.4606 21.5398 38.3676 27.5928 38.3676C33.6461 38.3676 38.5531 33.4606 38.5531 27.4076C38.5531 26.6507 37.9397 26.0376 37.1831 26.0376C36.4265 26.0376 35.813 26.6507 35.813 27.4076C35.813 31.9475 32.133 35.6279 27.5928 35.6279C23.0529 35.6279 19.3725 31.9475 19.3725 27.4076C19.3725 22.8674 23.0529 19.1874 27.5928 19.1874Z" fill="#94C8FF" />
+                      <path d="M53.7323 19.2709C53.4943 18.5521 52.7189 18.1623 51.9997 18.4002C51.2972 18.6327 50.9061 19.3804 51.1155 20.09C55.2127 33.1371 47.9575 47.0352 34.9104 51.1323C21.8637 55.2295 7.96556 47.9743 3.86843 34.9272C-0.229124 21.8801 7.02646 7.98196 20.0732 3.88483C24.9029 2.36834 30.081 2.36834 34.9104 3.88483C35.6355 4.10345 36.4004 3.69306 36.619 2.96797C36.8343 2.25378 36.4394 1.49889 35.7299 1.2681C21.2426 -3.27718 5.81335 4.78239 1.26807 19.2701C-3.27722 33.7573 4.78277 49.1866 19.27 53.7319C33.7577 58.2772 49.1866 50.2176 53.7318 35.7299C55.4128 30.3723 55.4128 24.6286 53.7323 19.2709Z" fill="#94C8FF" />
+                      <path d="M30.2015 9.78865C30.2087 9.00858 29.6094 8.3565 28.8315 8.29817C28.4223 8.26334 28.0128 8.22852 27.5928 8.22852C16.9996 8.22852 8.41211 16.816 8.41211 27.4092C8.41211 38.002 16.9996 46.5894 27.5928 46.5894C38.1856 46.5894 46.773 38.002 46.773 27.4092C46.773 26.9136 46.7428 26.4185 46.6819 25.9267C46.5724 25.1747 45.8742 24.654 45.1222 24.7635C44.3703 24.8726 43.8495 25.5713 43.9586 26.3232C43.9628 26.3517 43.9679 26.3799 43.9737 26.4084C44.0035 26.7403 44.0329 27.0693 44.0329 27.4083C44.0333 36.4884 36.6728 43.8489 27.5932 43.8497C18.5131 43.8502 11.1526 36.4892 11.1522 27.4096C11.1518 18.3299 18.5119 10.969 27.5919 10.9686H27.5923C27.9322 10.9686 28.2616 10.998 28.5927 11.0274L28.8495 11.0488C29.5654 11.0794 30.1705 10.5238 30.2007 9.80795C30.2011 9.80124 30.2011 9.79494 30.2015 9.78865Z" fill="#94C8FF" />
+                      <path d="M35.8121 12.338V17.2508L26.6233 26.4396C26.0791 26.9654 26.064 27.8327 26.5898 28.3769C27.1155 28.9212 27.9829 28.9363 28.5271 28.4105C28.5385 28.3996 28.5498 28.3883 28.5607 28.3769L37.7494 19.1882H42.6623C43.0257 19.1882 43.374 19.0438 43.6312 18.7866L51.8511 10.5663C52.3861 10.0313 52.3861 9.16398 51.8511 8.62897C51.5943 8.37216 51.246 8.22781 50.8826 8.22781H46.7725V4.11767C46.7725 3.36111 46.159 2.74763 45.402 2.74805C45.039 2.74805 44.6907 2.8924 44.4339 3.1492L36.2137 11.3695C35.9564 11.6263 35.8121 11.9746 35.8121 12.338ZM38.5522 12.9053L44.0324 7.42509V9.59786C44.0324 10.3544 44.6458 10.9679 45.4024 10.9679H47.5752L42.095 16.4481H38.5522V12.9053Z" fill="#94C8FF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1407_1582">
+                        <rect width="55" height="55" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div className="vission-des">
+                <p className='text-[12px] text-white text-start'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+
     </div>
-    // <div className='custom_container'>
-    //   <div className='grid grid-cols-2 md:grid-cols-2 title_grid py-12 gap-6 md:gap-0'>
-    //     <div className='text-center md:text-left'>
-    //       <Title title={'About SST Pro'} color={'gradient_text'} />
-    //     </div>
 
-    //     <div className='flex justify-center md:justify-end items-center text-center md:text-right'>
-    //       <Description Description={'Established 2 years ago, SST Pro has been dedicated to helping <br /> clients achieve smarter growth and financial freedom.'} color={'text-white'} textalign={'text-end'} />
-    //     </div>
-    //   </div>
-
-    //   <div className="bg-cover bg-center py-[40%] md:py-[24%] px-4 md:px-0"
-    //     style={{ backgroundImage: `url(${Aboutsstbg.src})` }}>
-    //     <div className="mission-vission flex flex-col md:flex-row py-0 md:px-[10%] justify-between gap-10 md:gap-0">
-
-    //       <div className="vissoin flex flex-col items-center md:items-end text-center md:text-right">
-    //         <div className="icon-visson flex justify-center md:justify-end gap-[20px] items-center">
-    //           <div className="icon">
-    //             <svg xmlns="http://www.w3.org/2000/svg" width="68" height="73" viewBox="0 0 68 73" fill="none">
-    //               <path d="M34.0001 54.5415C24.3824..." fill="#94C8FF" />
-    //             </svg>
-    //           </div>
-    //           <h1 className='vission-text gradient_text text-[40px] sm:text-[50px] md:text-[62px]'> Vision</h1>
-    //         </div>
-
-    //         <div className="vission-des text-white mt-4">
-    //           <p className='max-w-[434px] text-center md:text-end px-4 md:px-0'>
-    //             To become a globally trusted financial partner recognized for innovation, transparency, and client success.
-    //           </p>
-    //         </div>
-    //       </div>
-
-    //       <div className="missoin flex flex-col items-center md:items-start text-center md:text-left">
-    //         <div className="icon-visson flex justify-center md:justify-start gap-[20px] items-center mt-10 md:mt-0">
-    //           <h1 className='mission-text gradient_text text-[40px] sm:text-[50px] md:text-[62px]'> Mision</h1>
-    //           <div className="icon">
-    //             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-    //               <g clipPath="url(#clip0_1407_1582)">
-    //                 <path d="M27.5928..." fill="#94C8FF" />
-    //               </g>
-    //               <defs>
-    //                 <clipPath id="clip0_1407_1582">
-    //                   <rect width="55" height="55" fill="white" />
-    //                 </clipPath>
-    //               </defs>
-    //             </svg>
-    //           </div>
-    //         </div>
-
-    //         <div className="mission-des text-white mt-4">
-    //           <p className='max-w-[430px] text-center md:text-left px-4 md:px-0'>
-    //             To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.
-    //           </p>
-    //         </div>
-    //       </div>
-
-    //     </div>
-    //   </div>
-    // </div>
 
   )
 }

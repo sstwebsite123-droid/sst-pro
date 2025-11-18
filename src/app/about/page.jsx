@@ -43,9 +43,9 @@ const page = () => {
       <Aboutsstpro />
       <Aboutdata />
       <Vision />
-      {/* <CEOMessage /> */}
+      <CEOMessage />
       <AboutChoose />
-      {/* <CertificatesCompliance /> */}
+      <CertificatesCompliance />
       <Corevalue />
       <Faqs faqData={faqData} />
     </div>

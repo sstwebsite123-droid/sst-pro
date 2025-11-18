@@ -10,6 +10,7 @@ import Image from "next/image";
 import Button from "../Uiux/Button";
 import leftArrow from '../../../../public/images/leftArrow.webp'
 import Rightarrow from '../../../../public/images/Rightarrow.webp'
+import Link from "next/link";
 const stockCards = [
   {
     cardsub_name: "EXXON MOBIL CORP.",
@@ -186,7 +187,9 @@ function Topstock() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button btn_name=" View All Stocks" color="text-black" btn_background="bg-primary" />
+              <Link href={"/#"}>
+                <Button btn_name=" View All Stocks" color="text-black" btn_background="bg-primary" />
+              </Link>
             </motion.div>
           </div>
         </div>
