@@ -267,7 +267,7 @@ const Banner = () => {
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
           <div className="banner-btn w-full">
-            <Link href={"/#"}>
+            <Link href={"https://www.sst.pro/contact-us"}>
               <Buttondev
                 text="Request Demo"
                 bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
