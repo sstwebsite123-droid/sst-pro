@@ -81,12 +81,12 @@ const AboutSst = () => {
 
 
       <div className=" relative MV-bg bg-cover bg-center px-[0%] lg:px-[16%] py-[16%]" style={{ backgroundImage: `url(${Aboutsstbg.src})` }} >
-        <div className="md:relative absolute h-full w-full flex justify-center items-center top-0 left-0">
+        <div className="md:absolute h-full w-full flex justify-center items-center top-0 left-0">
 
 
           <div className="  MV-wrap grid grid-cols-1 md:grid-cols-2 gap-[20rem]">
             <div className="vission-main">
-              <div className="icon-heading flex justify-end items-center gap-10 ">
+              <div className="icon-heading flex justify-end items-center  md:items-start">
                 <div className="icon ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="68" height="73" viewBox="0 0 68 73" fill="none">
                     <path d="M34.0001 54.5415C24.3824 54.5415 15.7703 49.8695 10.2392 45.9503C4.27667 41.726 0.609183 37.553 0.455917 37.3777C0.24833 37.1399 0.132812 36.8262 0.132812 36.5002C0.132812 36.1743 0.24833 35.8606 0.455917 35.6228C0.609183 35.4475 4.27773 31.2745 10.2392 27.0502C15.7703 23.131 24.3824 18.459 34.0001 18.459C43.6179 18.459 52.2299 23.131 57.7611 27.0502C63.7225 31.2745 67.391 35.4472 67.544 35.6228C67.7516 35.8606 67.8671 36.1743 67.8671 36.5002C67.8671 36.8262 67.7516 37.1399 67.544 37.3777C67.391 37.5533 63.7225 41.726 57.7611 45.9503C52.2299 49.8695 43.6179 54.5415 34.0001 54.5415ZM3.02159 36.5002C6.30923 39.8965 19.0563 51.9751 34.0001 51.9751C48.9644 51.9751 61.6952 39.8982 64.9794 36.5008C61.6926 33.1069 48.945 21.0254 34.0001 21.0254C19.0552 21.0254 6.3095 33.1038 3.02159 36.5002Z" fill="#94C8FF" />
@@ -102,7 +102,7 @@ const AboutSst = () => {
                   </svg>
                 </div>
                 <div className="heading">
-                  <p className='text-white md:text-[34px] text-[54px] gradient_text'>Vision</p>
+                  <p className='text-white md:text-[34px] text-[24px] gradient_text'>Vision</p>
                 </div>
               </div>
               <div className="vission-des">
@@ -112,7 +112,7 @@ const AboutSst = () => {
             <div className="vission-main">
               <div className="icon-heading flex justify-start items-center gap-2 ">
                 <div className="heading">
-                  <p className='text-white  md:text-[34px] text-[54px] gradient_text'>Mision</p>
+                  <p className='text-white  md:text-[34px] text-[24px] gradient_text'>Mision</p>
                 </div>
                 <div className="icon ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 55 55" fill="none">

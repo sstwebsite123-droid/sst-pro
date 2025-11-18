@@ -267,7 +267,7 @@ const Banner = () => {
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
           <div className="banner-btn w-full">
-            <Link href={"/#"}>
+            <Link href={"/contact-us"}>
               <Buttondev
                 text="Request Demo"
                 bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
@@ -277,7 +277,7 @@ const Banner = () => {
           </div>
 
         </div>
-        <div className="invest-tenpersent px-2 gap-[15%]  grid grid-cols-1 md:grid-cols-2 mt-[36px] md:mt-0 ">
+        <div className="invest-tenpersent px-2 gap-[15%]  grid grid-cols-1 md:grid-cols-2 mt-[36px] md:mt-0 mb-8 md:mb-0">
 
 
           {/* <div className=" w-[100px]  relative w-max m-auto md:mt-[18%] h-max rounded-2xl bg-gradient-to-br from-[#0f172a]/80 to-[#1e293b]/60 backdrop-blur-md border border-white/10 p-5 text-white shadow-lg">

@@ -36,10 +36,10 @@ const InteractiveGraph = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
+
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
@@ -48,11 +48,11 @@ const InteractiveGraph = () => {
     const fetchBtcData = async () => {
       try {
         setLoading(true);
-        
+
         // Fetch current Bitcoin price
         const priceResponse = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true');
         const priceData = await priceResponse.json();
-        
+
         if (priceData.bitcoin) {
           setCurrentPrice(Math.round(priceData.bitcoin.usd));
           setPriceChange(Math.round(priceData.bitcoin.usd_24h_change * 100) / 100);
@@ -61,7 +61,7 @@ const InteractiveGraph = () => {
         // Fetch historical data (last 30 days)
         const historicalResponse = await fetch('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily');
         const historicalData = await historicalResponse.json();
-        
+
         if (historicalData.prices) {
           const formattedData = historicalData.prices.map((item, index) => ({
             x: new Date(item[0]),
@@ -69,7 +69,7 @@ const InteractiveGraph = () => {
           }));
           setBtcData(formattedData);
         }
-        
+
         setLoading(false);
       } catch (error) {
         console.error('Error fetching Bitcoin data:', error);
@@ -77,17 +77,17 @@ const InteractiveGraph = () => {
         const mockData = [];
         const basePrice = 45000;
         let currentPrice = basePrice;
-        
+
         for (let i = 0; i < 30; i++) {
           const change = (Math.random() - 0.5) * 2000;
           currentPrice = Math.max(30000, currentPrice + change);
-          
+
           mockData.push({
             x: new Date(Date.now() - (29 - i) * 24 * 60 * 60 * 1000),
             y: currentPrice
           });
         }
-        
+
         setBtcData(mockData);
         setCurrentPrice(Math.round(currentPrice));
         setPriceChange(Math.round((Math.random() - 0.3) * 20 * 100) / 100);
@@ -150,10 +150,10 @@ const InteractiveGraph = () => {
         cornerRadius: 8,
         displayColors: false,
         callbacks: {
-          title: function(context) {
+          title: function (context) {
             return `Day ${context[0].dataIndex + 1}`;
           },
-          label: function(context) {
+          label: function (context) {
             return `BTC Price: $${context.parsed.y.toLocaleString()}`;
           },
         },
@@ -175,7 +175,7 @@ const InteractiveGraph = () => {
           font: {
             size: 12,
           },
-          callback: function(value) {
+          callback: function (value) {
             return value.toLocaleString();
           },
         },
@@ -206,20 +206,19 @@ const InteractiveGraph = () => {
 
   return (
     <div className="relative w-full h-[200px] bg-gradient-to-t from-black/20 to-transparent rounded-lg p-4 animate-fade-in max-h-[100px] md:max-h-[unset]">
-      <div className="absolute top-[-20px] left-4 z-10 animate-slide-in-left">
+      <div className="absolute top-[-20px] left-4 z-[1] animate-slide-in-left">
         <div className="flex items-center gap-2">
           <span className="text-xl md:text-2xl font-bold text-[#4aa1ff] animate-count-up">
             ${currentPrice.toLocaleString()}
           </span>
-          <span className={`text-xs md:text-sm flex items-center gap-1 animate-slide-in-right ${
-            priceChange >= 0 ? 'text-green-400' : 'text-red-400'
-          }`}>
+          <span className={`text-xs md:text-sm flex items-center gap-1 animate-slide-in-right ${priceChange >= 0 ? 'text-green-400' : 'text-red-400'
+            }`}>
             <span>{priceChange >= 0 ? '▲' : '▼'}</span>
             <span>{priceChange >= 0 ? '+' : ''}{priceChange}%</span>
           </span>
         </div>
       </div>
-      
+
       <div className="w-full h-full animate-graph-draw">
         <Line data={data} options={options} />
       </div>

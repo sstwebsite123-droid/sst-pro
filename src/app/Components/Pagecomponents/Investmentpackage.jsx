@@ -30,7 +30,7 @@ const packages = [
             "Eligibility for Rewards",
         ],
         buttonText: "Select Standard",
-        badge: "MOST POPULAR",
+        // badge: "MOST POPULAR",
         bg: "from-[#5AA9FA] to-[#2D8CF4]",
     },
     {
@@ -43,7 +43,7 @@ const packages = [
             "Priority support access",
             "Gifts & Bonanzas eligibility",
         ],
-        buttonText: "Select Premium",
+        // buttonText: "Select Premium",
         bg: "from-[#C6E5E2] to-[#B1D6D4]",
     },
 ];
@@ -53,11 +53,11 @@ const PackageCard = ({ pkg }) => {
         <div>
 
             <div className="relative w-full">
-                {pkg.badge && (
+                {/* {pkg.badge && (
                     <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#C6E5E2] px-3  md:px-4 py-3 rounded-full text-[12px] sm:text-[18px] md:text-[20px]">
                         {pkg.badge}
                     </div>
-                )}
+                )} */}
                 <div
                     className={`w-full  max-w-[451px]  mx-auto rounded-3xl p-4 sm:p-6 md:p-8 
     bg-gradient-to-b ${pkg.bg} shadow-xl flex flex-col justify-center items-center`}
@@ -98,7 +98,7 @@ const PackageCard = ({ pkg }) => {
                         </ul>
                     </div>
 
-                    <Link href={"/#"}>
+                    {/* <Link href={"/#"}>
                         <button
                             className={`
         absolute left-1/2 -translate-x-1/2 w-[70%] sm:w-[60%] md:w-[50%]
@@ -109,7 +109,7 @@ const PackageCard = ({ pkg }) => {
                         >
                             {pkg.buttonText}
                         </button>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
 

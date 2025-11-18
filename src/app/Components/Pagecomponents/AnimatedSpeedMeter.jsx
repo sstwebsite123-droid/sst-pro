@@ -88,24 +88,24 @@ const AnimatedSpeedMeter = () => {
   }, [isVisible]);
 
   return (
-    <div ref={containerRef} className="relative w-[140px] lg:w-[180px] xl:w-[275px] 2xl:w-[366px] h-[140px] lg:h-[180px] xl:h-[275px] 2xl:h-[366px]">
+    <div ref={containerRef} className="hidden md:block relative w-[140px] lg:w-[180px] xl:w-[275px] 2xl:w-[366px] h-[140px] lg:h-[180px] xl:h-[275px] 2xl:h-[366px] m-auto md:m-0">
       {/* Subtle Background Glow */}
-      <div 
+      <div
         className="absolute inset-0 rounded-full bg-gradient-to-br from-[#0642e7] via-[#065fe6] to-[#083deb] opacity-10"
         style={{
           transform: `scale(${1.02 + glowIntensity * 0.02})`,
           filter: 'blur(20px)',
         }}
       />
-      
+
       {/* Minimal Outer Ring */}
-      <div 
+      <div
         className="absolute inset-0 rounded-full border border-[#0c62ec] opacity-20"
       />
-      
+
       {/* Main SVG */}
-      <svg 
-        className="absolute inset-0 w-full h-full" 
+      <svg
+        className="absolute inset-0 w-full h-full"
         viewBox="0 0 200 200"
       >
         {/* Background Track */}
@@ -148,7 +148,7 @@ const AnimatedSpeedMeter = () => {
           const needleLength = 55;
           const needleEndX = centerX + needleLength * Math.cos(angle);
           const needleEndY = centerY + needleLength * Math.sin(angle);
-          
+
           return (
             <g>
               {/* Needle Shadow */}
@@ -194,7 +194,7 @@ const AnimatedSpeedMeter = () => {
             </g>
           );
         })()}
-        
+
         {/* Modern Tick Marks */}
         {[0, 20, 40, 60, 80, 100].map((tick, index) => {
           const angle = -Math.PI / 2 + (tick / 100) * Math.PI;
@@ -202,7 +202,7 @@ const AnimatedSpeedMeter = () => {
           const y1 = 100 + 60 * Math.sin(angle);
           const x2 = 100 + 75 * Math.cos(angle);
           const y2 = 100 + 75 * Math.sin(angle);
-          
+
           return (
             <line
               key={index}
@@ -216,13 +216,13 @@ const AnimatedSpeedMeter = () => {
             />
           );
         })}
-        
+
         {/* Modern Labels */}
         {[0, 2, 4, 6, 8, 10].map((value, index) => {
           const angle = -Math.PI / 2 + (index * 20 / 100) * Math.PI;
           const x = 100 + 85 * Math.cos(angle);
           const y = 100 + 85 * Math.sin(angle);
-          
+
           return (
             <text
               key={`label-${index}`}
@@ -238,7 +238,7 @@ const AnimatedSpeedMeter = () => {
             </text>
           );
         })}
-        
+
         {/* Gradients */}
         <defs>
           <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -246,19 +246,19 @@ const AnimatedSpeedMeter = () => {
             <stop offset="50%" stopColor="#06b6d4" />
             <stop offset="100%" stopColor="#3b82f6" />
           </linearGradient>
-          
+
           <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.6" />
             <stop offset="50%" stopColor="#06b6d4" stopOpacity="0.4" />
             <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.6" />
           </linearGradient>
-          
+
           <linearGradient id="needleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#ffffff" />
             <stop offset="50%" stopColor="#3b82f6" />
             <stop offset="100%" stopColor="#ffffff" />
           </linearGradient>
-          
+
           <radialGradient id="centerGradient" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="#ffffff" />
             <stop offset="70%" stopColor="#3b82f6" />
@@ -266,12 +266,12 @@ const AnimatedSpeedMeter = () => {
           </radialGradient>
         </defs>
       </svg>
-      
+
       {/* Enhanced Center Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="relative">
           {/* Remove white glow behind text; keep only crisp value */}
-          <span 
+          <span
             className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white transition-all duration-300 ease-out"
             style={{
               filter: `drop-shadow(0 0 20px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(59, 130, 246, 0.8)) drop-shadow(0 0 60px rgba(59, 130, 246, 0.4))`,
@@ -282,9 +282,9 @@ const AnimatedSpeedMeter = () => {
             {displayValue}
           </span>
         </div>
-        
+
         {/* Enhanced Label */}
-        <p 
+        <p
           className="text-white text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold mt-3"
           style={{
             textShadow: `0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(59, 130, 246, 0.6)`,
@@ -294,7 +294,7 @@ const AnimatedSpeedMeter = () => {
           Secure ROI
         </p>
       </div>
-      
+
       {/* Modern Particles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(8)].map((_, i) => (
