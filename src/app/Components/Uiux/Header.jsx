@@ -23,7 +23,7 @@ const headerlinks = [
   {
     id: 3,
     pagename: "Services",
-    pagelink: "/services"
+    pagelink: "/service"
   },
   {
     id: 4,
