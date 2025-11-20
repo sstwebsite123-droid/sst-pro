@@ -11,7 +11,7 @@ import CopyRight from "./CopyRight";
 const footerdata = {
   linkingdata: [
     {
-      title: "Products & Solutions",
+      title: "Company",
       pagelinks: [
         { pagelink: "/", pagename: "Home" },
         { pagelink: "/about", pagename: "About Us" },
@@ -22,7 +22,18 @@ const footerdata = {
       ],
     },
     {
-      title: "Core Investment",
+      title: "UpComing Project",
+      pagelinks: [
+        { pagelink: "/sugarplant", pagename: "Sugar Plant" },
+        { pagelink: "/hotelchain", pagename: "Hotel Chains" },
+        { pagelink: "/", pagename: "Oil & Energy" },
+        { pagelink: "/", pagename: "Agriculture Us" },
+        { pagelink: "/", pagename: "Transportation & Logistics" },
+        { pagelink: "/", pagename: "Technology & AI" },
+      ],
+    },
+    {
+      title: "Real Investment",
       pagelinks: [
         { pagelink: "/forex", pagename: "Forex Trading" },
         { pagelink: "/real-estate", pagename: "Real-Estate" },
@@ -64,8 +75,9 @@ const Footer = () => {
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
             <div className="px-[1.5%] 2xl:px-[3%]">
-              <div className="hidden md:grid grid-cols-[3fr_4fr_4fr_4fr] lg:grid-cols-4">
-                <div>
+
+              <div className="hidden md:grid grid-cols-[3fr_4fr_4fr_4fr] lg:grid-cols-5">
+                <div className="flex justify-center">
                   <Link href="/">
                     <Image
                       src={logo}
@@ -75,16 +87,16 @@ const Footer = () => {
                       className=" max-w-[55px] lg:max-w-[74px] xl:max-w-[84px]"
                     />
                   </Link>
-                  <p className="lg:text-lg xl:text-xl text-white pt-4" style={{ fontSize: '14px' }}>
+                  {/* <p className="lg:text-lg xl:text-xl text-white pt-4" style={{ fontSize: '14px' }}>
                     SST Pro is a trusted investment platform specializing in
                     Forex and Real Estate trading, offering investors secure,
                     diversified, and profitable opportunities for sustainable
                     financial growth.
-                  </p>
+                  </p> */}
                 </div>
                 {footerdata.linkingdata.map((data, index) => (
                   <div
-                    className={`${index === 2
+                    className={`${index === 3
                       ? null
                       : "border-r-[3px] border-dashed border-[#72727250]"
                       }`}
