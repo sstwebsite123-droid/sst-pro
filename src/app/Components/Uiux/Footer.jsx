@@ -13,19 +13,20 @@ const footerdata = {
     {
       title: "Products & Solutions",
       pagelinks: [
-        // { pagelink: "/", pagename: "About us" },
-        { pagelink: "/", pagename: "Strategy Workshops" },
-        { pagelink: "/", pagename: "AI Analysis Tools Us" },
-        { pagelink: "/", pagename: "Personal Mentorship" },
-        { pagelink: "/", pagename: "Portfolio Review" },
+        { pagelink: "/", pagename: "Home" },
+        { pagelink: "/about", pagename: "About Us" },
+        { pagelink: "/service", pagename: "Services" },
+        { pagelink: "/contact-us", pagename: "Contact Us" },
+        // { pagelink: "/forex", pagename: "Forex Trading" },
+        // { pagelink: "/real-estate", pagename: "Real-Estate" },
       ],
     },
     {
-      title: "Resources",
+      title: "Core Investment",
       pagelinks: [
-        { pagelink: "/", pagename: "Training Modules" },
-        { pagelink: "/", pagename: "Market Insights" },
-        { pagelink: "/terms", pagename: "Terms & Conditions" },
+        { pagelink: "/forex", pagename: "Forex Trading" },
+        { pagelink: "/real-estate", pagename: "Real-Estate" },
+        // { pagelink: "/terms", pagename: "Terms & Conditions" },
       ],
     },
     {

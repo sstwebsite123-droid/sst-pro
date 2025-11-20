@@ -59,18 +59,18 @@ const PackageCard = ({ pkg }) => {
                     </div>
                 )} */}
                 <div
-                    className={`w-full  max-w-[451px]  mx-auto rounded-3xl p-4 sm:p-6 md:p-8 
+                    className={`w-full  max-w-[451px]  mx-auto rounded-3xl p-4 sm:p-6 
     bg-gradient-to-b ${pkg.bg} shadow-xl flex flex-col justify-center items-center`}
                 >
 
 
-                    <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black mb-2 w-full">
+                    <h2 className={`text-xl sm:text-lg md:text-xl lg:text-3xl   mb-2 w-full ${pkg.id === 2 ? 'text-white' : 'text-black'}`}>
                         {pkg.title}
                     </h2>
 
 
                     <p
-                        className={`mb-4 sm:mb-6 text-sm sm:text-base md:text-lg 
+                        className={`mb-4 sm:mb-6 text-sm sm:text-base md:text-base 
       ${pkg.id === 2 ? 'text-white' : 'text-black'}`}
                     >
                         {pkg.description}
@@ -79,10 +79,10 @@ const PackageCard = ({ pkg }) => {
 
                     <div className="w-full bg-black text-white p-4 sm:p-6 rounded-2xl">
                         <div className="flex items-baseline space-x-2 mb-4">
-                            <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#7EC6FF]">
+                            <span className="text-3xl sm:text-4xl md:text-2xl font-bold text-[#7EC6FF]">
                                 {pkg.price}
                             </span>
-                            <span className="text-lg sm:text-xl md:text-2xl opacity-80">
+                            <span className="text-lg sm:text-xl md:text-lg opacity-80">
                                 / Investment
                             </span>
                         </div>
@@ -90,7 +90,7 @@ const PackageCard = ({ pkg }) => {
 
                         <ul className="space-y-3">
                             {pkg.features.map((feature, index) => (
-                                <li key={index} className="flex items-center gap-2 text-sm sm:text-base md:text-lg">
+                                <li key={index} className="flex items-center gap-2 text-sm sm:text-base md:text-base">
                                     <span className="text-[#7EC6FF] text-xl sm:text-2xl font-bold">✓</span>
                                     {feature}
                                 </li>
@@ -143,7 +143,7 @@ const InvestmentPackages = () => {
                 </div>
             </div>
             {/* Cards */}
-            <div className="grid grid-cols-1 2xl:grid-cols-3 justify-center items-center    gap-12 md:gap-[4rem] mt-[4%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center items-center    gap-12  mt-[4%]">
                 {packages.map((pkg) => (
                     <PackageCard key={pkg.id} pkg={pkg} />
                 ))}

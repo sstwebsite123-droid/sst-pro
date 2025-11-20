@@ -266,14 +266,35 @@ const Banner = () => {
           <div className="des max-w-[805px] m-auto text-[10px] md:text-[13px] 2xl:text-[24px] lg:text-[15px] text-[#D0D0D0]  2xl:leading-[35px]">
             <span>Where Trust Meets Technology — Powering the Next Generation of Trading and Investment.</span>
           </div>
+          <motion.div
+            className="cursor-fire"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Button
+              btn_name={"Request Demo"}
+              btn_background={"gradient_bg"}
+              btn_border={"border-secondary"}
+              color={"text-black "}
+              icon={true}
+            />
+          </motion.div>
           <div className="banner-btn w-full">
-            <Link href={"/contact-us"}>
-              <Buttondev
-                text="Request Demo"
-                bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
-                textColor="text-black"
-                className='w-full max-w-[176px] 2xl:max-w-[476px] lg:max-w-[276px] md:max-w-[276px] m-auto' />
-            </Link>
+            {/* <motion.div
+              className="cursor-fire"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Link href={"/contact-us"}>
+                <Buttondev
+                  text="Request Demo"
+                  bgColor="bg-gradient-to-r from-blue-400 via-teal-200 to-blue-400"
+                  textColor="text-black"
+                  className='w-full max-w-[176px] 2xl:max-w-[476px] lg:max-w-[276px] md:max-w-[276px] m-auto' />
+              </Link>
+            </motion.div> */}
           </div>
 
         </div>

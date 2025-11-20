@@ -10,29 +10,34 @@ import servicesbanner from "../../../public/images/servicesbanner.webp";
 
 const faqData = [
   {
-    question: "What is SST Pro Ltd?",
+    question: "What makes SST Pro a trusted investment platform?",
     answer:
-      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
+      "SST Pro combines secure systems, expert traders, smart technology, and transparent operations to provide stable returns, real market-backed profits, and long-term value for all investors."
   },
   {
-    question: "Is SST Pro officially registered and regulated?",
+    question: "How does SST Pro generate daily trading profits?",
     answer:
-      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
+      "Daily profits come from verified live market trades executed by professional traders, ensuring real performance without bots, speculation, or fake promises—just strategic trading focused on consistent growth."
   },
   {
-    question: "What makes SST Pro different from other investment companies?",
+    question: "Who can join and invest with SST Pro?",
     answer:
-      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
+      "Anyone above 18, seeking secure financial growth through Forex or real estate, can join SST Pro and choose a suitable investment package for their goals."
   },
   {
-    question: "Who can invest with SST Pro?",
+    question: "Are my funds and personal data protected with SST Pro?",
     answer:
-      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
+      "Yes, SST Pro uses advanced security, encryption, AML, and KYC compliance to fully protect investor funds, identities, and transactions with industry-standard safeguards."
   },
   {
-    question: "What markets does SST Pro operate in?",
+    question: "What returns can I expect from SST Pro investment plans?",
     answer:
-      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
+      "Returns vary by market conditions and selected plans. SST Pro offers daily profits, monthly compounding, and multiple earning opportunities, but no guaranteed fixed returns."
+  },
+  {
+    question: "Does SST Pro offer support for new or beginner investors?",
+    answer:
+      "Yes, beginners receive complete guidance, mentorship, training resources, and support to understand trading, choose plans, and confidently begin their investment journey with SST Pro."
   }
 ];
 

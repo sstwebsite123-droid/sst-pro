@@ -220,7 +220,7 @@ const Trackgroth = () => {
             {industries.map((data, index) =>
               <motion.div
                 key={index}
-                className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic"
+                className="p-4 gradient_border group rounded-[50px]  hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic"
                 initial={{ opacity: 0, y: 100, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
                 transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
@@ -274,7 +274,7 @@ const Trackgroth = () => {
                     transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
                     whileHover={{ scale: 1.1, rotate: 5 }}
                   >
-                    <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[80px] h-[50px] md:h-[65px] 2xl:h-[80px]"} />
+                    <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[72px] h-[50px] md:h-[65px] 2xl:h-[72px]"} />
                   </motion.div>
                 </motion.div>
 

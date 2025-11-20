@@ -11,29 +11,34 @@ import CertificatesCompliance from "../Components/Pagecomponents/CertificatesCom
 import Aboutbgbanner from '../../../public/images/Aboutbgbanner.webp'
 const faqData = [
   {
-    question: "What is SST Pro?",
+    question: "What does SST Pro Ltd do?",
     answer:
-      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
+      "SST Pro Ltd is a licensed global investment company offering secure, diversified opportunities in Forex, Real Estate, and other profitable markets across the USA and UK."
   },
   {
-    question: "Are my funds safe?",
+    question: "Is SST Pro legally registered and regulated?",
     answer:
-      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
+      "Yes, SST Pro is officially registered under Colorado law with valid certification and is also licensed in the UK, ensuring compliance, transparency, and strong investor protection"
   },
   {
-    question: "What services do you offer?",
+    question: "How does SST Pro ensure investor safety?",
     answer:
-      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
+      "We use strict risk-management practices, transparent reporting, regulated operations, and data-driven strategies to safeguard investor funds while maintaining stable, sustainable financial growth."
   },
   {
-    question: "How do I open an account?",
+    question: "What makes SST Pro a reliable investment partner?",
     answer:
-      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
+      "Our regulated status, expert analysts, diversified portfolio options, integrity-based approach, and consistent performance make SST Pro a dependable and trusted global investment partner."
   },
   {
-    question: "Is SST Pro beginner-friendly?",
+    question: "Who can invest with SST Pro?",
     answer:
-      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
+      "Both individuals and institutions can invest with SST Pro. We offer customized investment plans designed to match different financial goals and suitable risk levels."
+  },
+  {
+    question: "What markets does SST Pro focus on?",
+    answer:
+      "We specialize in Forex, Real Estate, and selective high-performing global sectors, helping investors achieve long-term, stable returns through diversified, expertly managed investment strategies."
   }
 ];
 const page = () => {

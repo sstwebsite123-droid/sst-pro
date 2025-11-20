@@ -75,132 +75,149 @@ function Homewrap() {
       style={{ opacity }}
     >
       {/* Animated background gradient */}
-      <motion.div
+      {/* <motion.div
         className="fixed inset-0 pointer-events-none"
         style={{ y }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/20 via-transparent to-black/20"></div>
-      </motion.div>
+      > */}
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/20 via-transparent to-black/20"></div> */}
+      {/* </motion.div> */}
 
       {/* Floating geometric shapes - removed to eliminate boxes and circles */}
 
       {/* Banner Section */}
-      <motion.div
+      {/* <motion.div
         ref={bannerRef}
         initial={{ opacity: 0, y: 50 }}
         animate={bannerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <div className=" md:block">
-          <Banner />
-        </div>
-        {/* <div className="block md:hidden">
+      > */}
+      <div className=" md:block">
+        <Banner />
+      </div>
+      {/* <div className="block md:hidden">
           <Bannermobile />
         </div> */}
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Topstock Section */}
-      <motion.div
+      {/* <motion.div
         ref={topstockRef}
         initial={{ opacity: 0, y: 100 }}
         animate={topstockInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-      >
-        <Topstock />
-      </motion.div>
+      > */}
+      <Topstock />
+      {/* </motion.div> */}
 
       {/* Currentproject Section */}
-      <motion.div
+      {/* <motion.div
         ref={currentprojectRef}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={currentprojectInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-      >
-        <Currentproject />
-      </motion.div>
+      > */}
+      <Currentproject />
+      {/* </motion.div> */}
 
       {/* Trackgroth Section */}
-      <motion.div
+      {/* <motion.div
         ref={trackgrothRef}
         initial={{ opacity: 0, x: -100 }}
         animate={trackgrothInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
-      >
-        <Trackgroth />
-      </motion.div>
+      > */}
+      <Trackgroth />
+      {/* </motion.div> */}
 
       {/* Investsmartly Section */}
-      <motion.div
+      {/* <motion.div
         ref={investsmartlyRef}
         initial={{ opacity: 0, y: 150 }}
         animate={investsmartlyInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }}
         transition={{ duration: 1.3, ease: "easeOut", delay: 0.5 }}
-      >
-        <Investsmartly />
-      </motion.div>
+      > */}
+      <Investsmartly />
+      {/* </motion.div> */}
 
       {/* Whysst Section */}
-      <motion.div
+      {/* <motion.div
         ref={whysstRef}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={whysstInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
         transition={{ duration: 1.1, ease: "easeOut", delay: 0.6 }}
-      >
-        <Whysst />
-      </motion.div>
+      > */}
+      <Whysst />
+      {/* </motion.div> */}
 
       {/* Aboutsst Section */}
-      <motion.div
+      {/* <motion.div
         ref={aboutsstRef}
         initial={{ opacity: 0, x: 100 }}
         animate={aboutsstInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.7 }}
-      >
-        <Aboutsst />
-      </motion.div>
+      > */}
+      <Aboutsst />
+      {/* </motion.div> */}
 
       {/* Award Section */}
+
+      {/* <motion.div
+        ref={aboutsstRef}
+        initial={{ opacity: 0, x: 100 }}
+        animate={aboutsstInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+        transition={{ duration: 1.2, ease: "easeOut", delay: 0.7 }}
+      > */}
       <Awardndreco />
 
+      {/* </motion.div> */}
 
 
-      <StatsSection />
 
-
-      <motion.div
+      {/* <motion.div
         ref={corevalueRef}
         initial={{ opacity: 0, y: 200 }}
         animate={corevalueInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
         transition={{ duration: 1.4, ease: "easeOut", delay: 0.8 }}
-      >
-        <InvestorRelations />
-      </motion.div>
+      > */}
+      <StatsSection />
+      {/* </motion.div> */}
+
+
+
+      {/* <motion.div
+        ref={corevalueRef}
+        initial={{ opacity: 0, y: 200 }}
+        animate={corevalueInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
+        transition={{ duration: 1.4, ease: "easeOut", delay: 0.8 }}
+      > */}
+      <InvestorRelations />
+      {/* </motion.div> */}
 
 
 
 
       {/* Corevalue Section */}
-      <motion.div
+      {/* <motion.div
         ref={corevalueRef}
         initial={{ opacity: 0, y: 200 }}
         animate={corevalueInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
         transition={{ duration: 5, ease: "easeOut", delay: 0.8 }}
-      >
-        <Corevalue />
-      </motion.div>
+      > */}
+      <Corevalue />
+      {/* </motion.div> */}
 
       {/* Faqs Section */}
 
 
-      <motion.div
+      {/* <motion.div
         ref={faqsRef}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={faqsInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.9 }}
-      >
-        <Faqs faqData={faqData} />
-      </motion.div>
+      > */}
+      <Faqs faqData={faqData} />
+      {/* </motion.div> */}
     </motion.div>
   );
 }

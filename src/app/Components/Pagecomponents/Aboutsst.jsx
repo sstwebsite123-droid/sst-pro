@@ -102,17 +102,17 @@ const AboutSst = () => {
                   </svg>
                 </div>
                 <div className="heading">
-                  <p className='text-white md:text-[34px] text-[24px] gradient_text'>Vision</p>
+                  <p className='text-white md:text-[34px] text-[40px] 2xl:text-6xl gradient_text'>Vision</p>
                 </div>
               </div>
               <div className="vission-des">
-                <p className='text-[12px] text-white text-end'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
+                <p className='text-[12px] 2xl:text-[20px] text-white text-end'>To become a globally trusted financial partner recognized for innovation, transparency, and client success.</p>
               </div>
             </div>
             <div className="vission-main">
               <div className="icon-heading flex justify-start items-center gap-2 ">
                 <div className="heading">
-                  <p className='text-white  md:text-[34px] text-[24px] gradient_text'>Mision</p>
+                  <p className='text-white  md:text-[34px] text-[40px] 2xl:text-6xl gradient_text'>Mision</p>
                 </div>
                 <div className="icon ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 55 55" fill="none">
@@ -131,7 +131,7 @@ const AboutSst = () => {
                 </div>
               </div>
               <div className="vission-des">
-                <p className='text-[12px] text-white text-start'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
+                <p className='text-[12px] 2xl:text-[20px] text-white text-start'>To simplify investing and empower individuals and businesses with intelligent financial solutions that drive sustainable growth.</p>
               </div>
             </div>
           </div>

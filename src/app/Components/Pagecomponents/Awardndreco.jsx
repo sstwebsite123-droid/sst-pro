@@ -66,7 +66,7 @@ const Awardndreco = () => {
                     />
                 </div>
             </div>
-            <div className="awardcard  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-[8%] gap-[11rem] lg:gap-[10px] 2xl:gap-[10px]  mt-[17%] md:m-auto 2xl:mt-0 ">
+            <div className=" awardcard  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-[8%] gap-[9rem] lg:gap-[10px] 2xl:gap-[10px]  mt-[27%] md:m-auto 2xl:mt-0 ">
                 {
                     Award_card.map((data, index) => (
                         <div key={index} className="card-container  ">
@@ -96,21 +96,21 @@ const Awardndreco = () => {
                                 />
 
 
-                                <div className="bootom-ribbon absolute flex justify-center items-center bottom-[-30px] w-full">
+                                <div className="bootom-ribbon absolute flex justify-center items-center 2xl:bottom-[-30px] bottom-[-17px]  w-full">
                                     {/* Bottom (ribbon/date) */}
                                     <Image
                                         src={data.year}
                                         alt="Bottom Ribbon"
                                         width={1000}
                                         height={500}
-                                        className="ribbon  max-w-[218px] m-auto flex justify-center items-center "
+                                        className="ribbon  2xl:max-w-[218px] max-w-[138px]  m-auto flex justify-center items-center "
                                     />
 
                                 </div>
 
                                 {/* Text Overlay */}
                                 <div className="absolute w-full  top-[41%]    ">
-                                    <h2 className="2xl:text-[30px] font-semibold">{data.Awardtitle}</h2>
+                                    <h2 className=" text-[18px] 2xl:text-[30px] font-semibold">{data.Awardtitle}</h2>
                                     <p className="text-gray-300 w-max m-auto  bg-[#0000001C] text-sm mt-1">{data.Awarddes}</p>
 
                                 </div>

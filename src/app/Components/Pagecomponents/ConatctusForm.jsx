@@ -4,7 +4,7 @@ import Image from "next/image";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import MainContactFormDark from "./MainContactFormDark";
-import Formbanner from ".././../../../public/banners/contactbg.jpg";
+import Formbanner from "../../../../public/images/newtradingimg.webp";
 
 const tradingBadges = [
   "/images/candle.png",
@@ -42,9 +42,9 @@ const ConatctusForm = () => {
           <Image
             src={Formbanner}
             alt=""
-            width={10000}
+            width={1000}
             height={500}
-            className="w-full h-full cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl "
           />
           {/* <div className="relative rounded-[40px] bg-white/5 border border-white/10 overflow-hidden min-h-[520px]">
             <div className="absolute inset-0 flex items-center justify-center">
