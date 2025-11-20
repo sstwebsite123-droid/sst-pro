@@ -104,7 +104,7 @@ function Topstock() {
       </div>
 
       <motion.div
-        className="pt-18"
+        className="pt-12 md:pt-18"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.8, delay: 0.3 }}
@@ -157,7 +157,7 @@ function Topstock() {
       </motion.div>
 
       <motion.div
-        className="inn_container pt-12"
+        className="inn_container md:pt-12"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 1, delay: 1.2 }}

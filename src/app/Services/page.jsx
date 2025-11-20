@@ -38,6 +38,7 @@ const faqData = [
 
 const page = () => {
     return (
+        
         <div>
             <Dynamicbanner banner_title={"Next-Level Trading <br /> Services"} bannerimg={servicesbanner} />
             <Whatweoffer />
@@ -49,5 +50,4 @@ const page = () => {
         </div>
     )
 }
-
 export default page
