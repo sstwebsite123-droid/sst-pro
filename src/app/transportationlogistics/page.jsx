@@ -1,27 +1,29 @@
 import React from 'react'
 import Image from 'next/image'
-import hotel1 from '../../../public/images/hotel1.webp'
-import hotellocation from '../../../public/images/hotellocation.webp'
-import hotel2 from '../../../public/images/hotel2.webp'
-import portfoliohotel from '../../../public/images/portfoliohotel.webp'
+import logistics1 from '../../../public/images/logistics1.webp'
+import logistics2 from '../../../public/images/logistics2.webp'
+
 import Globlegroth from '../Components/Pagecomponents/Globlegroth'
+
 const page = () => {
     return (
         <div>
             <main className="bg-black text-gray-100">
+
                 {/* Hero Section with Image */}
                 <section className="relative bg-gray-900 text-white mt-[120px]">
                     <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                                Expanding Hospitality with Innovation and Global Reach
+                                Connecting Global Trade with Efficiency and Speed
                             </h1>
                             <p className="text-lg md:text-xl max-w-lg text-gray-200">
-                                At SST Pro, we recognize hospitality as a strong and growing segment within real estate, offering both long-term value and steady income. Our Hotel Chains project provides investors with smart, secure, and transparent access to high-potential hotel investment opportunities.</p>
+                                In our interconnected world, transportation and logistics form the backbone of the global economy. At SST Pro, we see this sector as a dynamic, opportunity-rich landscape for investment and trading. Our Transportation & Logistics project gives clients strategic access to trends shaping the future of global trade.
+                            </p>
                         </div>
                         <div className="md:w-1/2 relative h-64 md:h-96">
                             <Image
-                                src={hotel1} // replace with your hotel hero image
+                                src={logistics1} // Replace with relevant transportation/logistics image
                                 width={1000}
                                 height={500}
                                 className='rounded-[50px]'
@@ -33,34 +35,37 @@ const page = () => {
                 {/* Content Sections */}
                 <section className="container mx-auto px-6 py-16 space-y-16">
 
-                    {/* The New Era of Hospitality */}
+                    {/* The Logistics Market */}
                     <Globlegroth
-                        title={'The Hospitality Market: A Real Estate Investors View'}
+                        title={'The Logistics Market: An Investor’s Roadmap'}
                         description={
-                            "The hotel industry is rapidly transforming through new travel trends, technology, and stronger guest expectations. With rising transactions and growing demand from leisure, business, and 'bleisure' travel, hotel investments offer strong long-term opportunities."
+                            "Transportation and logistics are evolving rapidly, driven by e-commerce growth, digital transformation, and infrastructure modernization. Investors can access a sector poised for long-term growth and innovation in 2025 and beyond."
                         }
                         videoSrc='/video/graphvideo.mp4'
                         right_description={
-                            "The global hotel industry is undergoing major transformation driven by evolving travel trends and new technologies.This shift is creating strong opportunities for real estate investors.Transaction volumes are expected to rise in 2025 and beyond.Growth is fueled by increasing leisure, business, and emerging"
+                            "From AI and IoT integration to upgraded ports, airports, and roads, logistics presents strategic opportunities for investors seeking exposure to efficient, technology-driven supply chains and resilient global trade."
                         }
                     />
 
-                    {/* Strategic Investments in High-Potential Locations */}
+                    {/* Strategic Investment Insights */}
                     <section className="py-20 bg-gray-900 relative">
                         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
                             <div className="md:col-span-2 flex flex-col justify-center">
-                                <h2 className="text-4xl font-bold mb-6 text-green-400">Unlocking Value in Hotel Real Estate'</h2>
+                                <h2 className="text-4xl font-bold mb-6 text-green-400">
+                                    Key Drivers of Opportunity in Transportation & Logistics
+                                </h2>
+
                                 <p className="text-gray-300 leading-relaxed text-lg">
-                                    SST Pro provides multiple hotel-sector investment options tailored to different goals and risk levels.
-                                    • Hotel REITs: A diversified, liquid way to earn dividends and long-term growth.
-                                    • Direct Property Investment: Ideal for high-net-worth investors seeking control and higher returns.
-                                    • Hotel Brand Franchising: Partnering with top hotel brands to build long-term, stable wealth.
+                                    • <strong>E-commerce Boom:</strong> Rising online retail demand drives warehousing, last-mile delivery, and reverse logistics needs.<br />
+                                    • <strong>Digital Transformation:</strong> AI, IoT, and blockchain revolutionize supply chain efficiency and transparency.<br />
+                                    • <strong>Infrastructure Modernization:</strong> Investments in ports, airports, roads, and railways create opportunities for logistics and infrastructure funds.<br />
                                 </p>
                             </div>
+
                             <div className="md:col-span-1 relative rounded-3xl overflow-hidden shadow-2xl h-96">
                                 <Image
-                                    src={hotellocation} // replace with relevant image
-                                    alt="Hotel Location"
+                                    src={logistics2} // Replace with transportation/logistics image
+                                    alt="Logistics Market"
                                     fill
                                     className="object-cover opacity-60"
                                 />
@@ -69,33 +74,39 @@ const page = () => {
                         </div>
                     </section>
 
-                    {/* Technology-Driven Guest Experience */}
+                    {/* Investment Tools Section */}
                     <section className="py-20 bg-gray-800 relative overflow-hidden">
                         <div className="container mx-auto px-6 relative z-10">
                             <h2 className="text-4xl font-bold text-purple-400 mb-10 text-center">
-                                Your Partner in Hospitality Investment
+                                Investment Opportunities in the Transportation & Logistics Sector
                             </h2>
+
                             <div className="grid md:grid-cols-3 gap-8">
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl transform -translate-y-6">
-                                    <p className="text-gray-300">With SST Pro, you have a partner who understands the nuances of the hotel investment market. </p>
+                                    <p className="text-gray-300">
+                                        • <strong>Logistics Stocks:</strong> Invest in leading publicly traded logistics companies, from global shipping giants to specialized last-mile delivery providers.
+                                    </p>
                                 </div>
+
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl">
-                                    <p className="text-gray-300">Our team of real estate experts conducts rigorous due diligence on every investment opportunity, ensuring that it meets our strict criteria for financial performance and long-term value.</p>
+                                    <p className="text-gray-300">
+                                        • <strong>Infrastructure Funds:</strong> Gain exposure to transportation infrastructure assets, including roads, ports, and railways, through specialized funds.
+                                    </p>
                                 </div>
+
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl transform translate-y-6">
-                                    <p className="text-gray-300">We provide our clients with the data and analysis they need to make informed decisions, and our secure platform makes it easy to track the performance of your investments.</p>
+                                    <p className="text-gray-300">
+                                        • <strong>Private Equity:</strong> For qualified investors, access private equity opportunities in logistics with potential for high returns.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-
-
                 </section>
 
                 {/* Footer */}
             </main>
-
         </div>
     )
 }

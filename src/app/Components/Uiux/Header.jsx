@@ -19,7 +19,7 @@ const headerlinks = [
 
   {
     id: 4,
-    pagename: "Markets",
+    pagename: "Real Invest",
     dropdown: [
       { name: "Forex", link: "/forex" },
       { name: "Real-Estate", link: "/real-estate" },
@@ -29,14 +29,14 @@ const headerlinks = [
 
   {
     id: 5,
-    pagename: "Projects",
+    pagename: "UpComing Projects",
     dropdown: [
-      { name: "Sugar Plant", link: "/#" },
-      { name: "Hotel Chains", link: "/#" },
-      { name: "Oil & Energy", link: "/#" },
-      { name: "Agriculture", link: "/#" },
-      { name: "Transportation & Logistics", link: "/#" },
-      { name: "Technology & AI", link: "/#" },
+      { name: "Sugar Plant", link: "/sugarplant" },
+      { name: "Hotel Chains", link: "/hotelchain" },
+      { name: "Oil & Energy", link: "/oilandenergy" },
+      { name: "Agriculture", link: "/Agriculture" },
+      { name: "Transportation & Logistics", link: "/transportationlogistics" },
+      { name: "Technology & AI", link: "/Technology" },
     ]
   },
 
@@ -81,7 +81,7 @@ const Header = () => {
                 {!data.dropdown ? (
                   <Link href={data.pagelink}>
                     <span
-                      className={`text-base xl:text-xl px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
+                      className={`text-base xl:text-sm px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
                         }`}
                     >
                       {data.pagename}

@@ -26,10 +26,10 @@ const footerdata = {
       pagelinks: [
         { pagelink: "/sugarplant", pagename: "Sugar Plant" },
         { pagelink: "/hotelchain", pagename: "Hotel Chains" },
-        { pagelink: "/", pagename: "Oil & Energy" },
-        { pagelink: "/", pagename: "Agriculture Us" },
-        { pagelink: "/", pagename: "Transportation & Logistics" },
-        { pagelink: "/", pagename: "Technology & AI" },
+        { pagelink: "/oilandenergy", pagename: "Oil & Energy" },
+        { pagelink: "/Agriculture", pagename: "Agriculture Us" },
+        { pagelink: "/transportationlogistics", pagename: "Transportation & Logistics" },
+        { pagelink: "/Technology", pagename: "Technology & AI" },
       ],
     },
     {

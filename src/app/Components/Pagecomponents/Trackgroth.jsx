@@ -127,7 +127,7 @@ const industries = [
     cardvaluetype2: "Yearly Growth",
     cardvalue3: "30%",
     cardvaluetype3: "Renewable Shift",
-    href: "/" // <-- Add this
+    href: "/oilandenergy" // <-- Add this
   },
 
 
@@ -142,7 +142,7 @@ const industries = [
     cardvaluetype2: "Annual Growth",
     cardvalue3: "25%",
     cardvaluetype3: "Tech-Integrated Farms",
-    href: "/" // <-- Add this
+    href: "/Agriculture" // <-- Add this
   },
   {
     image: Transportation,
@@ -155,7 +155,7 @@ const industries = [
     cardvaluetype2: "Growth Rate",
     cardvalue3: "80%",
     cardvaluetype3: "Digitalized Operations",
-    href: "/" // <-- Add this
+    href: "/transportationlogistics" // <-- Add this
   },
   {
     image: Technologys,
@@ -168,7 +168,7 @@ const industries = [
     cardvaluetype2: "CAGR",
     cardvalue3: "65%",
     cardvaluetype3: "Adoption Rate",
-    href: "/" // <-- Add this
+    href: "/Technology" // <-- Add this
   },
 ];
 
