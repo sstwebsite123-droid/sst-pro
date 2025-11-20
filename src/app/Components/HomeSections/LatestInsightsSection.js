@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FiCalendar, FiClock, FiUser } from "react-icons/fi";
 import investmentImg from "../../../../public/images/investment.webp";
@@ -11,7 +12,6 @@ import Button from "../Uiux/Button";
 const insights = [
   {
     category: "Investment Tips",
-    badgeColor: "bg-sky-500/10 text-sky-200 border border-sky-400/20",
     title: "5 Investment Strategies for 2025",
     description:
       "Discover the top investment approaches that are shaping the financial landscape this year.",
@@ -23,7 +23,6 @@ const insights = [
   },
   {
     category: "Market Analysis",
-    badgeColor: "bg-amber-500/10 text-amber-200 border border-amber-400/20",
     title: "Understanding Market Volatility",
     description:
       "Learn how to navigate uncertain markets and protect your portfolio during turbulent times.",
@@ -35,7 +34,6 @@ const insights = [
   },
   {
     category: "Technology",
-    badgeColor: "bg-indigo-500/10 text-indigo-200 border border-indigo-400/20",
     title: "The Future of AI in Finance",
     description:
       "Exploring how artificial intelligence is revolutionizing investment decision-making.",
@@ -48,26 +46,64 @@ const insights = [
 ];
 
 const LatestInsightsSection = () => {
+  // -------- Subscribe States ----------
+  const [subscriberEmail, setSubscriberEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState(null); // success or error message
+
+  // --------- Subscribe Handler ----------
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage(null);
+
+    try {
+      const req = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: subscriberEmail }),
+      });
+
+      const res = await req.json();
+
+      if (req.ok) {
+        setMessage({
+          type: "success",
+          text: "You're successfully subscribed! 🎉",
+        });
+        setSubscriberEmail("");
+      } else {
+        setMessage({
+          type: "error",
+          text: res.message || "Something went wrong.",
+        });
+      }
+    } catch (error) {
+      setMessage({
+        type: "error",
+        text: "Server error. Please try again later.",
+      });
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="mt-16 space-y-14">
+      {/* Title & Sub-text */}
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
-        <div>
-          <Title
-            title={'Latest <span class="gradient_text">Insights</span> '}
-            color={"text-white"}
-          />
-        </div>
-        <div>
-          <Description
-            description={
-              "Expert analysis, market trends, and investment strategies from our team"
-            }
-            color={"text-white"}
-            align={"text-left lg:text-end"}
-          />
-        </div>
+        <Title
+          title={'Latest <span class="gradient_text">Insights</span>'}
+          color={"text-white"}
+        />
+        <Description
+          description="Expert analysis, market trends, and investment strategies from our team"
+          color="text-white"
+          align="text-left lg:text-end"
+        />
       </div>
 
+      {/* Cards Section */}
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {insights.map((item) => (
           <article
@@ -79,37 +115,33 @@ const LatestInsightsSection = () => {
                 src={item.image}
                 alt={item.imageAlt}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 360px"
                 className="object-cover transition duration-500 group-hover:scale-105"
-                priority={false}
               />
-              <div className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-2xl bg-white px-3 py-1 text-xs font-medium backdrop-blur">
-                <span className={`rounded-2xl px-3 py-1 text-black`}>{item.category}</span>
+              <div className="absolute top-4 left-4 bg-white text-black px-4 py-1 rounded-full text-xs font-medium">
+                {item.category}
               </div>
             </div>
-            <div className="flex flex-1 flex-col gap-4 p-6">
-              <div className="space-y-2">
-                <h3 className="text-lg font-semibold gradient_text transition group-hover:gradient_text">
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-white/70">
-                  {item.description}
-                </p>
-              </div>
 
-              <div className="mt-auto space-y-4 text-sm text-white/60">
+            <div className="flex flex-1 flex-col gap-4 p-6">
+              <h3 className="text-lg font-semibold gradient_text">
+                {item.title}
+              </h3>
+              <p className="text-sm text-white/70">{item.description}</p>
+
+              <div className="mt-auto text-sm text-white/60 space-y-2">
                 <div className="flex items-center gap-4">
-                  <span className="flex items-center gap-1.5">
-                    <FiUser className="text-base text-blue-500" />
+                  <span className="flex items-center gap-2">
+                    <FiUser className="text-blue-500" />
                     {item.author}
                   </span>
-                  <span className="flex items-center gap-1.5">
-                    <FiCalendar className="text-base text-blue-500" />
+                  <span className="flex items-center gap-2">
+                    <FiCalendar className="text-blue-500" />
                     {item.date}
                   </span>
                 </div>
-                <span className="flex items-center gap-1.5 text-white">
-                  <FiClock className="text-base" />
+
+                <span className="flex items-center gap-2 text-white">
+                  <FiClock />
                   {item.readTime}
                 </span>
               </div>
@@ -118,37 +150,57 @@ const LatestInsightsSection = () => {
         ))}
       </div>
 
-      <div className="mt-10 overflow-hidden rounded-[48px] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.22),transparent_55%)] p-px">
-        <div className="rounded-[48px] bg-[linear-gradient(180deg,rgba(10,20,38,0.96),rgba(4,9,19,0.95))] px-6 text-white shadow-[inset_0px_0px_20px_20px_#4aa1ff54] sm:px-12 lg:px-20 py-20">
-          <div className="flex flex-col items-center text-center">
-            <h3 className="text-3xl font-semibold md:text-5xl gradient_text">
+      {/* Subscribe Box */}
+      <div className="mt-10 rounded-[48px] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.22),transparent_55%)] p-px">
+        <div className="rounded-[48px] bg-[linear-gradient(180deg,rgba(10,20,38,0.96),rgba(4,9,19,0.95))] px-6 sm:px-12 lg:px-20 py-20 text-white">
+          <div className="text-center flex flex-col items-center">
+            <h3 className="text-3xl md:text-5xl font-semibold gradient_text">
               Subscribe to Our Newsletter
             </h3>
-            <p className="mt-3 max-w-2xl text-sm text-white/70 md:text-base">
-              Get weekly insights, market updates, and exclusive investment tips delivered to your inbox.
+
+            <p className="mt-3 max-w-2xl text-sm md:text-base text-white/70">
+              Get weekly insights, market updates, and exclusive investment tips
+              delivered to your inbox.
             </p>
-            <form className="mt-8 flex w-full flex-col gap-4 sm:flex-row sm:justify-center">
+
+            {/* SUBSCRIBE FORM */}
+            <form
+              className="mt-8 flex w-full flex-col gap-4 sm:flex-row sm:justify-center"
+              onSubmit={handleSubscribe}
+            >
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white placeholder:text-white/40 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-500/50 sm:max-w-sm"
+                value={subscriberEmail}
+                onChange={(e) => setSubscriberEmail(e.target.value)}
+                className="w-full rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-white placeholder:text-white/40 focus:border-sky-400 focus:ring-2 focus:ring-sky-500/50 focus:outline-none sm:max-w-sm"
+                required
               />
-              {/* <button
-                type="button"
-                className="rounded-full bg-linear-to-r from-sky-500 via-blue-500 to-indigo-500 px-8 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(59,130,246,0.45)] transition hover:shadow-[0_18px_40px_rgba(59,130,246,0.6)]"
-              >
-                Subscribe
-              </button> */}
+
               <div className="flex justify-center">
-              <Button
-                btn_name={"Subscribe"}
-                btn_background={"bg-linear-to-r from-sky-500 via-blue-500 to-indigo-500"}
-                btn_border={"border-sky-400/40"}
-                color={"text-white"}
-                icon={true}
-              />
+                <Button
+                  btn_name={loading ? "Subscribing..." : "Subscribe"}
+                  btn_background="bg-linear-to-r from-sky-500 via-blue-500 to-indigo-500"
+                  btn_border="border-sky-400/40"
+                  color="text-white"
+                  icon={false}
+                  type="submit"
+                />
               </div>
             </form>
+
+            {/* Message UI */}
+            {message && (
+              <p
+                className={`mt-4 text-sm ${
+                  message.type === "success"
+                    ? "text-green-400"
+                    : "text-red-400"
+                }`}
+              >
+                {message.text}
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -157,4 +209,3 @@ const LatestInsightsSection = () => {
 };
 
 export default LatestInsightsSection;
-

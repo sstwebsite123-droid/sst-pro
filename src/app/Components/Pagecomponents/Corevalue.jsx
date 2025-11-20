@@ -68,7 +68,7 @@ const Corevalue = () => {
           </div> */}
 
         <div className="relative flex w-full justify-center">
-          <div className="relative hidden h-[520px] w-full md:flex md:items-center md:justify-center">
+          <div className="relative hidden h-[520px] w-full xl:flex md:items-center md:justify-center">
             <div className="absolute inset-0 -z-10 rounded-[38px] bg-[radial-gradient(circle_at_center,rgba(74,161,255,0.08)_0%,rgba(7,20,39,0.05)_60%,transparent_100%)]"></div>
 
             <div className="block md:hidden absolute inset-0 flex items-center justify-center">
@@ -95,7 +95,7 @@ const Corevalue = () => {
             ))}
           </div>
 
-          <div className="flex w-full flex-col gap-6 md:hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-10 xl:gap-6 xl:hidden">
             {values.map((value) => (
               <Card
                 key={value.title}
