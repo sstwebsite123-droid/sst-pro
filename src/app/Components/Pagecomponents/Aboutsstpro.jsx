@@ -6,6 +6,7 @@ import missionblack from "../../../../public/icons/earthicon.svg";
 import visionblack from "../../../../public/icons/securityicon.svg";
 import Button from "../Uiux/Button";
 import aboutsst from "../../../../public/images/aboutsst.webp";
+import Link from "next/link";
 
 const Aboutsstpro = () => {
   return (
@@ -50,7 +51,9 @@ const Aboutsstpro = () => {
                     
                   </p> */}
                   <span className="sub_description text-black">
-                    With operations in the USA and the United Kingdom, we help <br /> investors achieve consistent, secure, and sustainable financial <br />growth through data-driven strategies.
+                    With operations in the USA and the United Kingdom, we help{" "}
+                    <br /> investors achieve consistent, secure, and sustainable
+                    financial <br />growth through data-driven strategies.
                   </span>
                 </div>
               </div>
@@ -69,7 +72,10 @@ const Aboutsstpro = () => {
                     Vision
                   </p> */}
                   <span className="sub_description text-black">
-                    SST Pro Ltd is officially registered under the laws of Colorado and <br /> certified by the Secretary of State of Colorado, maintaining full <br />compliance and good standing.
+                    SST Pro Ltd is officially registered under the laws of
+                    Colorado and <br /> certified by the Secretary of State of
+                    Colorado, maintaining full <br />compliance and good
+                    standing.
                   </span>
                 </div>
               </div>
@@ -84,12 +90,14 @@ const Aboutsstpro = () => {
                 items_start={true}
               />
               <div className="w-max m-auto md:m-[unset]">
-                <Button
-                  btn_name={"Join as an Investor"}
-                  border_bottom={false}
-                  btn_background={"bg-primary"}
-                  btn_border={false}
-                />
+                <Link href={"https://clients.sst.pro/register"}>
+                  <Button
+                    btn_name={"Join as an Investor"}
+                    border_bottom={false}
+                    btn_background={"bg-primary"}
+                    btn_border={false}
+                  />
+                </Link>
               </div>
             </div>
           </div>

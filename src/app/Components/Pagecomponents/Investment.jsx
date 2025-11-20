@@ -58,7 +58,7 @@ const Investment = () => {
                 border={false}
               />
               <div className="flex gap-5 justify-center lg:justify-start lg:pt-5 xl:pt-8">
-                <Link href={"/#"}>
+                <Link href={"https://clients.sst.pro/register"}>
                   <Button
                     btn_name={"Create Account"}
                     btn_background={"bg-[#63818D]"}
@@ -66,7 +66,7 @@ const Investment = () => {
                     shadow={true}
                   />
                 </Link>
-                <Link href={"/#"}>
+                <Link href={"/contact-us"}>
                   <Button
                     btn_name={"Request Demo"}
                     btn_background={"bg-secondary"}
@@ -99,18 +99,22 @@ const Investment = () => {
               border={false}
             />
             <div className="flex flex-wrap items-center gap-5 justify-center lg:justify-start lg:pt-5 xl:pt-8">
-              <Button
-                btn_name={"Create Account"}
-                btn_background={"bg-[#63818D]"}
-                color={"text-white"}
-                shadow={true}
-              />
-              <Button
-                btn_name={"Request Demo"}
-                btn_background={"bg-secondary"}
-                color={"text-black"}
-                btn_border={"border-secondary"}
-              />
+               <Link href={"https://clients.sst.pro/register"}>
+                  <Button
+                    btn_name={"Create Account"}
+                    btn_background={"bg-[#63818D]"}
+                    color={"text-white"}
+                    shadow={true}
+                  />
+                </Link>
+                <Link href={"/contact-us"}>
+                  <Button
+                    btn_name={"Request Demo"}
+                    btn_background={"bg-secondary"}
+                    color={"text-black"}
+                    btn_border={"border-secondary"}
+                  />
+                </Link>
             </div>
           </div>
         </div>

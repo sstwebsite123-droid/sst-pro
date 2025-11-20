@@ -9,6 +9,7 @@ import icMulti from ".././../../../public/icons/market.svg";
 import icUp from ".././../../../public/icons/return.svg";
 import icGlobe from ".././../../../public/icons/global.svg";
 import Card from "./Card";
+import Link from "next/link";
 
 const items = [
   {
@@ -106,11 +107,15 @@ const AboutChoose = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
+          
+          <Link
+           href={'https://clients.sst.pro/register'}>
           <Button
             btn_name="Join as an Investor"
             btn_background="bg-[#CFE8E6]"
             color="text-black"
           />
+          </Link>
         </div>
       </div>
     </section>
