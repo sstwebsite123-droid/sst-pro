@@ -10,8 +10,8 @@ const page = () => {
             <main className="bg-black text-gray-100">
 
                 {/* Hero Section */}
-                <section className="relative bg-gray-900 text-white  mt-[150px]">
-                    <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+                <section className="relative bg-gray-900 text-white  mt-[100px]  md:mt-[150px]">
+                    <div className="container mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                 Connecting Global Trade with Efficiency and Speed
@@ -20,19 +20,19 @@ const page = () => {
                                 In our interconnected world, transportation and logistics form the backbone of the global economy. At SST Pro, we see this sector as a dynamic, opportunity-rich landscape for investment and trading. Our Transportation & Logistics project gives clients strategic access to trends shaping the future of global trade.
                             </p>
                         </div>
-                        <div className="md:w-1/2 relative h-64 md:h-96">
+                        <div className="md:w-1/2 relative h-64 md:h-96 object-cover">
                             <Image
                                 src={logistics1}
                                 width={1000}
                                 height={500}
-                                className='rounded-[50px]'
+                                className='rounded-[50px]  object-cover h-full'
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Main Content */}
-                <section className="container mx-auto px-6 py-16 space-y-16">
+                <section className="container mx-auto px-6 md:py-16 space-y-16">
 
                     {/* Logistics Market */}
                     <Globlegroth

@@ -9,7 +9,7 @@ import Button from "../Uiux/Button";
 import Link from "next/link";
 const Investment = () => {
   return (
-    <div className=" py-24 xl:py-32 overflow-hidden">
+    <div className=" pt-12 pb-0 md:pb-auto md:py-24 xl:py-32 overflow-hidden">
       <div className="inn_container relative hidden md:block">
         <div className="pt-12 md:pt-18 lg:pt-24">
           <Image
@@ -99,22 +99,22 @@ const Investment = () => {
               border={false}
             />
             <div className="flex flex-wrap items-center gap-5 justify-center lg:justify-start lg:pt-5 xl:pt-8">
-               <Link href={"https://clients.sst.pro/register"}>
-                  <Button
-                    btn_name={"Create Account"}
-                    btn_background={"bg-[#63818D]"}
-                    color={"text-white"}
-                    shadow={true}
-                  />
-                </Link>
-                <Link href={"/contact-us"}>
-                  <Button
-                    btn_name={"Request Demo"}
-                    btn_background={"bg-secondary"}
-                    color={"text-black"}
-                    btn_border={"border-secondary"}
-                  />
-                </Link>
+              <Link href={"https://clients.sst.pro/register"}>
+                <Button
+                  btn_name={"Create Account"}
+                  btn_background={"bg-[#63818D]"}
+                  color={"text-white"}
+                  shadow={true}
+                />
+              </Link>
+              <Link href={"/contact-us"}>
+                <Button
+                  btn_name={"Request Demo"}
+                  btn_background={"bg-secondary"}
+                  color={"text-black"}
+                  btn_border={"border-secondary"}
+                />
+              </Link>
             </div>
           </div>
         </div>

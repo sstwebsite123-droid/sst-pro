@@ -10,8 +10,8 @@ const page = () => {
             <main className="bg-black text-gray-100">
 
                 {/* Hero Section with Image */}
-                <section className="relative bg-gray-900 text-white  mt-[150px]">
-                    <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+                <section className="relative bg-gray-900 text-white  mt-[100px]  md:mt-[150px]">
+                    <div className="container mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                 Powering Economies Through Reliable Energy Investments
@@ -21,19 +21,19 @@ const page = () => {
                             </p>
                         </div>
 
-                        <div className="md:w-1/2 relative h-64 md:h-96">
+                        <div className="md:w-1/2 relative h-64 md:h-96 object-cover">
                             <Image
                                 src={WindAndSolarPower}
                                 width={1000}
                                 height={500}
-                                className="rounded-[50px]"
+                                className="rounded-[50px]  object-cover h-full"
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Content Sections */}
-                <section className="container mx-auto px-6 py-16 space-y-16">
+                <section className="container mx-auto px-6 md:py-16 space-y-16">
 
                     {/* The Energy Market */}
                     <Globlegroth
