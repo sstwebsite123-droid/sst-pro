@@ -71,7 +71,7 @@ export default function page() {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-[32px] gradient_text sm:text-[45px] lg:text-[60px] xl:text-[70px]  text-center leading-snug md:px-16 lg:px-12 xl:px-0 aos-init aos-animate"
+                        className="text-[32px] gradient_text sm:text-[45px] lg:text-[55px] 2xl:text-[70px] text-center leading-snug md:px-16 lg:px-12 xl:px-0 aos-init aos-animate"
                     >
                         Smart Diversified Investing for 2026
                     </motion.h1>
