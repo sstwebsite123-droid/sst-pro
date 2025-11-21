@@ -33,7 +33,7 @@ const footerdata = {
       ],
     },
     {
-      title: "Real Investment",
+      title: "Core Market",
       pagelinks: [
         { pagelink: "/forex", pagename: "Forex Trading" },
         { pagelink: "/real-estate", pagename: "Real-Estate" },
