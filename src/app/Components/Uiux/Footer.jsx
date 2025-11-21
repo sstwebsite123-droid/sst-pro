@@ -22,6 +22,14 @@ const footerdata = {
       ],
     },
     {
+      title: "Core Markets",
+      pagelinks: [
+        { pagelink: "/forex", pagename: "Forex Trading" },
+        { pagelink: "/real-estate", pagename: "Real-Estate" },
+        // { pagelink: "/terms", pagename: "Terms & Conditions" },
+      ],
+    },
+    {
       title: "UpComing Project",
       pagelinks: [
         { pagelink: "/sugarplant", pagename: "Sugar Plant" },
@@ -32,14 +40,7 @@ const footerdata = {
         { pagelink: "/technology-ai", pagename: "Technology & AI" },
       ],
     },
-    {
-      title: "Core Markets",
-      pagelinks: [
-        { pagelink: "/forex", pagename: "Forex Trading" },
-        { pagelink: "/real-estate", pagename: "Real-Estate" },
-        // { pagelink: "/terms", pagename: "Terms & Conditions" },
-      ],
-    },
+
     {
       title: "Contact",
       pagelinks: [
