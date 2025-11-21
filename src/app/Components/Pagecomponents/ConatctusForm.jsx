@@ -18,7 +18,7 @@ const tradingBadges = [
 
 const ConatctusForm = () => {
   return (
-    <section className="inn_container pt-24 2xl:pt-32">
+    <section className="inn_container md:pt-24 2xl:pt-32">
       {/* heading */}
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
         <div>

@@ -10,8 +10,8 @@ const page = () => {
         <div>
             <main className="bg-black text-gray-100">
                 {/* Hero Section with Image */}
-                <section className="relative bg-gray-900 text-white  mt-[150px]">
-                    <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+                <section className="relative bg-gray-900 text-white  mt-[100px]  md:mt-[150px]">
+                    <div className="container mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                 Expanding Hospitality with Innovation and Global Reach
@@ -19,19 +19,19 @@ const page = () => {
                             <p className="text-lg md:text-xl max-w-lg text-gray-200">
                                 At SST Pro, we recognize hospitality as a strong and growing segment within real estate, offering both long-term value and steady income. Our Hotel Chains project provides investors with smart, secure, and transparent access to high-potential hotel investment opportunities.</p>
                         </div>
-                        <div className="md:w-1/2 relative h-64 md:h-96">
+                        <div className="md:w-1/2 relative h-64 md:h-96 object-cover">
                             <Image
                                 src={globalreach} // replace with your hotel hero image
                                 width={1000}
                                 height={500}
-                                className='rounded-[50px]'
+                                className='rounded-[50px]  object-cover h-full'
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Content Sections */}
-                <section className="container mx-auto px-6 py-16 space-y-16">
+                <section className="container mx-auto px-6 md:py-16 space-y-16">
 
                     {/* The New Era of Hospitality */}
                     <Globlegroth

@@ -66,7 +66,7 @@ const Header = () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                className="max-w-[62px] md:max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px] animate-spin"
+                className="max-w-[62px] md:max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px] "
                 style={{ animationDuration: "2s", animationIterationCount: "1" }}
               />
             </Link>

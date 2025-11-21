@@ -15,8 +15,8 @@ const Sugarplant = () => {
             <main className="bg-black text-gray-100">
                 {/* <Dynamicbanner banner_title={"About SST Pro"} bannerimg={Sugarimg1} /> */}
                 {/* Hero Section with Image */}
-                <section className="relative bg-gray-900 text-white  mt-[150px]">
-                    <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+                <section className="relative bg-gray-900 text-white  mt-[100px]  md:mt-[150px]">
+                    <div className="container mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-3xl md:text-4xl font-bold mb-4">
                                 Fueling Industries with Quality and Sustainable Production
@@ -25,19 +25,19 @@ const Sugarplant = () => {
                                 At SST Pro, we see the global sugar industry as a powerful investment opportunity within the commodities market. Our Sugar Plant project enables investors to tap into this essential and rapidly evolving sector with strong long-term potential.
                             </p>
                         </div>
-                        <div className="md:w-1/2 relative h-64 md:h-96">
+                        <div className="md:w-1/2 relative h-64 md:h-96 object-cover">
                             <Image
                                 src={thumsup}
                                 width={1000}
                                 height={500}
-                                className='rounded-[50px]'
+                                className='rounded-[50px]  object-cover h-full'
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Content Sections */}
-                <section className="container mx-auto px-6 py-16 space-y-16">
+                <section className="container mx-auto px-6 md:py-16 space-y-16">
                     {/* Global Demand */}
 
                     <Globlegroth
