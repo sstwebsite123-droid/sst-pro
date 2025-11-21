@@ -168,7 +168,7 @@ const industries = [
     cardvaluetype2: "CAGR",
     cardvalue3: "65%",
     cardvaluetype3: "Adoption Rate",
-    href: "/technology" // <-- Add this
+    href: "/technology-ai" // <-- Add this
   },
 ];
 
@@ -177,6 +177,7 @@ const Trackgroth = () => {
   const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
   return (
+
     <motion.div
       ref={containerRef}
       initial={{ opacity: 0 }}

@@ -29,7 +29,7 @@ const footerdata = {
         { pagelink: "/oilandenergy", pagename: "Oil & Energy" },
         { pagelink: "/Agriculture", pagename: "Agriculture Us" },
         { pagelink: "/transportationlogistics", pagename: "Transportation & Logistics" },
-        { pagelink: "/technology", pagename: "Technology & AI" },
+        { pagelink: "/technology-ai", pagename: "Technology & AI" },
       ],
     },
     {

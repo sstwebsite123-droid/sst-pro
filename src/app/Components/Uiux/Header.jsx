@@ -36,7 +36,7 @@ const headerlinks = [
       { name: "Oil & Energy", link: "/oilandenergy" },
       { name: "Agriculture", link: "/Agriculture" },
       { name: "Transportation & Logistics", link: "/transportationlogistics" },
-      { name: "Technology & AI", link: "/technology" },
+      { name: "Technology & AI", link: "/technology-ai" },
     ]
   },
 
