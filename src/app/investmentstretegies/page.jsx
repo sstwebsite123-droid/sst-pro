@@ -88,7 +88,7 @@ export default function page() {
             </div>
 
             {/* MOBILE SLIDER */}
-            <div className="md:hidden mt-10 px-4">
+            {/* <div className="md:hidden mt-10 px-4">
                 <Swiper spaceBetween={20} slidesPerView={1}>
                     {sections.map((sec, i) => (
                         <SwiperSlide key={i}>
@@ -101,7 +101,6 @@ export default function page() {
                         </SwiperSlide>
                     ))}
                     <div className="relative">
-                        {/* ↓↓↓ Arrows placed BELOW the slider ↓↓↓ */}
                         <div className="flex relative justify-between items-center mb-[13%] px-2">
                             <button className="swiper-button-prev bg-gray-800 text-white px-4 py-2 rounded-lg">
                                 ◀
@@ -113,10 +112,10 @@ export default function page() {
                         </div>
                     </div>
                 </Swiper>
-            </div>
+            </div> */}
 
             {/* DESKTOP SECTIONS */}
-            <div className="hidden md:block max-w-7xl mx-auto py-20 px-6 space-y-20">
+            <div className="block max-w-7xl mx-auto py-20 px-6 space-y-20">
                 {sections.map((sec, i) => (
                     <motion.div
                         key={i}
