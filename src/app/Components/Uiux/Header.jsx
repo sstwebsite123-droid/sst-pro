@@ -19,7 +19,7 @@ const headerlinks = [
 
   {
     id: 4,
-    pagename: "Markets",
+    pagename: "Core Markets",
     dropdown: [
       { name: "Forex", link: "/forex" },
       { name: "Real-Estate", link: "/real-estate" },
