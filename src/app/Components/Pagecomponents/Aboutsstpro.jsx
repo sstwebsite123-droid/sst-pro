@@ -111,7 +111,7 @@ const Aboutsstpro = () => {
             >
               <source src="/video/earthvideo.mp4" type="video/mp4" />
             </video>
-            <div className="absolute w-max flex items-center gap-2 md:gap-4 bg-[#000000E5] ps-6 2xl:ps-12 pe-2 2xl:pe-4 py-1 2xl:py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] top-[30%] right-[4%] ">
+            {/* <div className="absolute w-max flex items-center gap-2 md:gap-4 bg-[#000000E5] ps-6 2xl:ps-12 pe-2 2xl:pe-4 py-1 2xl:py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] top-[30%] right-[4%] ">
               <p className="text-[14px] md:text-xl 2xl:text-[25px] text-white">
                 {" "}Entity ID{" "}
               </p>
@@ -126,7 +126,7 @@ const Aboutsstpro = () => {
               <div className="text-[14px] md:text-xl 2xl:text-[25px] bg-primary px-4 md:px-5 py-1.5 md:py-2 rounded-[40px]">
                 17752920
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

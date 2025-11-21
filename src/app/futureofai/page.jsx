@@ -57,7 +57,7 @@ export default function page() {
         <div className="min-h-screen bg-gray-900 text-white">
 
             {/* HERO SECTION */}
-            <div className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+            <div className="relative  py-24 lg:py-34 flex items-center justify-center overflow-hidden">
                 <motion.img
                     initial={{ scale: 1.4 }}
                     animate={{ scale: 1 }}
@@ -66,7 +66,7 @@ export default function page() {
                     className="absolute inset-0 w-full h-full object-cover brightness-[0.25]"
                 />
 
-                <div className="relative z-10 text-center px-5 max-w-3xl">
+                <div className="relative text-center px-5 max-w-3xl pt-12">
                     <motion.h1
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
