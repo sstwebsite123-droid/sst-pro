@@ -2,13 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import Sugarimg1 from "../../../public/images/Sugarimg1.webp"
 import Globlegroth from '../Components/Pagecomponents/Globlegroth'
-import indusrty1 from '../../../public/images/indusrty1.webp'
-import sugarbanner from '../../../public/images/sugarbanner.webp'
 import sugarcanefiels from '../../../public/images/sugarcanefiels.webp'
-import greenEnergy from '../../../public/images/greenEnergy.webp'
 import sugar3 from '../../../public/images/sugar3.webp'
+import thumsup from '../../../public/images/thumsup.webp'
 
-import Dynamicbanner from '../Components/Pagecomponents/Dynamicbanner'
 
 
 const Sugarplant = () => {
@@ -30,7 +27,7 @@ const Sugarplant = () => {
                         </div>
                         <div className="md:w-1/2 relative h-64 md:h-96">
                             <Image
-                                src={Sugarimg1}
+                                src={thumsup}
                                 width={1000}
                                 height={500}
                                 className='rounded-[50px]'
@@ -91,7 +88,7 @@ const Sugarplant = () => {
                                         src={sugar3}
                                         alt="Sugar Plant"
                                         fill
-                                        className="object-cover opacity-60"
+                                        className="object-cover"
                                     />
                                     <div className="absolute inset-0 bg-black/40 rounded-3xl"></div>
                                 </div>

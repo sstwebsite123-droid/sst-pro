@@ -271,14 +271,14 @@ const Banner = () => {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}
-          >
-            <Button
-              btn_name={"Request Demo"}
-              btn_background={"gradient_bg"}
-              btn_border={"border-secondary"}
-              color={"text-black "}
-              icon={true}
-            />
+          > <Link href={"/contact-us"}>
+              <Button
+                btn_name={"Request Demo"}
+                btn_background={"gradient_bg"}
+                btn_border={"border-secondary"}
+                color={"text-black "}
+                icon={true}
+              /></Link>
           </motion.div>
           <div className="banner-btn w-full">
             {/* <motion.div

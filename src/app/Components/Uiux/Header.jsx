@@ -52,7 +52,7 @@ const Header = () => {
     <div className="relative">
       <div className="px-[3%]">
         <div
-          className="max-w-[1600px] cus_header w-[88%] m-auto flex justify-between items-center bg-cover px-[20px] py-1 md:px-[35px] md:py-[13px] rounded-[60px] bg-no-repeat"
+          className="max-w-[1800px] cus_header w-[95%] m-auto flex justify-between items-center bg-cover px-[20px] py-1 md:px-[35px] md:py-[13px] rounded-[60px] bg-no-repeat"
           style={{ backgroundImage: `url(${Headerbg.src})` }}
         >
           {/* Mobile Menu Icon */}
@@ -81,7 +81,7 @@ const Header = () => {
                 {!data.dropdown ? (
                   <Link href={data.pagelink}>
                     <span
-                      className={`text-base xl:text-sm px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
+                      className={`text-base xl:text-xl  font_light px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
                         }`}
                     >
                       {data.pagename}
@@ -91,7 +91,7 @@ const Header = () => {
                   <>
                     {/* Dropdown Button + Arrow */}
                     <div className="flex items-center gap-2 px-3 xl:px-5 text-white group-hover:text-secondary">
-                      <span className="text-base xl:text-xl">{data.pagename}</span>
+                      <span className="text-base xl:text-xl  font_light">{data.pagename}</span>
                       <Image
                         src={arrowDown}
                         alt="arrow"
@@ -103,7 +103,7 @@ const Header = () => {
                     <div className="absolute left-0 top-[100%] bg-[#132941] text-white shadow-md rounded-lg min-w-[180px] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-50">
                       {data.dropdown.map((item, idx) => (
                         <Link key={idx} href={item.link}>
-                          <div className="px-4 py-2 hover:bg-secondary hover:text-black">{item.name}</div>
+                          <div className="px-4 py-2 hover:bg-secondar hover:text-[#4aa1ff]">{item.name}</div>
                         </Link>
                       ))}
                     </div>

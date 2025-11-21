@@ -21,7 +21,7 @@ const insights = [
     readTime: "5 min read",
     image: investmentImg,
     imageAlt: "Investor reviewing financial data on a tablet",
-    link: "/Blogs", // link to individual page
+    link: "/investmentstretegies", // link to individual page
   },
   {
     category: "Market Analysis",
@@ -33,7 +33,7 @@ const insights = [
     readTime: "7 min read",
     image: marketImg,
     imageAlt: "Representation of market volatility with bitcoin coin",
-    link: "/Blogs", // link to individual page
+    link: "/understanding-markets", // link to individual page
   },
   {
     category: "Technology",
@@ -45,7 +45,7 @@ const insights = [
     readTime: "6 min read",
     image: technologyImg,
     imageAlt: "Laptop screen showing AI-driven financial dashboard",
-    link: "/Blogs", // link to individual page
+    link: "/futureofai", // link to individual page
   },
 ];
 
