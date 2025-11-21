@@ -15,7 +15,7 @@ const Sugarplant = () => {
             <main className="bg-black text-gray-100">
                 {/* <Dynamicbanner banner_title={"About SST Pro"} bannerimg={Sugarimg1} /> */}
                 {/* Hero Section with Image */}
-                <section className="relative bg-gray-900 text-white mt-[120px]">
+                <section className="relative bg-gray-900 text-white  mt-[150px]">
                     <div className="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className="text-3xl md:text-4xl font-bold mb-4">
