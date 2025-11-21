@@ -39,8 +39,8 @@ const contacts = [
 const Contactusdata = () => {
   return (
     <div>
-      <div className="inn_container pt-24 2xl:pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="inn_container  pt-32 2xl:pt-44">
+        <div className="grid grid-cols-1  items-center">
           <div>
             <Title
               title={'Get in <span class="gradient_text"> Touch </span>'}
@@ -67,27 +67,27 @@ const Contactusdata = () => {
                 className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700"
               >
                 <Link href={item.href} target="_blank">
-                <div className="max-w-[510px] m-auto pt-8 pb-6">
-                  {/* small icon box like the screenshot */}
-                  <div className="w-10 h-10 rounded-2xl border border-white/20 bg-white/5 flex items-center justify-center">
-                    {item.icon}
+                  <div className="max-w-[510px] m-auto pt-8 pb-6">
+                    {/* small icon box like the screenshot */}
+                    <div className="w-10 h-10 rounded-2xl border border-white/20 bg-white/5 flex items-center justify-center">
+                      {item.icon}
+                    </div>
+
+                    <h4 className="text-[30px] gradient_text w-max mt-4">
+                      {item.heading}
+                    </h4>
+
+                    <p className="sub_description text-white pt-2 min-h-[44px]">
+                      {item.subtext}
+                    </p>
+
+                    <span
+                      // href={item.href}
+                      className="inline-block mt-2 underline text-white"
+                    >
+                      {item.actionText}
+                    </span>
                   </div>
-
-                  <h4 className="text-[30px] gradient_text w-max mt-4">
-                    {item.heading}
-                  </h4>
-
-                  <p className="sub_description text-white pt-2 min-h-[44px]">
-                    {item.subtext}
-                  </p>
-
-                  <span
-                    // href={item.href}
-                    className="inline-block mt-2 underline text-white"
-                  >
-                    {item.actionText}
-                  </span>
-                </div>
                 </Link>
               </div>
             ))}
