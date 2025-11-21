@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import logistics1 from '../../../public/images/logistics1.webp'
-import logistics2 from '../../../public/images/logistics2.webp'
+import logistictransport from '../../../public/images/logistictransport.webp'
 import Globlegroth from '../Components/Pagecomponents/Globlegroth'
 
 const page = () => {
