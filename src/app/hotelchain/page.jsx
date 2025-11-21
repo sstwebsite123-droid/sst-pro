@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import hotel1 from '../../../public/images/hotel1.webp'
+import globalreach from '../../../public/images/globalreach.webp'
 import hotellocation from '../../../public/images/hotellocation.webp'
 import hotel2 from '../../../public/images/hotel2.webp'
 import portfoliohotel from '../../../public/images/portfoliohotel.webp'
@@ -21,7 +21,7 @@ const page = () => {
                         </div>
                         <div className="md:w-1/2 relative h-64 md:h-96">
                             <Image
-                                src={hotel1} // replace with your hotel hero image
+                                src={globalreach} // replace with your hotel hero image
                                 width={1000}
                                 height={500}
                                 className='rounded-[50px]'
@@ -62,9 +62,9 @@ const page = () => {
                                     src={hotellocation} // replace with relevant image
                                     alt="Hotel Location"
                                     fill
-                                    className="object-cover opacity-60"
+                                    className="object-cover"
                                 />
-                                <div className="absolute inset-0 bg-black/40 rounded-3xl"></div>
+                                <div className="absolute  rounded-3xl"></div>
                             </div>
                         </div>
                     </section>

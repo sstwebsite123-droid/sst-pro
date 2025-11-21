@@ -19,7 +19,7 @@ const headerlinks = [
 
   {
     id: 4,
-    pagename: "Real Invest",
+    pagename: "Markets",
     dropdown: [
       { name: "Forex", link: "/forex" },
       { name: "Real-Estate", link: "/real-estate" },
@@ -81,17 +81,20 @@ const Header = () => {
                 {!data.dropdown ? (
                   <Link href={data.pagelink}>
                     <span
-                      className={`text-base xl:text-xl  font_light px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
+                      className={`relative z-[2] text-base xl:text-xl  font_light px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
                         }`}
                     >
                       {data.pagename}
                     </span>
+                    {currentpath === data.pagelink
+                      ? null
+                      : <span className="bg-secondary border-b-4 border-black rounded-[20px]  my-auto h-[90%] left-0 absolute top-[5%] scale-0 translate-y-[50px] transition-all duration-500 w-full z-[1] group-hover:scale-100 group-hover:translate-y-0" />}
                   </Link>
                 ) : (
                   <>
                     {/* Dropdown Button + Arrow */}
                     <div className="flex items-center gap-2 px-3 xl:px-5 text-white group-hover:text-secondary">
-                      <span className="text-base xl:text-xl  font_light">{data.pagename}</span>
+                      <span className="text-base xl:text-xl  font_light relative z-[2] ">{data.pagename}</span>
                       <Image
                         src={arrowDown}
                         alt="arrow"
@@ -103,10 +106,13 @@ const Header = () => {
                     <div className="absolute left-0 top-[100%] bg-[#132941] text-white shadow-md rounded-lg min-w-[180px] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-50">
                       {data.dropdown.map((item, idx) => (
                         <Link key={idx} href={item.link}>
-                          <div className="px-4 py-2 hover:bg-secondar hover:text-[#4aa1ff]">{item.name}</div>
+                          <div className={` px-4 py-2 hover:bg-secondar hover:text-[#4aa1ff] ${currentpath === item.link ? 'text-[#4aa1ff]' : 'text-white'}`}>{item.name}</div>
                         </Link>
                       ))}
                     </div>
+                    {currentpath === data.pagelink
+                      ? null
+                      : <span className="bg-secondary border-b-4 border-black rounded-[20px]  my-auto h-[90%] left-0 absolute top-[5%] scale-0 translate-y-[50px] transition-all duration-500 w-full z-[1] group-hover:scale-100 group-hover:translate-y-0" />}
                   </>
                 )}
               </div>
