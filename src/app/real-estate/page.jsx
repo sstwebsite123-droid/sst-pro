@@ -14,11 +14,7 @@ import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
 import sleekglass from '../../../public/images/sleekglass.webp'
 const faqData = [
-  {
-    question: "What is SST Pro?",
-    answer:
-      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
-  },
+
   {
     question: "What returns can I expect from SST Pro’s real estate investment program?",
     answer:

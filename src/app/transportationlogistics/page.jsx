@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import logistics1 from '../../../public/images/logistics1.webp'
-import logistics2 from '../../../public/images/logistics2.webp'
+import logistictransport from '../../../public/images/logistictransport.webp'
+import logistics22 from '../../../public/images/logistics22.webp'
 
 import Globlegroth from '../Components/Pagecomponents/Globlegroth'
 
@@ -18,12 +18,12 @@ const page = () => {
                                 Connecting Global Trade with Efficiency and Speed
                             </h1>
                             <p className="text-lg md:text-xl max-w-lg text-gray-200">
-                                In our interconnected world, transportation and logistics form the backbone of the global economy. At SST Pro, we see this sector as a dynamic, opportunity-rich landscape for investment and trading. Our Transportation & Logistics project gives clients strategic access to trends shaping the future of global trade.
+                                In our interconnected world, the transportation and logistics sector is the backbone of the global economy. At SST Pro, we see this vital industry not just as a network of roads, ports, and warehouses, but as a dynamic and opportunity-rich landscape for investment and trading. Our Transportation & Logistics project is designed to give our clients a strategic entry point into this sector, enabling them to capitalize on the trends that are shaping the future of global trade.
                             </p>
                         </div>
                         <div className="md:w-1/2 relative h-64 md:h-96">
                             <Image
-                                src={logistics1} // Replace with relevant transportation/logistics image
+                                src={logistictransport}
                                 width={1000}
                                 height={500}
                                 className='rounded-[50px]'
@@ -39,11 +39,11 @@ const page = () => {
                     <Globlegroth
                         title={'The Logistics Market: An Investor’s Roadmap'}
                         description={
-                            "Transportation and logistics are evolving rapidly, driven by e-commerce growth, digital transformation, and infrastructure modernization. Investors can access a sector poised for long-term growth and innovation in 2025 and beyond."
+                            "The transportation and logistics industry is at a critical juncture. The rapid growth of e-commerce, along with the global demand for more resilient and efficient supply chains, is driving a wave of investment and innovation. The sector is expected to experience continued growth in M&A activity in 2025, propelled by digital technologies and an increasing need for sophisticated logistics solutions."
                         }
                         videoSrc='/video/graphvideo.mp4'
                         right_description={
-                            "From AI and IoT integration to upgraded ports, airports, and roads, logistics presents strategic opportunities for investors seeking exposure to efficient, technology-driven supply chains and resilient global trade."
+                            "From advanced warehousing to upgraded infrastructure across ports, airports, and highways, logistics is emerging as a strategic sector for investors. As businesses adopt AI, automation, and IoT-driven systems, logistics companies that are prepared for this shift offer far-reaching investment potential."
                         }
                     />
 
@@ -56,20 +56,31 @@ const page = () => {
                                 </h2>
 
                                 <p className="text-gray-300 leading-relaxed text-lg">
-                                    • <strong>E-commerce Boom:</strong> Rising online retail demand drives warehousing, last-mile delivery, and reverse logistics needs.<br />
-                                    • <strong>Digital Transformation:</strong> AI, IoT, and blockchain revolutionize supply chain efficiency and transparency.<br />
-                                    • <strong>Infrastructure Modernization:</strong> Investments in ports, airports, roads, and railways create opportunities for logistics and infrastructure funds.<br />
+
+                                    <strong>E-commerce Boom:</strong>
+                                    The exponential growth of online retail is creating unprecedented demand for warehousing, last-mile delivery, and reverse logistics services.<br /><br />
+
+                                    <strong>Digital Transformation:</strong>
+                                    AI, IoT, and blockchain are revolutionizing supply chain management — increasing transparency, speed, and efficiency.<br /><br />
+
+                                    <strong>Infrastructure Modernization:</strong>
+                                    Governments and private sector organizations are investing heavily in upgrading transportation infrastructure including ports, airports, railways, and highways.<br /><br />
+
+                                    <strong>SST Pro’s Strategic Approach:</strong><br />
+                                    • We identify logistics companies positioned to benefit from the e-commerce boom.<br />
+                                    • We invest in tech-driven logistics companies leading digital transformation.<br />
+                                    • We provide access to infrastructure funds involved in large-scale modernization projects.<br />
+
                                 </p>
                             </div>
 
                             <div className="md:col-span-1 relative rounded-3xl overflow-hidden shadow-2xl h-96">
                                 <Image
-                                    src={logistics2} // Replace with transportation/logistics image
+                                    src={logistics22}
                                     alt="Logistics Market"
                                     fill
-                                    className="object-cover opacity-60"
+                                    className="object-cover"
                                 />
-                                <div className="absolute inset-0 bg-black/40 rounded-3xl"></div>
                             </div>
                         </div>
                     </section>
@@ -84,19 +95,22 @@ const page = () => {
                             <div className="grid md:grid-cols-3 gap-8">
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl transform -translate-y-6">
                                     <p className="text-gray-300">
-                                        • <strong>Logistics Stocks:</strong> Invest in leading publicly traded logistics companies, from global shipping giants to specialized last-mile delivery providers.
+                                        • <strong>Logistics Stocks:</strong>
+                                        Invest in a curated selection of publicly traded logistics companies, from global shipping giants to specialized last-mile delivery providers.
                                     </p>
                                 </div>
 
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl">
                                     <p className="text-gray-300">
-                                        • <strong>Infrastructure Funds:</strong> Gain exposure to transportation infrastructure assets, including roads, ports, and railways, through specialized funds.
+                                        • <strong>Infrastructure Funds:</strong>
+                                        Gain exposure to diversified transportation infrastructure assets, including roads, ports, and rail systems.
                                     </p>
                                 </div>
 
                                 <div className="bg-gray-900 p-6 rounded-3xl shadow-2xl transform translate-y-6">
                                     <p className="text-gray-300">
-                                        • <strong>Private Equity:</strong> For qualified investors, access private equity opportunities in logistics with potential for high returns.
+                                        • <strong>Private Equity:</strong>
+                                        For qualified investors, we offer access to private equity opportunities in the logistics sector, providing the potential for high long-term returns.
                                     </p>
                                 </div>
                             </div>
@@ -105,7 +119,6 @@ const page = () => {
 
                 </section>
 
-                {/* Footer */}
             </main>
         </div>
     )

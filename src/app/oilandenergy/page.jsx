@@ -67,9 +67,9 @@ const page = () => {
                                     src={oil22}
                                     alt="Energy Market"
                                     fill
-                                    className="object-cover opacity-60"
+                                    className="object-cover"
                                 />
-                                <div className="absolute inset-0 bg-black/40 rounded-3xl"></div>
+                                <div className="absolute rounded-3xl"></div>
                             </div>
                         </div>
                     </section>
