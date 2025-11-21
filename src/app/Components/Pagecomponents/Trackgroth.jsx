@@ -24,6 +24,7 @@ import Technologys from "../../../../public/images/Technologys.webp";
 
 import Image from "next/image";
 import Arrowbtn from "../Uiux/Arrowbtn";
+import Link from "next/link";
 const industries = [
   // {
   //   image: cardbanner3,
@@ -87,7 +88,8 @@ const industries = [
     cardvalue2: "4%",
     cardvaluetype2: "Annual Growth",
     cardvalue3: "180M",
-    cardvaluetype3: "Produced Yearly"
+    cardvaluetype3: "Produced Yearly",
+    href: "/sugarplant" // <-- Add this
   },
   {
     image: HotelChains,
@@ -99,7 +101,8 @@ const industries = [
     cardvalue2: "70%",
     cardvaluetype2: "Avg Occupancy",
     cardvalue3: "12%",
-    cardvaluetype3: "Yearly Revenue Rise"
+    cardvaluetype3: "Yearly Revenue Rise",
+    href: "/hotelchain" // <-- Add this
   },
   // {
   //   image: cardbanner6,
@@ -123,7 +126,8 @@ const industries = [
     cardvalue2: "5%",
     cardvaluetype2: "Yearly Growth",
     cardvalue3: "30%",
-    cardvaluetype3: "Renewable Shift"
+    cardvaluetype3: "Renewable Shift",
+    href: "/oilandenergy" // <-- Add this
   },
 
 
@@ -138,6 +142,7 @@ const industries = [
     cardvaluetype2: "Annual Growth",
     cardvalue3: "25%",
     cardvaluetype3: "Tech-Integrated Farms",
+    href: "/Agriculture" // <-- Add this
   },
   {
     image: Transportation,
@@ -150,6 +155,7 @@ const industries = [
     cardvaluetype2: "Growth Rate",
     cardvalue3: "80%",
     cardvaluetype3: "Digitalized Operations",
+    href: "/transportationlogistics" // <-- Add this
   },
   {
     image: Technologys,
@@ -162,6 +168,7 @@ const industries = [
     cardvaluetype2: "CAGR",
     cardvalue3: "65%",
     cardvaluetype3: "Adoption Rate",
+    href: "/technology" // <-- Add this
   },
 ];
 
@@ -218,89 +225,92 @@ const Trackgroth = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-12">
             {industries.map((data, index) =>
-              <motion.div
-                key={index}
-                className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic"
-                initial={{ opacity: 0, y: 100, scale: 0.8 }}
-                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
-                transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
-                whileHover={{
-                  y: -10,
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
-              >
-                {/* Animated background gradient */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#001D3C] group-hover:opacity-100 transition-opacity duration-500"
-                />
 
-                {/* Floating particles */}
+              <Link key={index} href={data.href}>
                 <motion.div
-                  className="absolute top-4 right-4 w-2 h-2 bg-primary/40 rounded-full"
-                  animate={{
-                    y: [0, -15, 0],
-                    opacity: [0.4, 1, 0.4]
+                  key={index}
+                  className="p-4 gradient_border group rounded-[50px]  hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic"
+                  initial={{ opacity: 0, y: 100, scale: 0.8 }}
+                  animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.8 }}
+                  transition={{ duration: 0.8, delay: 1 + index * 0.1 }}
+                  whileHover={{
+                    y: -10,
+                    scale: 1.05,
+                    transition: { duration: 0.3 }
                   }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: index * 0.5
-                  }}
-                />
-
-                <motion.div
-                  className="relative max-w-[510px] m-auto cursor-ripple"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
                 >
+                  {/* Animated background gradient */}
                   <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
-                    transition={{ duration: 0.8, delay: 1.2 + index * 0.1 }}
+                    className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#001D3C] group-hover:opacity-100 transition-opacity duration-500"
+                  />
+
+                  {/* Floating particles */}
+                  <motion.div
+                    className="absolute top-4 right-4 w-2 h-2 bg-primary/40 rounded-full"
+                    animate={{
+                      y: [0, -15, 0],
+                      opacity: [0.4, 1, 0.4]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      delay: index * 0.5
+                    }}
+                  />
+
+                  <motion.div
+                    className="relative max-w-[510px] m-auto cursor-ripple"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <Image
-                      src={data.image}
-                      alt="banner"
-                      width={1000}
-                      height={500}
-                      className="rounded-lg"
+                    <motion.div
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
+                      transition={{ duration: 0.8, delay: 1.2 + index * 0.1 }}
+                    >
+                      <Image
+                        src={data.image}
+                        alt="banner"
+                        width={1000}
+                        height={500}
+                        className="rounded-lg"
+                      />
+                    </motion.div>
+
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+                      transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                    >
+                      <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[72px] h-[50px] md:h-[65px] 2xl:h-[72px]"} />
+                    </motion.div>
+                  </motion.div>
+
+                  <motion.div
+                    className="max-w-[510px] m-auto pt-8 relative z-10"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                    transition={{ duration: 0.8, delay: 1.6 + index * 0.1 }}
+                  >
+                    <motion.h4
+                      className="text-2xl lg:text-[30px] gradient_text w-max"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {data.title}
+                    </motion.h4>
+
+                    <motion.p
+                      className="sub_description text-white pt-3 min-h-[66px]"
+                      dangerouslySetInnerHTML={{ __html: data.description }}
+                      initial={{ opacity: 0 }}
+                      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                      transition={{ duration: 0.8, delay: 1.8 + index * 0.1 }}
                     />
                   </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                    transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                  >
-                    <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[80px] h-[50px] md:h-[65px] 2xl:h-[80px]"} />
-                  </motion.div>
                 </motion.div>
-
-                <motion.div
-                  className="max-w-[510px] m-auto pt-8 relative z-10"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                  transition={{ duration: 0.8, delay: 1.6 + index * 0.1 }}
-                >
-                  <motion.h4
-                    className="text-2xl lg:text-[30px] gradient_text w-max"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {data.title}
-                  </motion.h4>
-
-                  <motion.p
-                    className="sub_description text-white pt-3 min-h-[66px]"
-                    dangerouslySetInnerHTML={{ __html: data.description }}
-                    initial={{ opacity: 0 }}
-                    animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ duration: 0.8, delay: 1.8 + index * 0.1 }}
-                  />
-                </motion.div>
-              </motion.div>
+              </Link>
             )}
           </div>
         </motion.div>

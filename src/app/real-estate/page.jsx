@@ -14,30 +14,31 @@ import investworkimg2 from "../../../public/images/investworkimg2.webp";
 import investworkimg3 from "../../../public/images/investworkimg3.webp";
 import sleekglass from '../../../public/images/sleekglass.webp'
 const faqData = [
+
   {
-    question: "What is SST Pro?",
+    question: "What returns can I expect from SST Pro’s real estate investment program?",
     answer:
-      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
+      "SST Pro offers investors 20%–30% annual return potential, generated through expert property selection, market analysis, and strategically managed real estate trading opportunities."
   },
   {
-    question: "Are my funds safe?",
+    question: "Is real estate investment with SST Pro secure?",
     answer:
-      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
+      "Yes. SST Pro uses strict risk-management practices, diversified property portfolios, detailed due diligence, and long-term valuation strategies to ensure safe, stable, and transparent real estate investments."
   },
   {
-    question: "What services do you offer?",
+    question: "How does SST Pro manage investor funds in real estate trading?",
     answer:
-      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
+      "The minimum duration for SST Pro’s real estate investment program is 1 year, allowing enough time for strategic property growth and secure annual profit distribution."
   },
   {
-    question: "How do I open an account?",
+    question: "Who can invest in SST Pro’s real estate program?",
     answer:
-      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
+      "Both individual and institutional investors from eligible regions can participate, accessing professionally managed real estate opportunities in the USA and United Kingdom."
   },
   {
-    question: "Is SST Pro beginner-friendly?",
+    question: "Is SST Pro legally registered and regulated for real estate investments?",
     answer:
-      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
+      "Yes. SST Pro Ltd is a certified Colorado-registered corporation (Entity ID: 20258098855) and a licensed UK investment company, adhering to strict AML and KYC regulations."
   }
 ];
 const cards = [

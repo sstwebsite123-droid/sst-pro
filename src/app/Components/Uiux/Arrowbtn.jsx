@@ -7,7 +7,7 @@ const Arrowbtn = ({ width_height }) => {
   return (
     <div className="relative">
       <div
-        className={`absolute overflow-hidden bottom-0 transition-all duration-500 group-hover:scale-[1.2] bg-[var(--primary)] group-hover:bg-[var(--secondary)] cursor-pointer right-[0px]  ${width_height} flex justify-center items-center rounded-[50%] z-[3]`}
+        className={`absolute overflow-hidden bottom-0 transition-all duration-500 group-hover:scale-[1.2] bg-[var(--primary)] group-hover:bg-[var(--secondary)] right-[0px]  ${width_height} flex justify-center items-center rounded-[50%] z-[3]`}
       >
         <div className="relative flex  w-full h-full justify-center items-center">
           <div className="absolute w-full h-full flex justify-center items-center  right-[0px] top-[0px] group-hover:top-[-200px]   group-hover:right-[-200px] transition-all duration-500 z-[2]">

@@ -15,29 +15,34 @@ import investworkimg3 from "../../../public/images/investworkimg3.webp";
 import forexbg from "../../../public/images/forexbg.webp";
 const faqData = [
   {
-    question: "What is SST Pro?",
+    question: "How much can I earn monthly with SST Pro’s Forex investment program?",
     answer:
-      "SST Pro is a global investment platform offering smart, secure, and fast trading options in Forex and real estate to help users achieve financial growth."
+      "SST Pro offers investors consistent monthly returns between 10% and 12%, achieved through professionally managed trading strategies, advanced analytics, and disciplined risk-management practices"
   },
   {
-    question: "Are my funds safe?",
+    question: "Is Forex investment with SST Pro safe?",
     answer:
-      "Yes, your funds are completely safe with SST Pro. We use advanced encryption, regulated accounts, and strict compliance standards to ensure maximum financial security."
+      "Yes. SST Pro uses strict risk-control systems, capital protection strategies, trade limits, and data-driven decision models to minimize market exposure and ensure secure, sustainable growth"
   },
   {
-    question: "What services do you offer?",
+    question: "How does SST Pro manage investor funds in Forex trading?",
     answer:
-      "SST Pro offers trading in Forex, real estate investments, and global financial markets, along with market analysis, portfolio management, and secure client account handling."
+      "Investor capital is added to a professionally managed investment pool, monitored 24/7 by expert analysts who use algorithmic models and multi-currency strategies to generate consistent returns."
   },
   {
-    question: "How do I open an account?",
+    question: "What is the minimum investment duration?",
     answer:
-      "Opening an account is simple. Register online, verify your details, choose your investment type, and start trading instantly through our secure SST Pro platform."
+      "The minimum tenure for Forex investment with SST Pro is 1 month, allowing investors to start earning returns quickly while maintaining flexibility and control over their investment."
   },
   {
-    question: "Is SST Pro beginner-friendly?",
+    question: "Who can invest in SST Pro’s Forex program?",
     answer:
-      "Absolutely! SST Pro is designed for all experience levels. Our intuitive dashboard, learning resources, and customer support make trading easy for beginners and professionals alike."
+      "SST Pro accepts both individual and institutional investors from the United States, United Kingdom, and other eligible regions where investment services are legally permitted."
+  },
+  {
+    question: "Is SST Pro a legally registered and regulated company?",
+    answer:
+      "Yes. SST Pro Ltd is officially registered in Colorado, USA and licensed in the United Kingdom, operating fully under AML and KYC guidelines for investor protection."
   }
 ];
 const cards = [

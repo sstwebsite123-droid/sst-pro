@@ -115,7 +115,7 @@ function Topstock() {
               key={index}
               className="mx-3 py-6 group"
             >
-              <div className="min-w-[350px] md:min-w-[415px] w-full border-2 border-[#b5d9d774] p-8 bg-[#00000666] rounded-[45px] relative overflow-hidden transition-all duration-300 hover:scale-105 hover:border-[#b5d9d7] hover:shadow-[0_0_30px_rgba(181,217,215,0.3)]">
+              <div className="min-w-[350px] md:min-w-[415px] w-full border-2 border-[#b5d9d774] p-8 bg-[#000000666] rounded-[45px] relative overflow-hidden transition-all duration-300 hover:scale-105 hover:border-[#b5d9d7] hover:shadow-[0_0_30px_rgba(181,217,215,0.3)]">
 
                 {/* Hover background effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

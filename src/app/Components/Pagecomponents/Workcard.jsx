@@ -70,7 +70,17 @@ const Workcard = ({ title, description, cardata }) => {
         </div>
       </div>
       <div className="px-[3%]">
-        <GalaxyAnimation />
+        {/* <GalaxyAnimation /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className=" w-full h-full object-cover -z-10 brightness-[0.7]"
+        >
+          <source src="/video/galaxywave.mp4" type="video/mp4" />
+        </video>
+
       </div>
     </div>
   );

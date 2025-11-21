@@ -19,7 +19,7 @@ const Buttondev = ({
           alt="arowicon"
           width={1000}
           height={500}
-          className=' max-w-[21px] 2xl:max-w-[51px]  md:max-w-[31px] bg-[#000]  color-white rounded-[50%] flex justify-center items-center ' /></button>
+          className=' max-w-[21px] 2xl:max-w-[46px]  md:max-w-[31px] bg-[#000]  color-white rounded-[50%] flex justify-center items-center ' /></button>
 
     </div>
   )
