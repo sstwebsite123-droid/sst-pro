@@ -87,6 +87,7 @@ export default function page() {
                 </div>
             </div>
 
+
             {/* MOBILE SLIDER */}
             {/* <div className="md:hidden mt-10 px-4">
                 <Swiper spaceBetween={20} slidesPerView={1}>
