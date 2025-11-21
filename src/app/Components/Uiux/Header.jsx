@@ -73,7 +73,7 @@ const Header = () => {
           </div>
 
           {/* DESKTOP NAV */}
-          <div className="hidden lg:flex justify-center">
+          <div className="hidden xl:flex justify-center">
             {headerlinks.map((data, index) => (
               <div key={index} className="relative group border-r-2 border-[#4AA1FF4D] cursor-pointer py-1 xl:py-2">
 
@@ -81,7 +81,7 @@ const Header = () => {
                 {!data.dropdown ? (
                   <Link href={data.pagelink}>
                     <span
-                      className={`relative z-[2] text-base xl:text-xl  font_light px-3 xl:px-5 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
+                      className={`relative z-[2] text-base xl:text-lg 2xl:text-xl  font_light px-3 xl:px-4 ${currentpath === data.pagelink ? "text-secondary font-semibold" : "text-white font-medium"
                         }`}
                     >
                       {data.pagename}
@@ -93,8 +93,8 @@ const Header = () => {
                 ) : (
                   <>
                     {/* Dropdown Button + Arrow */}
-                    <div className="flex items-center gap-2 px-3 xl:px-5 text-white group-hover:text-secondary">
-                      <span className="text-base xl:text-xl  font_light relative z-[2] ">{data.pagename}</span>
+                    <div className="flex items-center gap-2 px-3 xl:px-4 text-white group-hover:text-secondary">
+                      <span className=" text-base xl:text-lg 2xl:text-xl  font_light relative z-[2] ">{data.pagename}</span>
                       <Image
                         src={arrowDown}
                         alt="arrow"
@@ -125,7 +125,7 @@ const Header = () => {
               <Button btn_name="Sign Up" btn_background="gradient_bg" color="text-black" icon />
             </Link>
 
-            <div className="block lg:hidden" onClick={() => setMenu(!Menu)}>
+            <div className="block xl:hidden lg:ps-4" onClick={() => setMenu(!Menu)}>
               <Image src={Menu ? cross : menu} alt="menu icon" className="max-w-[30px]" />
             </div>
           </div>

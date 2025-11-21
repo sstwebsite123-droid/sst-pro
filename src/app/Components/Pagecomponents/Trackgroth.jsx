@@ -168,7 +168,7 @@ const industries = [
     cardvaluetype2: "CAGR",
     cardvalue3: "65%",
     cardvaluetype3: "Adoption Rate",
-    href: "/Technology" // <-- Add this
+    href: "/technology" // <-- Add this
   },
 ];
 

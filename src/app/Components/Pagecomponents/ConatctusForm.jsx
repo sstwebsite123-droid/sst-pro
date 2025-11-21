@@ -4,7 +4,7 @@ import Image from "next/image";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import MainContactFormDark from "./MainContactFormDark";
-import Formbanner from "../../../../public/images/newtradingimg.webp";
+import contactus from "../../../../public/images/contact-us.webp";
 
 const tradingBadges = [
   "/images/candle.png",
@@ -40,7 +40,7 @@ const ConatctusForm = () => {
       <div className="mt-10 p-4 gradient_border rounded-[50px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 2xl:gap-12">
           <Image
-            src={Formbanner}
+            src={contactus}
             alt=""
             width={1000}
             height={500}
@@ -113,28 +113,28 @@ const ConatctusForm = () => {
                 fields={[
                   {
                     name: "firstName",
-                    label: "First name",
+                    label: "First name*",
                     type: "text",
                     col: 1,
                     placeholder: "First name",
                   },
                   {
                     name: "lastName",
-                    label: "Last name",
+                    label: "Last name*",
                     type: "text",
                     col: 1,
                     placeholder: "Last name",
                   },
                   {
                     name: "email",
-                    label: "Email",
+                    label: "Email*",
                     type: "email",
                     col: 2,
                     placeholder: "Email address",
                   },
                   {
                     name: "message",
-                    label: "Message",
+                    label: "Message*",
                     type: "textarea",
                     col: 2,
                     placeholder: "Leave us a message...",

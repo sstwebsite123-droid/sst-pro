@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 export default function page() {
 
@@ -69,7 +71,7 @@ export default function page() {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-4xl md:text-6xl font-bold"
+                        className="text-[32px] gradient_text sm:text-[45px] lg:text-[60px] xl:text-[70px]  text-center leading-snug md:px-16 lg:px-12 xl:px-0 aos-init aos-animate"
                     >
                         Smart Diversified Investing for 2026
                     </motion.h1>
@@ -78,7 +80,7 @@ export default function page() {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2 }}
-                        className="mt-4 text-xl text-gray-300"
+                        className="mt-4 text-lg text-gray-300"
                     >
                         A powerful combination of Forex & Real Estate managed by SST Pro.
                     </motion.p>
@@ -98,6 +100,18 @@ export default function page() {
                             </div>
                         </SwiperSlide>
                     ))}
+                    <div className="relative">
+                        {/* ↓↓↓ Arrows placed BELOW the slider ↓↓↓ */}
+                        <div className="flex relative justify-between items-center mb-[13%] px-2">
+                            <button className="swiper-button-prev bg-gray-800 text-white px-4 py-2 rounded-lg">
+                                ◀
+                            </button>
+
+                            <button className="swiper-button-next bg-gray-800 text-white px-4 py-2 rounded-lg">
+                                ▶
+                            </button>
+                        </div>
+                    </div>
                 </Swiper>
             </div>
 

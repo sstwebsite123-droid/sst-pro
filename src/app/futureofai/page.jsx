@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 export default function page() {
 
@@ -69,7 +71,7 @@ export default function page() {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="text-4xl md:text-6xl font-bold"
+                        className="text-[32px] gradient_text sm:text-[45px] lg:text-[60px] xl:text-[70px]  text-center leading-snug md:px-16 lg:px-12 xl:px-0 aos-init aos-animate"
                     >
                         Grow Wealth Confidently with Professional Trading
                     </motion.h1>
@@ -78,7 +80,7 @@ export default function page() {
                         initial={{ opacity: 0, y: 60 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2 }}
-                        className="mt-4 text-xl text-gray-300"
+                        className="mt-4 text-lg text-gray-300"
                     >
                         Expert-managed strategies, consistent daily profits, and smart risk control.
                     </motion.p>
@@ -86,7 +88,7 @@ export default function page() {
             </div>
 
             {/* MOBILE SLIDER */}
-            <div className="md:hidden mt-10 px-4">
+            {/* <div className="md:hidden mt-10 px-4">
                 <Swiper spaceBetween={20} slidesPerView={1}>
                     {sections.map((sec, i) => (
                         <SwiperSlide key={i}>
@@ -99,7 +101,48 @@ export default function page() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+            </div> */}
+
+            <div className="md:hidden mt-10 px-4">
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    modules={[Navigation]}
+                    navigation={{
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    }}
+                >
+                    {sections.map((sec, i) => (
+                        <SwiperSlide key={i}>
+                            <div className="bg-black p-5 rounded-xl shadow-lg">
+                                <img src={sec.img} className="rounded-xl mb-3" />
+                                <span className="text-green-400 text-sm font-semibold">
+                                    {sec.tag}
+                                </span>
+                                <h2 className="text-2xl font-bold mt-1">{sec.title}</h2>
+                                <p className="mt-2 text-gray-300">{sec.text}</p>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                    <div className="relative">
+                        {/* ↓↓↓ Arrows placed BELOW the slider ↓↓↓ */}
+                        <div className="flex relative justify-between items-center mb-[13%] px-2">
+                            <button className="swiper-button-prev bg-gray-800 text-white px-4 py-2 rounded-lg">
+                                ◀
+                            </button>
+
+                            <button className="swiper-button-next bg-gray-800 text-white px-4 py-2 rounded-lg">
+                                ▶
+                            </button>
+                        </div>
+                    </div>
+
+                </Swiper>
+
+
             </div>
+
 
             {/* DESKTOP SECTIONS */}
             <div className="hidden md:block max-w-7xl mx-auto py-20 px-6 space-y-20">

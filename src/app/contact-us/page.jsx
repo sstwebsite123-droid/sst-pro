@@ -35,10 +35,10 @@ const faqData = [
 const page = () => {
   return (
     <div>
-      {/* <Contactusbanner/> */}
-      <Contactusdata/>
-      <MapSection/>
-      <ConatctusForm/>
+      {/* <Contactusbanner /> */}
+      <Contactusdata />
+      <MapSection />
+      <ConatctusForm />
       <Faqs faqData={faqData} />
     </div>
   )
