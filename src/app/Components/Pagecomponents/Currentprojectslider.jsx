@@ -56,7 +56,7 @@ const Currentprojectslider = () => {
           return (
             <SwiperSlide key={index}>
               <Link href={data.route}>
-                <div className="relative max-w-[95%] xl:max-w-[580px] 2xl:max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
+                <div className="relative max-w-[95%] xl:max-w-[580px] 2xl:max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl min-h-[270px] py-5 px-[5px] md:py-0 md:px-0 gradient_border">
                   <Image
                     src={data.image}
                     alt={data.title}
@@ -66,7 +66,7 @@ const Currentprojectslider = () => {
                   />
                   <div className="absolute top-0  w-full h-full flex items-center z-[2]">
                     <div className="flex flex-col justify-between h-[90%] w-full max-w-[85%] xl:max-w-[540px] 2xl:max-w-[650px] m-auto">
-                      <div className="w-[40px] md:w-[64px] h-[40px] md:h-[64px] flex items-center justify-center bg-[var(--secondary)] group-hover:bg-[var(--primary)] rounded-[50%] transition-all duration-500">
+                      <div className="w-[60px] md:w-[64px] h-[60px] md:h-[64px] flex items-center justify-center bg-[var(--secondary)] group-hover:bg-[var(--primary)] rounded-[50%] transition-all duration-500">
                         <Image
                           src={data.icon}
                           alt="icon"
@@ -76,7 +76,7 @@ const Currentprojectslider = () => {
                         />
                       </div>
                       <div className="max-w-[85%] xl:max-w-[unset]">
-                        <p className="text-[22px] lg:text-[25px] gradient_text pb-2">
+                        <p className="text-[24px] lg:text-[25px] gradient_text pb-2">
                           {data.title}
                         </p>
                         <span
@@ -87,7 +87,7 @@ const Currentprojectslider = () => {
                     </div>
                   </div>
                   <Arrowbtn
-                    width_height={"w-[50px] md:w-[75px] h-[50px] md:h-[75px]"}
+                    width_height={"w-[60px] md:w-[75px] h-[60px] md:h-[75px]"}
                   />
                 </div>
               </Link>
