@@ -56,7 +56,7 @@ const Currentproject = () => {
             <div className="flex flex-wrap gap-6 2xl:gap-12 justify-center">
               {industries.map((data, index) =>
                 <Link key={index} href={data.route}>
-                  <div className="p-4 gradient_border group rounded-[50px] hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic max-w-[450px] xl:max-w-[520px] 2xl:max-w-[550px] m-auto">
+                  <div className="p-4 gradient_border group rounded-[50px] hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 relative overflow-hidden magnetic max-w-[390px] xl:max-w-[412px] 2xl:max-w-[550px] m-auto">
                     {/* Background Gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#000000] to-[#001D3C] group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -78,7 +78,7 @@ const Currentproject = () => {
                           alt="banner"
                           width={1000}
                           height={500}
-                          className="md:rounded-lg min-h-[299px] md:min-h-auto object-cover rounded-[35px]"
+                          className="md:rounded-lg object-cover rounded-[35px]"
                         />
                       </div>
 
